@@ -1,7 +1,5 @@
 This high-quality and hand-picked collection shows CSS cards from across the web. Included are links with examples and code for use on your own website.
 
-![Three Black Product CSS Cards](https://appcode.app/wp-content/uploads/2022/02/Three-Black-Product-CSS-Cards.png "Three Black Product CSS Cards")
-
 <article class="super-container">
   <figure>
     <img src="https://appcode.app/wp-content/uploads/2022/02/Three-Black-Product-CSS-Cards.png" alt="Three Black Product CSS Cards" title="Three Black Product CSS Cards">
