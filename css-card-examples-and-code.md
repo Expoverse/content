@@ -1,10 +1,3 @@
----
-title: "16 CSS Card Examples and Code"
-date: "2022-02-23"
-categories: 
-  - "css"
----
-
 This high-quality and hand-picked collection shows CSS cards from across the web. Included are links with examples and code for use on your own website.
 
 ![Three Black Product CSS Cards](https://appcode.app/wp-content/uploads/2022/02/Three-Black-Product-CSS-Cards.png "Three Black Product CSS Cards")
@@ -309,3 +302,5 @@ This high-quality and hand-picked collection shows CSS cards from across the web
 - [The CSS justify-self Property](https://appcode.app/the-css-justify-self-property/)
 - [Explaining the Scale Property in CSS](https://appcode.app/explaining-the-scale-property-in-css/)
 - [The Awesome CSS Transform Property and Scale Function](https://appcode.app/the-awesome-css-transform-property-and-scale-function/)
+
+[git-gitlab-history limit=5 url="[https://gitlab.com/nilsnolde/esy-osm-pbf/-/blob/master/README.md](https://raw.githubusercontent.com/Expoverse/content/main/css-card-examples-and-code.md)"]
