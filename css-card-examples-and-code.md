@@ -303,4 +303,3 @@ This high-quality and hand-picked collection shows CSS cards from across the web
 - [Explaining the Scale Property in CSS](https://appcode.app/explaining-the-scale-property-in-css/)
 - [The Awesome CSS Transform Property and Scale Function](https://appcode.app/the-awesome-css-transform-property-and-scale-function/)
 
-[git-gitlab-history limit=5 url="[https://gitlab.com/nilsnolde/esy-osm-pbf/-/blob/master/README.md](https://raw.githubusercontent.com/Expoverse/content/main/css-card-examples-and-code.md)"]
