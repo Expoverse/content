@@ -23,7 +23,6 @@ This high-quality and hand-picked collection shows CSS cards from across the web
 #### Links
 
 - [Demo and Code](https://codepen.io/triss90/pen/bpZzzN)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/bpZzzN/1645655147671/css-cards.zip)
 
 ![CSS Cards With Drop-Shadow Effect](https://appcode.app/wp-content/uploads/2022/02/CSS-Cards-With-Drop-Shadow-Effect.png "CSS Cards With Drop-Shadow Effect")
 
