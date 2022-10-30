@@ -1,12 +1,12 @@
 This high-quality and hand-picked collection shows CSS cards from across the web. Included are links with examples and code for use on your own website.
 
-<div>
-  <article> 
-  <figure>
-    <img src="https://appcode.app/wp-content/uploads/2022/02/Three-Black-Product-CSS-Cards.png" alt="Three Black Product CSS Cards" title="Three Black Product CSS Cards">
-  </figure>
-</article> 
-</div>  
+
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
+
 
 ## CSS Cards With Drop-Shadow Effect
 
