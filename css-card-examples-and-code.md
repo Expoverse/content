@@ -2,9 +2,7 @@ This high-quality and hand-picked collection shows CSS cards from across the web
 
 
 <article>
-    <tr>
-        <td>Foo</td>
-    </tr>
+ Foo
 </article>
 
 
