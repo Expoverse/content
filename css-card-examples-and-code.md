@@ -1,11 +1,11 @@
 This high-quality and hand-picked collection shows CSS cards from across the web. Included are links with examples and code for use on your own website.
 
 
-<table>
+<article>
     <tr>
         <td>Foo</td>
     </tr>
-</table>
+</article>
 
 
 ## CSS Cards With Drop-Shadow Effect
