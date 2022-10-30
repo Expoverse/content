@@ -1,7 +1,32 @@
 This high-quality and hand-picked collection shows CSS cards from across the web. Included are links with examples and code for use on your own website.
 
 <div>
-  Testing
+  <article class="super-container"> 
+  <figure>
+    <img src="https://appcode.app/wp-content/uploads/2022/02/Three-Black-Product-CSS-Cards.png" alt="Three Black Product CSS Cards" title="Three Black Product CSS Cards">
+  </figure>
+  <br>
+  <h2>Three Black Product CSS Cards</h2>
+  <h3 class="about-the-item">About Project</h3>
+  <h4></h4>
+  <p></p>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Tristan White</li>
+        <li>codepen.io</li>
+      </ul>
+    </div>
+    <div class="info info-link">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="https://codepen.io/triss90/pen/bpZzzN">Demo and Code</a></li>
+        <li><a href="https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/bpZzzN/1645655147671/css-cards.zip">Download</a></li>
+      </ul>
+    </div>
+  </div>
+</article> 
 </div>  
 
 ## CSS Cards With Drop-Shadow Effect
