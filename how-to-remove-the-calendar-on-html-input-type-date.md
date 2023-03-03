@@ -118,9 +118,9 @@ We need to remove the calendar icon from the input element above. Below is an im
   <figcaption>Remove Calendar From HTML Date Picker</figcaption>
 </figure>
 
-Removing an icon is simple; we will use two WebKit pseudo-element keywords with the CSS display and WebKit Appearance properties. The CSS pseudo-elements we are using are -webkit-inner-spin-button and -webkit-calender-picker-indicator. We combine these keywords with the CSS input[type="date"] selector, targeting the date picker element.
+Removing an icon is simple; we will use two WebKit [pseudo-element](https://www.tutorialspoint.com/css/css_pseudo_elements.htm) keywords with the [CSS display](https://www.freecodecamp.org/news/the-css-display-property-display-none-display-table-inline-block-and-more/) and [WebKit Appearance properties](https://www.geeksforgeeks.org/css-webkit-appearance/). The CSS pseudo-elements we are using are `-webkit-inner-spin-button` and `-webkit-calender-picker-indicator`. We combine these keywords with the CSS `input[type="date"]` selector, targeting the date picker element.
 
-Included within the braces, we use the CSS properties display and -webkit-appearance. Both of these properties will have a value set to none.
+Included within the braces, we use the CSS properties `display` and `-webkit-appearance`. Both of these properties will have a value set to none.
 
 Below are the full CSS selector and properties to remove a date picker calendar icon.
 
