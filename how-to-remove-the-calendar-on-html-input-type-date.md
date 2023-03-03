@@ -111,7 +111,7 @@ This section will remove a calendar icon using CSS styles and properties.
   <figcaption>Creating a Generic HTML Date Picker Element</figcaption>
 </figure>
 
-We need to remove the calendar icon from the input element above. Below is an image of the input element with the calendar icon removed. To make the icon disappear, we need to utilize a few CSS properties and a unique selector, which is required to achieve this effect.
+We need to remove the calendar icon from the input element above. Below is an image of the input element with the calendar icon removed. To make the icon disappear, we need to utilize a few [CSS properties](https://codeburst.io/how-to-style-your-website-with-css-e72e7046fda5) and a unique selector, which is required to achieve this effect.
 
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="928" height="175" src="https://appcode.app/wp-content/uploads/2021/11/Remove-Calendar-From-HTML-Date-Picker.png" alt="Remove Calendar From HTML Date Picker" class="wp-image-6309" srcset="https://appcode.app/wp-content/uploads/2021/11/Remove-Calendar-From-HTML-Date-Picker.png 928w, https://appcode.app/wp-content/uploads/2021/11/Remove-Calendar-From-HTML-Date-Picker-300x57.png 300w, https://appcode.app/wp-content/uploads/2021/11/Remove-Calendar-From-HTML-Date-Picker-768x145.png 768w" sizes="(max-width: 928px) 100vw, 928px">
