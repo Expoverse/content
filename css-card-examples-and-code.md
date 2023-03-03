@@ -274,285 +274,40 @@ This high-quality and hand-picked collection shows CSS cards from across the web
 
 <article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Three-Black-Product-CSS-Cards.png" alt="Three Black Product CSS Cards" title="Three Black Product CSS Cards"></figure><br><h2>Three Black Product CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Tristan White</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/triss90/pen/bpZzzN" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-## CSS Cards With Drop-Shadow Effect
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/CSS-Cards-With-Drop-Shadow-Effect.png" alt="CSS Cards With Drop-Shadow Effect" title="CSS Cards With Drop-Shadow Effect"></figure><br><h2>CSS Cards With Drop-Shadow Effect</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Jaroslaw Hubert</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/jhkepa/pen/vddwYE" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-### About Project
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Modern-CSS-Cards-Design.png" alt="Modern CSS Cards Design" title="Modern CSS Cards Design"></figure><br><h2>Modern CSS Cards Design</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>FlorinCornea</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/FlorinCornea/pen/KKwMeqd" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-#### Author
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Pure-CSS-Cards-and-Deal-Offer-Cards.png" alt="Pure CSS Cards and Deal Offer Cards" title="Pure CSS Cards and Deal Offer Cards"></figure><br><h2>Pure CSS Cards and Deal Offer Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Nishant Dogra</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/mrdogra007/pen/dZGbay" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-- Jaroslaw Hubert
-- codepen.io
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Multi-Colored-CSS-Cards-With-Buttons.png" alt="Multi-Colored CSS Cards With Buttons" title="Multi-Colored CSS Cards With Buttons"></figure><br><h2>Multi-Colored CSS Cards With Buttons</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Yana Mitrofanova</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/Raina97/pen/qQdzOV" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-#### Links
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Beautiful-Collection-of-CSS-Cards.png" alt="Beautiful Collection of CSS Cards" title="Beautiful Collection of CSS Cards"></figure><br><h2>Beautiful Collection of CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>CodingTuting</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/codingtuting/pen/XWrBgQz" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-- [Demo and Code](https://codepen.io/jhkepa/pen/vddwYE)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/vddwYE/1645655638729/css-cards-with-drop-shadow-effect.zip)
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Three-Small-CSS-Cards.png" alt="Three Small CSS Cards" title="Three Small CSS Cards"></figure><br><h2>Three Small CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Kelvyn Costa</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/kelvyncosta/pen/bgLwrw" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-![Modern CSS Cards Design](https://appcode.app/wp-content/uploads/2022/02/Modern-CSS-Cards-Design.png "Modern CSS Cards Design")
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/UI-Profile-CSS-Card.png" alt="UI Profile CSS Card" title="UI Profile CSS Card"></figure><br><h2>UI Profile CSS Card</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Muhammad Arsallan</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/marsallan/pen/jRYGVQ" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-  
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Flipping-CSS-Cards.png" alt="Flipping CSS Cards" title="Flipping CSS Cards"></figure><br><h2>Flipping CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Tom the Dev</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/thomasfaller/pen/EWOyRY" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-## Modern CSS Cards Design
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/CSS-Cards-Animation-and-Product-Card.png" alt="CSS Cards Animation and Product Card" title="CSS Cards Animation and Product Card"></figure><br><h2>CSS Cards Animation and Product Card</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Pratham</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/ps173/pen/yLJpWwy" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-### About Project
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Blue-Flat-CSS-Cards.png" alt="Blue Flat CSS Cards" title="Blue Flat CSS Cards"></figure><br><h2>Blue Flat CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Console.log</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/console_logs/pen/oqXRNK" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-#### Author
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Responsive-Column-CSS-Cards.png" alt="Responsive Column CSS Cards" title="Responsive Column CSS Cards"></figure><br><h2>Responsive Column CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Haneen Krimly</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/hkrimly/pen/mdbwKPR" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-- FlorinCornea
-- codepen.io
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Recipe-Flipping-CSS-Cards.png" alt="Recipe Flipping CSS Cards" title="Recipe Flipping CSS Cards"></figure><br><h2>Recipe Flipping CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Maja Kulpa-Malecka</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://cdpn.io/maja127/fullpage/abbWKBV" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-#### Links
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Tailwind-CSS-Cards.png" alt="Tailwind CSS Cards" title="Tailwind CSS Cards"></figure><br><h2>Tailwind CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Ross Orthwein</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://cdpn.io/rossorthwein/fullpage/rZbwaq" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-- [Demo and Code](https://codepen.io/FlorinCornea/pen/KKwMeqd)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/KKwMeqd/1645655760667/modern-css-cards-design.zip)
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Generic-Responsive-CSS-Cards.png" alt="Generic Responsive CSS Cards" title="Generic Responsive CSS Cards"></figure><br><h2>Generic Responsive CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Nick Kelly</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/nickresearch/pen/mdPNNOJ" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
-![Pure CSS Cards and Deal Offer Cards](https://appcode.app/wp-content/uploads/2022/02/Pure-CSS-Cards-and-Deal-Offer-Cards.png "Pure CSS Cards and Deal Offer Cards")
-
-  
-
-## Pure CSS Cards and Deal Offer Cards
-
-### About Project
-
-#### Author
-
-- Nishant Dogra
-- codepen.io
-
-#### Links
-
-- [Demo and Code](https://codepen.io/mrdogra007/pen/dZGbay)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/dZGbay/1645656026185/pure-css-cards-deal-and-offer-cards-widget.zip)
-
-![Multi-Colored CSS Cards With Buttons](https://appcode.app/wp-content/uploads/2022/02/Multi-Colored-CSS-Cards-With-Buttons.png "Multi-Colored CSS Cards With Buttons")
-
-  
-
-## Multi-Colored CSS Cards With Buttons
-
-### About Project
-
-#### Author
-
-- Yana Mitrofanova
-- codepen.io
-
-#### Links
-
-- [Demo and Code](https://codepen.io/Raina97/pen/qQdzOV)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/qQdzOV/1645656699977/css-cards-1.zip)
-
-![Beautiful Collection of CSS Cards](https://appcode.app/wp-content/uploads/2022/02/Beautiful-Collection-of-CSS-Cards.png "Beautiful Collection of CSS Cards")
-
-  
-
-## Beautiful Collection of CSS Cards
-
-### About Project
-
-#### Author
-
-- CodingTuting
-- codepen.io
-
-#### Links
-
-- [Demo and Code](https://codepen.io/codingtuting/pen/XWrBgQz)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/XWrBgQz/1645656880265/beautiful-css-cards.zip)
-
-![Three Small CSS Cards](https://appcode.app/wp-content/uploads/2022/02/Three-Small-CSS-Cards.png "Three Small CSS Cards")
-
-  
-
-## Three Small CSS Cards
-
-### About Project
-
-#### Author
-
-- Kelvyn Costa
-- codepen.io
-
-#### Links
-
-- [Demo and Code](https://codepen.io/kelvyncosta/pen/bgLwrw)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/bgLwrw/1645657031403/cards-css.zip)
-
-![UI Profile CSS Card](https://appcode.app/wp-content/uploads/2022/02/UI-Profile-CSS-Card.png "UI Profile CSS Card")
-
-  
-
-## UI Profile CSS Card
-
-### About Project
-
-#### Author
-
-- Muhammad Arsallan
-- codepen.io
-
-#### Links
-
-- [Demo and Code](https://codepen.io/marsallan/pen/jRYGVQ)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/jRYGVQ/1645657153948/ui-css-cards.zip)
-
-![Flipping CSS Cards](https://appcode.app/wp-content/uploads/2022/02/Flipping-CSS-Cards.png "Flipping CSS Cards")
-
-  
-
-## Flipping CSS Cards
-
-### About Project
-
-#### Author
-
-- Tom the Dev
-- codepen.io
-
-#### Links
-
-- [Demo and Code](https://codepen.io/thomasfaller/pen/EWOyRY)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/EWOyRY/1645657308449/flipping-css-cards.zip)
-
-![CSS Cards Animation and Product Card](https://appcode.app/wp-content/uploads/2022/02/CSS-Cards-Animation-and-Product-Card.png "CSS Cards Animation and Product Card")
-
-  
-
-## CSS Cards Animation and Product Card
-
-### About Project
-
-#### Author
-
-- Pratham
-- codepen.io
-
-#### Links
-
-- [Demo and Code](https://codepen.io/ps173/pen/yLJpWwy)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/yLJpWwy/1645657460083/css-cards-animationproduct-card.zip)
-
-![Blue Flat CSS Cards](https://appcode.app/wp-content/uploads/2022/02/Blue-Flat-CSS-Cards.png "Blue Flat CSS Cards")
-
-  
-
-## Blue Flat CSS Cards
-
-### About Project
-
-#### Author
-
-- Console.log
-- codepen.io
-
-#### Links
-
-- [Demo and Code](https://codepen.io/console_logs/pen/oqXRNK)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/oqXRNK/1645657740639/flat-css-cards.zip)
-
-![Responsive Column CSS Cards](https://appcode.app/wp-content/uploads/2022/02/Responsive-Column-CSS-Cards.png "Responsive Column CSS Cards")
-
-  
-
-## Responsive Column CSS Cards
-
-### About Project
-
-#### Author
-
-- Haneen Krimly
-- codepen.io
-
-#### Links
-
-- [Demo and Code](https://codepen.io/hkrimly/pen/mdbwKPR)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/mdbwKPR/1645657909070/responsive-css-cards.zip)
-
-![Recipe Flipping CSS Cards](https://appcode.app/wp-content/uploads/2022/02/Recipe-Flipping-CSS-Cards.png "Recipe Flipping CSS Cards")
-
-  
-
-## Recipe Flipping CSS Cards
-
-### About Project
-
-#### Author
-
-- Maja Kulpa-Malecka
-- codepen.io
-
-#### Links
-
-- [Demo and Code](https://cdpn.io/maja127/fullpage/abbWKBV)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/abbWKBV/1645658221696/css-flipping-cards.zip)
-
-![Tailwind CSS Cards](https://appcode.app/wp-content/uploads/2022/02/Tailwind-CSS-Cards.png "Tailwind CSS Cards")
-
-  
-
-## Tailwind CSS Cards
-
-### About Project
-
-#### Author
-
-- Ross Orthwein
-- codepen.io
-
-#### Links
-
-- [Demo and Code](https://cdpn.io/rossorthwein/fullpage/rZbwaq)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/rZbwaq/1645658449611/tailwind-css-cards-and-button.zip)
-
-![Generic Responsive CSS Cards](https://appcode.app/wp-content/uploads/2022/02/Generic-Responsive-CSS-Cards.png "Generic Responsive CSS Cards")
-
-  
-
-## Generic Responsive CSS Cards
-
-### About Project
-
-#### Author
-
-- Nick Kelly
-- codepen.io
-
-#### Links
-
-- [Demo and Code](https://codepen.io/nickresearch/pen/mdPNNOJ)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/mdPNNOJ/1645658583403/responsive-cards-generic.zip)
-
-![Basic CSS Cards](https://appcode.app/wp-content/uploads/2022/02/Basic-CSS-Cards.png "Basic CSS Cards")
-
-  
-
-## Basic CSS Cards
-
-### About Project
-
-#### Author
-
-- Haneen Krimly
-- codepen.io
-
-#### Links
-
-- [Demo and Code](https://codepen.io/hkrimly/pen/ExYZedV)
-- [Download](https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/ExYZedV/1645658709315/basic-css-cards.zip)
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Basic-CSS-Cards.png" alt="Basic CSS Cards" title="Basic CSS Cards"></figure><br><h2>Basic CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Haneen Krimly</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/hkrimly/pen/ExYZedV" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
 ## Recommended Articles
 
-- [15 Text Outline CSS Examples and Code](https://appcode.app/15-text-outline-css-examples-and-code/)
-- [15 Flexbox CSS Examples and Code](https://appcode.app/15-flexbox-css-examples-and-code/)
-- [32 CSS Menu Examples and Code](https://appcode.app/css-menu-examples-and-code/)
-- [16 CSS Image Gallery Examples and Code](https://appcode.app/css-image-gallery-examples-and-code/)
-- [15 CSS Spinner Animation Examples and Code](https://appcode.app/css-spinner-animation-examples-and-code/)
-- [15 CSS Chat Box Examples and Code](https://appcode.app/css-chat-box-examples-and-code/)
-- [15 Awesome Keyframe CSS Animation Examples and Code](https://appcode.app/awesome-keyframe-css-animation-examples-and-code/)
-
-## Other Articles
-
-- [The CSS justify-self Property](https://appcode.app/the-css-justify-self-property/)
-- [Explaining the Scale Property in CSS](https://appcode.app/explaining-the-scale-property-in-css/)
-- [The Awesome CSS Transform Property and Scale Function](https://appcode.app/the-awesome-css-transform-property-and-scale-function/)
+- [CSS Sidebar Menus](https://appcode.app/css-sidebar-menu-examples-and-code/)
+- [How To Create a Stacked Card Hover Effect Using CSS](https://appcode.app/how-to-create-a-stacked-card-hover-effect-using-css/)
+- [CSS Image Effects](https://appcode.app/css-image-effect-examples-and-code/)
+- [CSS Carousels](https://appcode.app/css-carousel-examples-and-code/)
 
