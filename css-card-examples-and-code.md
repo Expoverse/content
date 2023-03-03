@@ -19,6 +19,12 @@ These cards can display article excerpts, with an image on top and the article t
 
 We need some content to work with before we begin working with CSS. In this step, we will start by creating the HTML markups. If you are unfamiliar with HTML, you can start with some of our HTML tutorials.
 
+<pre>
+<code>
+testing
+</code>
+</pre>
+
 ```HTML {.style-me}
 <!-- A div with container id to hold the card -->
 <div id="container">
