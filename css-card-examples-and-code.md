@@ -19,8 +19,7 @@ These cards can display article excerpts, with an image on top and the article t
 
 We need some content to work with before we begin working with CSS. In this step, we will start by creating the HTML markups. If you are unfamiliar with HTML, you can start with some of our HTML tutorials.
 
-<pre class="wp-block-code language-markup" tabindex="0">
-<code lang="markup" class="language-markup">
+```HTML {#foo .bar .baz key=val}
 <!-- A div with container id to hold the card -->
 <div id="container">
   <!-- A div with card class for the card  -->
@@ -39,8 +38,7 @@ We need some content to work with before we begin working with CSS. In this step
     </div>
   </div>
 </div>
-</code>
-</pre>
+```
 
 ## CSS Cards With Drop-Shadow Effect
 
