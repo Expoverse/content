@@ -33,7 +33,8 @@ We need some content to work with before we begin working with CSS. In this step
       <!-- A div with name class for the name of the card -->
       <div class="name">Jim Carrey</div>
       <p>
-        Pride is an abomination. One must forego the self to obtain total spiritual creaminess and avoid the chewy chunks of degradation.</p>
+        Pride is an abomination. One must forego the self to obtain total spiritual creaminess and avoid the chewy chunks of degradation.
+      </p>
       <button>Read more</button>
     </div>
   </div>
