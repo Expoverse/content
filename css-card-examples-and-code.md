@@ -20,7 +20,7 @@ These cards can display article excerpts, with an image on top and the article t
 We need some content to work with before we begin working with CSS. In this step, we will start by creating the HTML markups. If you are unfamiliar with HTML, you can start with some of our HTML tutorials.
 
 <pre class="wp-block-code language-markup">
-<code lang="markup" class="language-markup">
+<code lang="markup" class="language-markup yikes">
 <!-- A div with container id to hold the card -->
 <div id="container">
   <!-- A div with card class for the card  -->
