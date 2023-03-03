@@ -13,9 +13,7 @@ This tutorial demonstrates how to remove the calendar on the [HTML input type da
 </figure>
 
 ## How To Remove the Icon From a Date Input?
-A calendar icon on an HTML input type date **(input[type=”date”])** can be removed using CSS selectors and properties that target 
-the input element calendar-picker-indicator. When removing a calendar icon, we need to use a ::-webkit-calendar-picker-indicator pseudo-element, 
-as the calendar icon cannot be selected using standard CSS selectors.
+A calendar icon on an HTML input type date **(input[type=”date”])** can be removed using CSS selectors and properties that target the input element calendar-picker-indicator. When removing a calendar icon, we need to use a **::-webkit-calendar-picker-indicator** pseudo-element, as the calendar icon cannot be selected using standard CSS selectors.
 
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="845" height="447" src="https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date.jpg" alt="Diagram of Hiding the Calendar Icon on an Input Type Date" class="wp-image-15370" srcset="https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date.jpg 845w, https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date-300x159.jpg 300w, https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date-768x406.jpg 768w" sizes="(max-width: 845px) 100vw, 845px">
@@ -23,13 +21,9 @@ as the calendar icon cannot be selected using standard CSS selectors.
 </figure>
 
 ## Creating an Input Type Date
-This section creates a styled date picker before we move on to removing the icon. This helps to spice up the example to be more visually 
-helpful, so adding the extra HTML and CSS isn’t necessary, but it helps with the demonstration.
+This section creates a styled date picker before we move on to removing the icon. This helps to spice up the example to be more visually helpful, so adding the extra HTML and CSS isn’t necessary, but it helps with the demonstration.
 
-To begin creating a webpage with an input type date, we need to create two div elements to move the input 
-element to the center of a web page. First, we will create a div element and a second div as a child. Once we have both div elements, 
-we can create an HTML input element with a type attribute set to date. Something like this: DIV > DIV > INPUT. The first DIV element will 
-have a class named .super-container, and the second will be .container. As you see below, the HTML code fits on a few lines.
+To begin creating a webpage with an input type date, we need to create two div elements to move the input element to the center of a web page. First, we will create a div element and a second div as a child. Once we have both div elements, we can create an HTML input element with a type attribute set to date. Something like this: DIV > DIV > INPUT. The first DIV element will have a class named .super-container, and the second will be .container. As you see below, the HTML code fits on a few lines.
 
 ```HTML
 <div class="super-container">
@@ -46,8 +40,7 @@ Rendering this HTML will create a generic HTML date picker element like the one 
   <figcaption>Input Type Date Without Custom CSS Styles</figcaption>
 </figure>
 
-Suppose we made the date selector a bit more interesting before we removed the calendar icon. In that case, we 
-could render an input element with custom styling, as in the image below.
+Suppose we made the date selector a bit more interesting before we removed the calendar icon. In that case, we could render an input element with custom styling, as in the image below.
 
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="1024" height="339" src="https://appcode.app/wp-content/uploads/2022/11/A-Custom-Styled-HTML-Input-Type-Date-1024x339.jpg" alt="A Custom Styled HTML Input Type Date" class="wp-image-15373" srcset="https://appcode.app/wp-content/uploads/2022/11/A-Custom-Styled-HTML-Input-Type-Date-1024x339.jpg 1024w, https://appcode.app/wp-content/uploads/2022/11/A-Custom-Styled-HTML-Input-Type-Date-300x99.jpg 300w, https://appcode.app/wp-content/uploads/2022/11/A-Custom-Styled-HTML-Input-Type-Date-768x254.jpg 768w, https://appcode.app/wp-content/uploads/2022/11/A-Custom-Styled-HTML-Input-Type-Date-1536x508.jpg 1536w, https://appcode.app/wp-content/uploads/2022/11/A-Custom-Styled-HTML-Input-Type-Date.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px">
@@ -118,16 +111,14 @@ This section will remove a calendar icon using CSS styles and properties.
   <figcaption>Creating a Generic HTML Date Picker Element</figcaption>
 </figure>
 
-We need to remove the calendar icon from the input element above. Below is an image of the input element with the calendar icon removed. 
-To make the icon disappear, we need to utilize a few CSS properties and a unique selector, which is required to achieve this effect.
+We need to remove the calendar icon from the input element above. Below is an image of the input element with the calendar icon removed. To make the icon disappear, we need to utilize a few CSS properties and a unique selector, which is required to achieve this effect.
 
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="928" height="175" src="https://appcode.app/wp-content/uploads/2021/11/Remove-Calendar-From-HTML-Date-Picker.png" alt="Remove Calendar From HTML Date Picker" class="wp-image-6309" srcset="https://appcode.app/wp-content/uploads/2021/11/Remove-Calendar-From-HTML-Date-Picker.png 928w, https://appcode.app/wp-content/uploads/2021/11/Remove-Calendar-From-HTML-Date-Picker-300x57.png 300w, https://appcode.app/wp-content/uploads/2021/11/Remove-Calendar-From-HTML-Date-Picker-768x145.png 768w" sizes="(max-width: 928px) 100vw, 928px">
   <figcaption>Remove Calendar From HTML Date Picker</figcaption>
 </figure>
 
-Removing an icon is simple; we will use two WebKit pseudo-element keywords with the CSS display and WebKit Appearance properties. 
-The CSS pseudo-elements we are using are -webkit-inner-spin-button and -webkit-calender-picker-indicator. We combine these keywords with the CSS input[type="date"] selector, targeting the date picker element.
+Removing an icon is simple; we will use two WebKit pseudo-element keywords with the CSS display and WebKit Appearance properties. The CSS pseudo-elements we are using are -webkit-inner-spin-button and -webkit-calender-picker-indicator. We combine these keywords with the CSS input[type="date"] selector, targeting the date picker element.
 
 Included within the braces, we use the CSS properties display and -webkit-appearance. Both of these properties will have a value set to none.
 
