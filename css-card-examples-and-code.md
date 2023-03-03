@@ -273,6 +273,8 @@ Mising Text
 
 This high-quality and hand-picked collection shows CSS cards from across the web. Included are links with examples and code for use on your website.
 
+{% include image.html url="/images/my-cat.jpg" description="My cat, Robert Downey Jr." %}
+
 <article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Three-Black-Product-CSS-Cards.png" alt="Three Black Product CSS Cards" title="Three Black Product CSS Cards"></figure><br><h2>Three Black Product CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Tristan White</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/triss90/pen/bpZzzN" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
 <article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/CSS-Cards-With-Drop-Shadow-Effect.png" alt="CSS Cards With Drop-Shadow Effect" title="CSS Cards With Drop-Shadow Effect"></figure><br><h2>CSS Cards With Drop-Shadow Effect</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Jaroslaw Hubert</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/jhkepa/pen/vddwYE" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
