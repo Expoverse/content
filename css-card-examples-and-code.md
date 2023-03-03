@@ -21,7 +21,7 @@ We need some content to work with before we begin working with CSS. In this step
 
 <pre class="wp-block-code language-markup">
 <code lang="markup" class="language-markup yikes">
-<div>Testing 3</div>
+Testing me
 </code>
 </pre>
 
