@@ -23,7 +23,7 @@ A calendar icon on an HTML input type date **(input[type=”date”])** can be r
 ## Creating an Input Type Date
 This section creates a styled date picker before we move on to removing the icon. This helps to spice up the example to be more visually helpful, so adding the extra HTML and CSS isn’t necessary, but it helps with the demonstration.
 
-To begin creating a webpage with an input type date, we need to create two div elements to move the input element to the center of a web page. First, we will create a div element and a second div as a child. Once we have both div elements, we can create an HTML input element with a type attribute set to date. Something like this: DIV > DIV > INPUT. The first DIV element will have a class named .super-container, and the second will be .container. As you see below, the HTML code fits on a few lines.
+To begin creating a webpage with an input type date, we need to create two [div elements](https://www.htmlquick.com/reference/tags/div.html) to move the input element to the center of a web page. First, we will create a div element and a second div as a child. Once we have both div elements, we can create an [HTML input element](https://www.w3schools.com/tags/tag_input.asp) with a type attribute set to date. Something like this: `DIV > DIV > INPUT`. The first DIV element will have a class named `.super-container`, and the second will be `.container`. As you see below, the [HTML code fits](https://www.quackit.com/html/codes/) on a few lines.
 
 ```HTML
 <div class="super-container">
