@@ -4,7 +4,13 @@ taxonomy:
     category: CSS
 ---
 
-This high-quality and hand-picked collection shows CSS cards from across the web. Included are links with examples and code for use on your own website.
+This article demonstrates CSS card designs, definitions, walk-throughs, code examples, FAQs, and other card-related developer information.
+
+You must be familiar with CSS to make your website look appealing. CSS (also referred to as Cascading Style Sheets) is a style sheet language for styling web content. Cards are often used in modern web design.
+
+The cards appear sleek and similar to the Android Material design. Using the box-shadow property, we can generate both Text and Picture cards.
+
+These cards can display article excerpts, with an image on top and the article title at the bottom, user profiles, or anything else. Picture cards can be used for several different things. This lesson will teach CSS fundamentals by creating card components from scratch. Let’s get started if you’re ready.
 
 ## CSS Cards With Drop-Shadow Effect
 
