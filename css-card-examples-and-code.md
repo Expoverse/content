@@ -12,6 +12,34 @@ The cards appear sleek and similar to the Android Material design. Using the box
 
 These cards can display article excerpts, with an image on top and the article title at the bottom, user profiles, or anything else. Picture cards can be used for several different things. This lesson will teach CSS fundamentals by creating card components from scratch. Let’s get started if you’re ready.
 
+## What is a Card?
+## Parts of a Card
+## How are Cards Used?
+## Example 1
+
+We need some content to work with before we begin working with CSS. In this step, we will start by creating the HTML markups. If you are unfamiliar with HTML, you can start with some of our HTML tutorials.
+
+```HTML
+    <!-- A div with container id to hold the card -->
+    <div id="container">
+      <!-- A div with card class for the card  -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1672357867403-0b36f4334de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+        <!-- A div with card__details class to hold the details in the card  -->
+        <div class="card__details">
+          <!-- Span with tag class for the tag -->
+          <span class="tag">When nature calls</span>
+          <span class="tag">By Unsplash</span>
+          <!-- A div with name class for the name of the card -->
+          <div class="name">Jim Carrey</div>
+          <p>
+            Pride is an abomination. One must forego the self to obtain total spiritual creaminess and avoid the chewy chunks of degradation.</p>
+          <button>Read more</button>
+        </div>
+      </div>
+    </div>
+```
+
 ## CSS Cards With Drop-Shadow Effect
 
 ### About Project
