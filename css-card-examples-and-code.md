@@ -41,6 +41,239 @@ We need some content to work with before we begin working with CSS. In this step
 </div>
 ```
 
+If you are coding externally, you must wrap these lines of code in the basic HTML markups. This means you ought to start by creating something like this:
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Creating Cards using CSS</title>
+    </head>
+    <body>
+    <!-- Website Content Here -->
+    </body>
+</html>
+```
+
+Alright, with the HMTL elements out of the way, let’s see what we’ve achieved so far with the lines of codes we’ve created thus far:
+
+```HTML
+Image Placeholder
+```
+
+It doesn’t look like much, but that’s because we are yet to style it. However, what we’ve done here with HTML is to create the “skeleton” or “frame” for our design. With this, styling can exist. But it’s like trying to place a fleshy one in thin air – nothing will hold it!
+
+Remember, our task is to create a card component with an image, tags, a name, a description, and a button.
+
+The component must then be styled. This is the tutorial’s central point. This section will explain several concepts as I create the card component.
+
+### CSS Recap – CSS Application in HTML
+First, let’s look at three approaches to adding CSS to HTML. These approaches are:
+
+External stylesheets
+The most popular and useful method is to use an external stylesheet. CSS is contained in a separate file with the extension.css.
+Create a new file, style.css, in the same folder as index.html to add an external stylesheet. You may also import the stylesheet within the element by doing this:
+
+```HTML
+<link rel="stylesheet" href="style.css">
+```
+
+Internal stylesheets
+You can include an internal stylesheet by putting CSS in the
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating Cards using CSS</title>
+
+  <style>
+    /* your style */
+  </style>
+
+</head>
+<body>
+  
+</body>
+</html>
+```
+
+Inline styles (Not recommended)
+You should avoid this style as much as you can. However, the style attribute can also add style directly to an element.
+
+This method is frequently used when working with lines of code that do not allow you to alter the external or internal stylesheets.
+
+Adding inline styling to your page is not a good practice. Why? That’s because it makes it tough to read and understand; therefore, avoid it wherever possible.
+
+```HTML
+<div style="color:red;">paragraph</div>
+```
+
+Styling the HTML elements
+With this out of the way, let’s go back to our tutorial and style it using CSS.
+
+```CSS
+body {
+  background-color: #eaeff1;
+  font-family: sans-serif;
+}
+
+#container {
+  max-width: 300px;
+
+  /* This will center the container in the middle on the horizontal axis */
+  margin: 0 auto;
+
+  /* Add space above the container (20% of the view height) */
+  margin-top: 20vh;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+  height: 214px;
+  object-fit: cover;
+}
+
+.card {
+  /* Change background color */
+  background-color: white;
+
+  /* Add border */
+  border: 1px solid #bacdd8;
+
+  /* Add space between the border and the content */
+  padding: 8px;
+  border-radius: 12px;
+}
+```
+
+Now you should have a responsive image with a height of 214px. So let’s move on. We’ve also fixed the distorted image by adding the object-fit: cover;
+
+But we still need to finish.
+
+```CSS
+.tag {
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+p {
+  font-size: 14px;
+  color: #7f8c9b;
+  line height: 150%;
+}
+
+button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #0077ff;
+  background-color: #e0efff;  
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  padding: 16px 8px 8px 8px;
+}
+
+button: focus,
+button: hover {
+  background-color: red;
+  color: #e0efff;
+}
+```
+
+Here’s the final result:
+
+```HTML
+Image Placeholder
+```
+
+Caption: News-like card using CSS
+
+## Example 2
+
+n this example, we will use CSS to design a simple card. We will not use any frameworks or libraries because there will be occasions when you want to make things as basic as possible, which is exactly what this example is intended for. Let’s begin:
+
+```HTML
+<div class="tutorial">
+  <div class="theheader">
+    <p>Paragraph</p>
+  </div>
+  <div class="container">
+    <p>Let me just place this here</p>
+    <p>Yep, we’ve got another text here!</p>
+    <p>Placeholder Texts</p>
+    <p>How about a dumb text? That should work. </p>
+  </div>
+</div>
+```
+
+We’ll start by making a div called “tutorial.” Then we will build another div called header and wrap it around the text “theheader .”It will be the content’s header, as the name suggests.
+Styling With CSS
+
+We’ll set the card width to 30% in the “tutorial” class and utilize the percentage ‘%’ to make the card mobile responsive. Then, we’ll use the flexbox to rearrange the header and the container so that the title fits appropriately on the card.
+
+To utilize flexbox, set the display to flex, which will stack the header and container into a row by default, and we’ll remedy that by changing the flex-direction to a column.
+
+```CSS
+.tutorial {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border: 1px red solid;
+}
+
+.theheader {
+    height: 35%;
+    background: red;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 3px 18px;
+}
+```
+
+The header has also been styled. We’ll make the header 35% taller, alter the background color to red, and change the text color to white.
+
+Finally, we’ll add the padding 3px 18px shorthand (similar to padding-top: 3 and padding-right: 18) to the container class to create some gap between the contents and the card, making the card look more professional.
+
+```HTML
+Image Placeholder
+```
+
+## Conclusion
+
+So that brings us to the end of the tutorial. There are plenty of additional crucial CSS concepts to understand. However, using this guide, you should be able to use CSS to make your next project appear excellent.
+
+These cards can be used on your website’s sidebars, blog entries, etc. I hope you enjoyed this guide, and thank you for taking the time to read it.
+
+## Frequently Asked Questions
+Mising Text
+
+## Other Examples
+
+This high-quality and hand-picked collection shows CSS cards from across the web. Included are links with examples and code for use on your website.
+
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Three-Black-Product-CSS-Cards.png" alt="Three Black Product CSS Cards" title="Three Black Product CSS Cards"></figure><br><h2>Three Black Product CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Tristan White</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/triss90/pen/bpZzzN" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+
 ## CSS Cards With Drop-Shadow Effect
 
 ### About Project
