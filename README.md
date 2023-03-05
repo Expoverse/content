@@ -1,7 +1,7 @@
 ---
 
 title: Contributing to AppCode
-post_status: publish
+skip_file: true
 
 ---
 
