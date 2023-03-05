@@ -177,14 +177,7 @@ ul li {
 To tinker with this example, here is a link to the [live demo hosted on codepen.io.](https://codepen.io/tyler-chipman/pen/jOLgReZ)
 
 ## Recommended Articles
-- [How To Create HTML and CSS Emoji Icons](https://appcode.app/how-to-create-html-and-css-emoji-icons/)
-- [How To Create CSS Gradient Buttons](https://appcode.app/how-to-create-css-gradient-buttons/)
 - [How To Create a Black and White Image Using CSS Grayscale](https://appcode.app/how-to-create-a-black-and-white-image-using-css-grayscale/)
-- [How To Create a CSS Neon Effect With CSS Shadows](https://appcode.app/how-to-create-a-css-neon-effect-with-css-shadows/)
-- [How To Remove the Calendar on HTML Input Type Date](https://appcode.app/how-to-remove-the-calendar-on-html-input-type-date/)
-
-## Other Articles
 - [Quickly Search and Filter a List With JavaScript](https://appcode.app/quickly-search-and-filter-a-list-with-javascript/)
 - [Create a Three Column Layout Using Pure CSS and Background Image](https://appcode.app/create-a-three-column-layout-using-pure-css-and-background-image/)
 - [How To Build Web Layouts for Dual-Screen](https://appcode.app/how-to-build-web-layouts-for-dual-screen/)
-
