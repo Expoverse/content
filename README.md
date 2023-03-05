@@ -1,3 +1,10 @@
+---
+
+title: Contributing to AppCode
+post_status: publish
+
+---
+
 # Content
 The content on AppCode covering references, examples, specifications, how-to, and the many other web development related content. This is the repo where you can change, update, fix, and improve the community developer materials.
 
@@ -9,4 +16,4 @@ You can change, fix, update, and improve the content on https://appcode.app by c
 - Ideas can be submitted in two ways.
   - Through a [pull request](https://github.com/Expoverse/content/pulls)
   - Using the [New content or feature suggestion issue template](https://github.com/Expoverse/content/issues/new?assignees=&labels=proposal&template=content-or-feature-suggestion.yml&title=Enter+your+proposal+here)
-- Submiting content and code changes with a [pull request.](https://github.com/Expoverse/content/pulls)  
+- Submiting content and code changes with a [pull request.](https://github.com/Expoverse/content/pulls) 
