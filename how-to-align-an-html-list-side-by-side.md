@@ -22,7 +22,7 @@ Before we go walk-through setting up an example project for demonstrating method
 
 **How do I make a list horizontally in HTML?**
 
-In HTML, `<ul>` and `<or>` elements are usually rendered vertically, with each list item stacked on top of another. This stacking creates a column, and each list item typically uses the entire width of its container. When you need to create an HTML list that expands horizontally or side-by-side, several methods, such as grid, flex, inline, and float, can achieve this effect.
+In HTML, `<ul>` and `<ol>` elements are usually rendered vertically, with each list item stacked on top of another. This stacking creates a column, and each list item typically uses the entire width of its container. When you need to create an HTML list that expands horizontally or side-by-side, several methods, such as grid, flex, inline, and float, can achieve this effect.
 
 <figure class="wp-block-image size-large is-resized">
   <img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/11/Diagram-of-an-HTML-List-Transformed-From-Vertical-to-Horizonal.jpg" alt="Diagram of an HTML List Transformed From Vertical to Horizonal" class="wp-image-15424" width="750" height="431" srcset="https://appcode.app/wp-content/uploads/2022/11/Diagram-of-an-HTML-List-Transformed-From-Vertical-to-Horizonal.jpg 943w, https://appcode.app/wp-content/uploads/2022/11/Diagram-of-an-HTML-List-Transformed-From-Vertical-to-Horizonal-300x172.jpg 300w, https://appcode.app/wp-content/uploads/2022/11/Diagram-of-an-HTML-List-Transformed-From-Vertical-to-Horizonal-768x441.jpg 768w" sizes="(max-width: 750px) 100vw, 750px">
