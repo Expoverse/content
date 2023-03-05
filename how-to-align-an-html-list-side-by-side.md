@@ -7,7 +7,7 @@ post_date: 2021-11-28 01:41:34
 
 This article demonstrates how to align an HTML list side by side with several methods and walk-throughs to create a horizontal row with [CSS](https://www.w3schools.com/cssref/index.php).
 
-**Content**
+**Contents**
 - [Setting Up a Demonstration](https://appcode.app/how-to-align-an-html-list-side-by-side/#setting-up-a-demonstration)
 - [Methods](https://appcode.app/how-to-align-an-html-list-side-by-side/#methods)
   - [Using Float Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-the-float-method)
