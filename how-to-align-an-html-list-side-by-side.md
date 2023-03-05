@@ -6,7 +6,7 @@ This article demonstrates how to align an HTML list side by side with several me
   - [Using Float Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-the-float-method)
   - [Using Grid Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-grid-method)
   - [Using Flexbox Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-flexbox-method)
-  - [Using display: inline Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-display:-inline-method)
+  - [Using display: inline Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-display-inline-method)
 - [Summary](https://appcode.app/how-to-align-an-html-list-side-by-side/#summary)
 
 ## Setting Up a Demonstration {#setting-up-a-demonstration}
