@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [How To Remove the Icon From a Date Input?](#how-to-remove-the-icon-from-a-date-input)
+- [Creating an Input Type Date](#creating-an-input-type-date)
+- [Removing the Calendar Icon](#removing-the-calendar-icon)
+- [Project Code](#project-code)
+- [Recommended Articles](#recommended-articles)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 title: How To Remove the Calendar on HTML Input Type Date
 taxonomy:
