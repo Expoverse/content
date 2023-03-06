@@ -1,18 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
-
-- [Setting Up a Demonstration {&#035;setting-up-a-demonstration}](#setting-up-a-demonstration-setting-up-a-demonstration)
-- [Methods {&#035;methods}](#methods-methods)
-  - [Using the Float Method {&#035;using-the-float-method}](#using-the-float-method-using-the-float-method)
-  - [Using Grid Method {&#035;using-grid-method}](#using-grid-method-using-grid-method)
-  - [Using Flexbox Method {&#035;using-flexbox-method}](#using-flexbox-method-using-flexbox-method)
-  - [Using display: inline Method {&#035;using-display-inline-method}](#using-display-inline-method-using-display-inline-method)
-- [Summary {&#035;summary}](#summary-summary)
-- [Recommended Articles](#recommended-articles)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ---
 title: How To Align an HTML List Side by Side
 taxonomy:
