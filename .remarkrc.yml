@@ -1,7 +1,7 @@
 settings:
   bullet: "-"
   rule: '-'
-  extentions: "micromark/micromark-extension-frontmatter"
+  extensions: "micromark/micromark-extension-frontmatter"
 plugins:
   # Check that markdown is consistent.
   #- remark-preset-lint-consistent
