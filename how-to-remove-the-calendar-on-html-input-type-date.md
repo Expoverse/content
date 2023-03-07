@@ -13,7 +13,7 @@ This tutorial demonstrates how to remove the calendar on the [HTML input type da
 </figure>
 
 ## How To Remove the Icon From a Date Input?
-A calendar icon on an HTML input type date **(input[type=”date”])** can be removed using CSS selectors and properties that target the input element calendar-picker-indicator. When removing a calendar icon, we need to use a **::-webkit-calendar-picker-indicator** pseudo-element, as the calendar icon cannot be selected using standard CSS selectors.
+A calendar icon on an HTML input type date **(input\[type=”date”])** can be removed using CSS selectors and properties that target the input element calendar-picker-indicator. When removing a calendar icon, we need to use a **::-webkit-calendar-picker-indicator** pseudo-element, as the calendar icon cannot be selected using standard CSS selectors.
 
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="845" height="447" src="https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date.jpg" alt="Diagram of Hiding the Calendar Icon on an Input Type Date" class="wp-image-15370" srcset="https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date.jpg 845w, https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date-300x159.jpg 300w, https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date-768x406.jpg 768w" sizes="(max-width: 845px) 100vw, 845px">
