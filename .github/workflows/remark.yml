@@ -19,12 +19,12 @@ jobs:
         id: verify-changed-files
         with:
           files: |
-             README.md
+             *.md
       - name: Create Pull Request
         if: steps.verify_changed_files.outputs.files_changed == 'true'
         uses: peter-evans/create-pull-request@v3
         with:
-          base: "main"
+          base: "master"
           title: "Updated README.md"
           branch: "chore/update-readme"
           commit-message: "Updated README.md"
