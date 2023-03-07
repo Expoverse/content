@@ -13,8 +13,7 @@ jobs:
              remark-toc
           files: |
              *.md
-          args: |
-             --use 'toc=max-depth:2'
+          rc_path: remark.json   
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v13
         id: verify-changed-files
