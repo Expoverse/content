@@ -1,20 +1,22 @@
 ---
+
 title: How To Align an HTML List Side by Side
 taxonomy:
-    category: CSS
-post_date: 2021-11-28 01:41:34
----
+category: CSS
+post\_date: 2021-11-28 01:41:34
+-------------------------------
 
 This article demonstrates how to align an HTML list side by side with several methods and walk-throughs to create a horizontal row with [CSS](https://www.w3schools.com/cssref/index.php).
 
 **Contents**
-- [Setting Up a Demonstration](https://appcode.app/how-to-align-an-html-list-side-by-side/#setting-up-a-demonstration)
-- [Methods](https://appcode.app/how-to-align-an-html-list-side-by-side/#methods)
-  - [Using Float Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-the-float-method)
-  - [Using Grid Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-grid-method)
-  - [Using Flexbox Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-flexbox-method)
-  - [Using display: inline Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-display-inline-method)
-- [Summary](https://appcode.app/how-to-align-an-html-list-side-by-side/#summary)
+
+-   [Setting Up a Demonstration](https://appcode.app/how-to-align-an-html-list-side-by-side/#setting-up-a-demonstration)
+-   [Methods](https://appcode.app/how-to-align-an-html-list-side-by-side/#methods)
+    -   [Using Float Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-the-float-method)
+    -   [Using Grid Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-grid-method)
+    -   [Using Flexbox Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-flexbox-method)
+    -   [Using display: inline Method](https://appcode.app/how-to-align-an-html-list-side-by-side/#using-display-inline-method)
+-   [Summary](https://appcode.app/how-to-align-an-html-list-side-by-side/#summary)
 
 ## Setting Up a Demonstration {#setting-up-a-demonstration}
 
@@ -100,6 +102,7 @@ ul li {
 ```
 
 ### Using Grid Method {#using-grid-method}
+
 The grid method also achieves making a list horizontal. We can use a CSS `display` with a `grid` value to turn an unordered list into a grid where its list element children are placed into three columns.
 
 ```CSS
@@ -115,6 +118,7 @@ Let’s explain how grid achieves a side-by-side list. A `grid-template-columns`
 <p class="note-dark"><strong>Note:</strong> In another article, we expand upon using <a href="https://appcode.app/a-guide-on-how-to-use-css-grids-for-layouts/">CSS grid property to create different layouts</a> on a web page. This might be helpful because other properties related to the grid can be applied to HTML lists, such as changing column width, defining gap spacing, sizing rows, and more. You can check out the grid article here. <a href="https://appcode.app/a-guide-on-how-to-use-css-grids-for-layouts/">Direct Link →</a></p>
 
 ### Using Flexbox Method {#using-flexbox-method}
+
 Another method to align an unordered or ordered list horizontally would be to use a `display: flex` property on a list container element, `<ol>` or `<ul>`. Flex converts a container into a flexbox, each child element becoming a flex item. These flex item act like a grid which is similar to using CSS grid.
 
 ```CSS
@@ -126,6 +130,7 @@ ul {
 <p class="note-dark"><strong>Note:</strong> Two other articles can expand information on using the display flexbox property. The first article demonstrates&nbsp;<a href="https://appcode.app/how-to-create-a-responsive-flexbox-grid/" target="_blank" rel="noreferrer noopener">creating a responsive flexbox grid</a>, which can be implemented into your own horizontal list. In a second article, we turn an&nbsp;<a href="https://appcode.app/css-flexbox-navigation-menus-tutorial-and-examples/" target="_blank" rel="noreferrer noopener">unordered list into a horizontal menu</a>, with each list element containing a link anchor to navigate. This could be useful if you create a menu using HTML lists.&nbsp;<a href="https://appcode.app/css-flexbox-navigation-menus-tutorial-and-examples/" target="_blank" rel="noreferrer noopener">Direct Link →</a></p>
 
 ### Using display: inline Method {#using-display-inline-method}
+
 A frequently used method to make a horizontal list is to use a `display: inline` property on the children list elements of a `<ul>` or `<ol>` (unordered or ordered list). By default, a list element is a block element and expands to the entire width of a parent element. When a list element is changed to inline, they no longer act like full-width blocks; instead, they take the smallest height and width possible if not declared, and they float to the left like text.
 
 ```CSS
@@ -137,6 +142,7 @@ ul li {
 Each of the `inline-block`, `inline-flex`, `inline-grid`, `inline-table`, `-webkit-inline-box` values also produce the same horizontal effect when set as the value of display.
 
 ## Summary {#summary}
+
 <p class="note-dark"><strong>Note:</strong> a unique feature of this project is the background gradient. We used a&nbsp;<a target="_blank" href="https://www.kirupa.com/css/circles_radial_gradient.htm" rel="noreferrer noopener">CSS background radial gradient</a> for the body and a container that wraps the unordered list. The position of a circular gradient is set by using the value <code>circle at 17% 98%</code>. We have an article that dives into conic and radial gradients here. <a href="https://appcode.app/diving-into-conic-and-radial-color-gradients-in-css/">Direct Link →</a></p>
 
 All the CSS styles used in this example to create the whole project are here. You can switch out the CSS properties and use the different methods above.
@@ -184,7 +190,8 @@ ul li {
 To tinker with this example, here is a link to the [live demo hosted on codepen.io.](https://codepen.io/tyler-chipman/pen/jOLgReZ)
 
 ## Recommended Articles
-- [How To Create a Black and White Image Using CSS Grayscale](https://appcode.app/how-to-create-a-black-and-white-image-using-css-grayscale/)
-- [Quickly Search and Filter a List With JavaScript](https://appcode.app/quickly-search-and-filter-a-list-with-javascript/)
-- [Create a Three Column Layout Using Pure CSS and Background Image](https://appcode.app/create-a-three-column-layout-using-pure-css-and-background-image/)
-- [How To Build Web Layouts for Dual-Screen](https://appcode.app/how-to-build-web-layouts-for-dual-screen/)
+
+-   [How To Create a Black and White Image Using CSS Grayscale](https://appcode.app/how-to-create-a-black-and-white-image-using-css-grayscale/)
+-   [Quickly Search and Filter a List With JavaScript](https://appcode.app/quickly-search-and-filter-a-list-with-javascript/)
+-   [Create a Three Column Layout Using Pure CSS and Background Image](https://appcode.app/create-a-three-column-layout-using-pure-css-and-background-image/)
+-   [How To Build Web Layouts for Dual-Screen](https://appcode.app/how-to-build-web-layouts-for-dual-screen/)
