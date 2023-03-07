@@ -10,11 +10,11 @@ jobs:
         uses: tj-actions/remark@v3
         with:
           plugins: |
-             - remark-toc
+             remark-toc
           files: |
              *.md
           args: |
-             - --use remark-toc
+             --use remark-toc
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v13
         id: verify-changed-files
