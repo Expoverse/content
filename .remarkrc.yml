@@ -10,7 +10,7 @@ plugins:
   - - remark-toc
     - heading: contents
       tight: true
-  - - remark-slug    
+  - - rehype-slug    
   - - remark-frontmatter
     - type: 'yaml'
       marker: '-'
