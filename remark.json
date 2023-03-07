@@ -1,7 +1,7 @@
 {
 	"remarkConfig": {
 		"settings": {
-			"bullet": "*"
+			"bullet": "-"
 		},
 		"plugins": [
 			[
