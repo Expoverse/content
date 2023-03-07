@@ -5,7 +5,7 @@ taxonomy:
 post_date: 2021-11-23 01:17:22 
 ---
 
-Test: This tutorial demonstrates how to remove the calendar on the [HTML input type date](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date). Included is a walkthrough example, code, and a live demo.
+This tutorial demonstrates how to remove the calendar on the [HTML input type date](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date). Included is a walkthrough example, code, and a live demo.
 
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="1024" height="278" src="https://appcode.app/wp-content/uploads/2021/11/Remove-Arrows-on-HTML-Input-Type-Date-1024x278.png" alt="Remove Arrows on HTML Input Type Date" class="wp-image-6295" srcset="https://appcode.app/wp-content/uploads/2021/11/Remove-Arrows-on-HTML-Input-Type-Date-1024x278.png 1024w, https://appcode.app/wp-content/uploads/2021/11/Remove-Arrows-on-HTML-Input-Type-Date-300x81.png 300w, https://appcode.app/wp-content/uploads/2021/11/Remove-Arrows-on-HTML-Input-Type-Date-768x208.png 768w, https://appcode.app/wp-content/uploads/2021/11/Remove-Arrows-on-HTML-Input-Type-Date-1536x417.png 1536w, https://appcode.app/wp-content/uploads/2021/11/Remove-Arrows-on-HTML-Input-Type-Date.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px">
@@ -13,7 +13,7 @@ Test: This tutorial demonstrates how to remove the calendar on the [HTML input t
 </figure>
 
 ## How To Remove the Icon From a Date Input?
-A calendar icon on an HTML input type date **(input\[type=”date”])** can be removed using CSS selectors and properties that target the input element calendar-picker-indicator. When removing a calendar icon, we need to use a **::-webkit-calendar-picker-indicator** pseudo-element, as the calendar icon cannot be selected using standard CSS selectors.
+A calendar icon on an HTML input type date `(input\[type=”date”])` can be removed using CSS selectors and properties that target the input element calendar-picker-indicator. When removing a calendar icon, we need to use a `::-webkit-calendar-picker-indicator` pseudo-element, as the calendar icon cannot be selected using standard CSS selectors.
 
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="845" height="447" src="https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date.jpg" alt="Diagram of Hiding the Calendar Icon on an Input Type Date" class="wp-image-15370" srcset="https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date.jpg 845w, https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date-300x159.jpg 300w, https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date-768x406.jpg 768w" sizes="(max-width: 845px) 100vw, 845px">
