@@ -5,7 +5,7 @@ taxonomy:
 post_date: 2021-11-23 01:17:22 
 ---
 
-This tutorial demonstrates how to remove the calendar on the [HTML input type date](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date). Included is a walkthrough example, code, and a live demo.
+Test: This tutorial demonstrates how to remove the calendar on the [HTML input type date](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date). Included is a walkthrough example, code, and a live demo.
 
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="1024" height="278" src="https://appcode.app/wp-content/uploads/2021/11/Remove-Arrows-on-HTML-Input-Type-Date-1024x278.png" alt="Remove Arrows on HTML Input Type Date" class="wp-image-6295" srcset="https://appcode.app/wp-content/uploads/2021/11/Remove-Arrows-on-HTML-Input-Type-Date-1024x278.png 1024w, https://appcode.app/wp-content/uploads/2021/11/Remove-Arrows-on-HTML-Input-Type-Date-300x81.png 300w, https://appcode.app/wp-content/uploads/2021/11/Remove-Arrows-on-HTML-Input-Type-Date-768x208.png 768w, https://appcode.app/wp-content/uploads/2021/11/Remove-Arrows-on-HTML-Input-Type-Date-1536x417.png 1536w, https://appcode.app/wp-content/uploads/2021/11/Remove-Arrows-on-HTML-Input-Type-Date.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px">
