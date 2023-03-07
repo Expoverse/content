@@ -1,8 +1,6 @@
 settings:
   bullet: "-"
-  rule: '-'
-  extensions: 
-    - micromark/micromark-extension-frontmatter
+  #rule: '-'
 plugins:
   # Check that markdown is consistent.
   #- remark-preset-lint-consistent
@@ -11,3 +9,6 @@ plugins:
   # Generate a table of contents in `## Contents`
   - - remark-toc
     - heading: contents
+  - - remark-frontmatter
+    - type: 'yaml'
+    - marker: '-'
