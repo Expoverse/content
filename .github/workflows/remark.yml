@@ -12,7 +12,7 @@ jobs:
         id: verify_changed_files
         with:
           files: |
-            README.md
+            ../../README.md
       - name: Create Pull Request
         if: steps.verify_changed_files.outputs.files_changed == 'true'
         uses: peter-evans/create-pull-request@v3
