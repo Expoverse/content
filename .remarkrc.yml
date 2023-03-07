@@ -1,5 +1,6 @@
 settings:
   bullet: "-"
+  rule: '-'
 plugins:
   # Check that markdown is consistent.
   #- remark-preset-lint-consistent
