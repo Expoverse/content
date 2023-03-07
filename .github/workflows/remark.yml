@@ -11,6 +11,7 @@ jobs:
         with:
           plugins: |
              remark-toc
+             remark-frontmatter
           files: |
              *.md
           rc_path: .remarkrc.yml   
