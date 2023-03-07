@@ -21,12 +21,7 @@ jobs:
           files: |
              *.md
       - name: Run step only when any of the above files change.
-        if: steps.verify-changed-files.outputs.changed_files
-        run: |
-          echo "Did files change?: ${{ steps.verify-changed-files.outputs.files_changed }}"
-          echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"
-      - name: Run step only when any of the above files change.
-        if: ${{ steps.verify-changed-files.outputs.files_changed }}
+        if: steps.verify-changed-files.outputs.files_changed == 1
         run: |
           echo "Did files change?: ${{ steps.verify-changed-files.outputs.files_changed }}"
           echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"          
