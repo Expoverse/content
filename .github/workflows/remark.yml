@@ -21,10 +21,35 @@ jobs:
           files: |
              *.md
       - name: Run step only when any of the above files change.
+        if: steps.verify-changed-files.outputs.files_changed == true
+        run: |
+          echo "Did files change?: ${{ steps.verify-changed-files.outputs.files_changed }}"
+          echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"       
+      - name: Run step only when any of the above files change.
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        run: |
+          echo "Did files change?: ${{ steps.verify-changed-files.outputs.files_changed }}"
+          echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"  
+      - name: Run step only when any of the above files change.
         if: steps.verify-changed-files.outputs.files_changed == 1
         run: |
           echo "Did files change?: ${{ steps.verify-changed-files.outputs.files_changed }}"
-          echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"          
+          echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"  
+      - name: Run step only when any of the above files change.
+        if: steps.verify-changed-files.outputs.files_changed == 0
+        run: |
+          echo "Did files change?: ${{ steps.verify-changed-files.outputs.files_changed }}"
+          echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"  
+      - name: Run step only when any of the above files change.
+        if: steps.verify-changed-files.outputs.files_changed == 'false'
+        run: |
+          echo "Did files change?: ${{ steps.verify-changed-files.outputs.files_changed }}"
+          echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"  
+      - name: Run step only when any of the above files change.
+        if: steps.verify-changed-files.outputs.files_changed == false
+        run: |
+          echo "Did files change?: ${{ steps.verify-changed-files.outputs.files_changed }}"
+          echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"            
       - name: Create Pull Request
         if: steps.verify_changed_files.outputs.files_changed == 'true'
         uses: peter-evans/create-pull-request@v4
