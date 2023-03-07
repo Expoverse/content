@@ -14,8 +14,11 @@ The cards appear sleek and similar to the Android Material design. Using the box
 These cards can display article excerpts, with an image on top and the article title at the bottom, user profiles, or anything else. Picture cards can be used for several different things. This lesson will teach CSS fundamentals by creating card components from scratch. Let’s get started if you’re ready.
 
 ## What is a Card?
+
 ## Parts of a Card
+
 ## How are Cards Used?
+
 ## Example 1
 
 We need some content to work with before we begin working with CSS. In this step, we will start by creating the HTML markups. If you are unfamiliar with HTML, you can start with some of our HTML tutorials.
@@ -71,6 +74,7 @@ Remember, our task is to create a card component with an image, tags, a name, a 
 The component must then be styled. This is the tutorial’s central point. This section will explain several concepts as I create the card component.
 
 ### CSS Recap – CSS Application in HTML
+
 First, let’s look at three approaches to adding CSS to HTML. These approaches are:
 
 External stylesheets
@@ -267,6 +271,7 @@ So that brings us to the end of the tutorial. There are plenty of additional cru
 These cards can be used on your website’s sidebars, blog entries, etc. I hope you enjoyed this guide, and thank you for taking the time to read it.
 
 ## Frequently Asked Questions
+
 Mising Text
 
 ## Other Examples
@@ -307,8 +312,7 @@ This high-quality and hand-picked collection shows CSS cards from across the web
 
 ## Recommended Articles
 
-- [CSS Sidebar Menus](https://appcode.app/css-sidebar-menu-examples-and-code/)
-- [How To Create a Stacked Card Hover Effect Using CSS](https://appcode.app/how-to-create-a-stacked-card-hover-effect-using-css/)
-- [CSS Image Effects](https://appcode.app/css-image-effect-examples-and-code/)
-- [CSS Carousels](https://appcode.app/css-carousel-examples-and-code/)
-
+-   [CSS Sidebar Menus](https://appcode.app/css-sidebar-menu-examples-and-code/)
+-   [How To Create a Stacked Card Hover Effect Using CSS](https://appcode.app/how-to-create-a-stacked-card-hover-effect-using-css/)
+-   [CSS Image Effects](https://appcode.app/css-image-effect-examples-and-code/)
+-   [CSS Carousels](https://appcode.app/css-carousel-examples-and-code/)
