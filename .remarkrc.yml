@@ -12,3 +12,5 @@ plugins:
   - - remark-frontmatter
     - type: 'yaml'
       marker: '-'
+  - - remark-prism
+    - transformInlineCode: true
