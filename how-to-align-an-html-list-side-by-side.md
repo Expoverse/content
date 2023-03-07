@@ -9,6 +9,15 @@ This article demonstrates how to align an HTML list side by side with several me
 
 ## Contents
 
+-   [Setting Up a Demonstration {#setting-up-a-demonstration}](#setting-up-a-demonstration-setting-up-a-demonstration)
+-   [Methods {#methods}](#methods-methods)
+    -   [Using the Float Method {#using-the-float-method}](#using-the-float-method-using-the-float-method)
+    -   [Using Grid Method {#using-grid-method}](#using-grid-method-using-grid-method)
+    -   [Using Flexbox Method {#using-flexbox-method}](#using-flexbox-method-using-flexbox-method)
+    -   [Using display: inline Method {#using-display-inline-method}](#using-display-inline-method-using-display-inline-method)
+-   [Summary {#summary}](#summary-summary)
+-   [Recommended Articles](#recommended-articles)
+
 ## Setting Up a Demonstration {#setting-up-a-demonstration}
 
 Before we go walk-through setting up an example project for demonstrating methods of creating a horizontal list, we should review a frequently asked question that developers may ask when developing a website with list items:
