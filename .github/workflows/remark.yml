@@ -12,6 +12,7 @@ jobs:
           plugins: |
              remark-toc
              remark-frontmatter
+             remark-prism
           files: |
              *.md
           rc_path: .remarkrc.yml   
