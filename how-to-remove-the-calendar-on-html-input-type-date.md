@@ -1,9 +1,10 @@
----
+***
+
 title: How To Remove the Calendar on HTML Input Type Date
 taxonomy:
-    category: CSS
-post_date: 2021-11-23 01:17:22 
----
+category: CSS
+post\_date: 2021-11-23 01:17:22
+-------------------------------
 
 This tutorial demonstrates how to remove the calendar on the [HTML input type date](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date). Included is a walkthrough example, code, and a live demo.
 
@@ -13,7 +14,8 @@ This tutorial demonstrates how to remove the calendar on the [HTML input type da
 </figure>
 
 ## How To Remove the Icon From a Date Input?
-A calendar icon on an HTML input type date **(input[type=”date”])** can be removed using CSS selectors and properties that target the input element calendar-picker-indicator. When removing a calendar icon, we need to use a **::-webkit-calendar-picker-indicator** pseudo-element, as the calendar icon cannot be selected using standard CSS selectors.
+
+A calendar icon on an HTML input type date **(input\[type=”date”])** can be removed using CSS selectors and properties that target the input element calendar-picker-indicator. When removing a calendar icon, we need to use a **::-webkit-calendar-picker-indicator** pseudo-element, as the calendar icon cannot be selected using standard CSS selectors.
 
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="845" height="447" src="https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date.jpg" alt="Diagram of Hiding the Calendar Icon on an Input Type Date" class="wp-image-15370" srcset="https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date.jpg 845w, https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date-300x159.jpg 300w, https://appcode.app/wp-content/uploads/2022/11/Diagram-of-Hiding-the-Calendar-Icon-on-an-Input-Type-Date-768x406.jpg 768w" sizes="(max-width: 845px) 100vw, 845px">
@@ -21,6 +23,7 @@ A calendar icon on an HTML input type date **(input[type=”date”])** can be r
 </figure>
 
 ## Creating an Input Type Date
+
 This section creates a styled date picker before we move on to removing the icon. This helps to spice up the example to be more visually helpful, so adding the extra HTML and CSS isn’t necessary, but it helps with the demonstration.
 
 To begin creating a webpage with an input type date, we need to create two [div elements](https://www.htmlquick.com/reference/tags/div.html) to move the input element to the center of a web page. First, we will create a div element and a second div as a child. Once we have both div elements, we can create an [HTML input element](https://www.w3schools.com/tags/tag_input.asp) with a type attribute set to date. Something like this: `DIV > DIV > INPUT`. The first DIV element will have a class named `.super-container`, and the second will be `.container`. As you see below, the [HTML code fits](https://www.quackit.com/html/codes/) on a few lines.
@@ -104,6 +107,7 @@ input::placeholder {
 ```
 
 ## Removing the Calendar Icon
+
 This section will remove a calendar icon using CSS styles and properties.
 
 <figure class="wp-block-image size-large">
@@ -133,6 +137,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 ```
 
 ## Project Code
+
 Here are the entire CSS stylesheet and HTML used in this project.
 
 ```HTML
@@ -201,11 +206,9 @@ input::placeholder {
 Here is a live demo of this [example hosted on codepen.io](https://codepen.io/tyler-chipman/pen/mdMYRqJ)
 
 ## Recommended Articles
-- [How to Create CSS Color Palettes](https://appcode.app/how-to-create-css-color-palettes/)
-- [How To Remove the Arrows on HTML Input Type Number](https://appcode.app/how-to-remove-the-arrows-on-html-input-type-number/)
-- [How To Create HTML and CSS Emoji Icons](https://appcode.app/how-to-create-html-and-css-emoji-icons/)
-- [How To Create CSS Gradient Buttons](https://appcode.app/how-to-create-css-gradient-buttons/)
-- [How To Create a Black and White Image Using CSS Grayscale](https://appcode.app/how-to-create-a-black-and-white-image-using-css-grayscale/)
 
-
-
+*   [How to Create CSS Color Palettes](https://appcode.app/how-to-create-css-color-palettes/)
+*   [How To Remove the Arrows on HTML Input Type Number](https://appcode.app/how-to-remove-the-arrows-on-html-input-type-number/)
+*   [How To Create HTML and CSS Emoji Icons](https://appcode.app/how-to-create-html-and-css-emoji-icons/)
+*   [How To Create CSS Gradient Buttons](https://appcode.app/how-to-create-css-gradient-buttons/)
+*   [How To Create a Black and White Image Using CSS Grayscale](https://appcode.app/how-to-create-a-black-and-white-image-using-css-grayscale/)
