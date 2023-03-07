@@ -13,7 +13,7 @@ jobs:
              remark-toc
           files: |
              *.md
-          rc_path: remark.json   
+          rc_path: .remarkrc.yml   
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v13
         id: verify-changed-files
