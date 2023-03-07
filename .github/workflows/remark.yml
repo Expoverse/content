@@ -25,10 +25,10 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           base: "master"
-          title: "Updated README.md"
-          branch: "chore/update-readme"
-          commit-message: "Updated README.md"
-          body: "Updated README.md"
+          title: "Remark Processor"
+          branch: "chore/update-markdown"
+          commit-message: "Updated markdown content"
+          body: "Updated markdown content format as set in .remarkrc.yml"
           token: ${{ github.token }}
           
       
