@@ -11,8 +11,8 @@ jobs:
         uses: tj-actions/verify-changed-files@v6
         id: verify_changed_files
         with:
-          files:
-            - "*.md"
+          files: |
+            README.md
       - name: Create Pull Request
         if: steps.verify_changed_files.outputs.files_changed == 'true'
         uses: peter-evans/create-pull-request@v3
