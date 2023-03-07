@@ -1,13 +1,11 @@
-"remarkConfig": {
-  "settings": {
-    "bullet": "*",
-  },
-  "plugins": [
-    [
-      "remark-toc",
-      {
-        "heading": "contents"
-      }
-    ]
+"settings": {
+  "bullet": "*",
+},
+"plugins": [
+  [
+    "remark-toc",
+    {
+      "heading": "contents"
+    }
   ]
-}
+]
