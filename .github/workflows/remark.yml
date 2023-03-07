@@ -1,0 +1,26 @@
+on: push
+name: Remark
+jobs:
+  generateNewMarkdown:
+    name: Remark
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run remark cli
+        uses: tj-actions/remark@v3
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v6
+        id: verify_changed_files
+        with:
+          files:
+            - "*.md"
+      - name: Create Pull Request
+        if: steps.verify_changed_files.outputs.files_changed == 'true'
+        uses: peter-evans/create-pull-request@v3
+        with:
+          base: "main"
+          title: "Updated README.md"
+          branch: "chore/update-readme"
+          commit-message: "Updated README.md"
+          body: "Updated README.md"
+          token: ${{ github.token }}
+      
