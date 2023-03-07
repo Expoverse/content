@@ -1,0 +1,14 @@
+"remarkConfig": {
+  "settings": {
+    "bullet": "*",
+  },
+  "plugins": [
+    [
+      // Generate a table of contents in `## Contents`
+      "remark-toc",
+      {
+        "heading": "contents"
+      }
+    ]
+  ]
+}
