@@ -10,4 +10,5 @@ plugins:
   - - remark-toc
     - heading: contents
   - - remark-frontmatter
-    - type: 'yaml', marker: '-'
+    - type: 'yaml',
+      marker: '-'
