@@ -11,4 +11,4 @@ plugins:
     - heading: contents
   - - remark-frontmatter
     - type: 'yaml'
-    - marker: '-'
+      - marker: '-'
