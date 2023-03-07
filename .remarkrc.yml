@@ -6,6 +6,7 @@ plugins:
   #- remark-preset-lint-consistent
   # Few recommended rules.
   #- remark-preset-lint-recommended
+  - remark-frontmatter
   # Generate a table of contents in `## Contents`
   - - remark-toc
     - heading: contents
