@@ -5,6 +5,7 @@ jobs:
     name: Remark
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Run remark cli
         uses: tj-actions/remark@v3
         with:
