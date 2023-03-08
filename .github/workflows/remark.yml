@@ -53,11 +53,11 @@ jobs:
       - name: Create Pull Request For Rendered
         uses: peter-evans/create-pull-request@v4
         with:
-          base: "master"
+          base: "rendered"
           title: "Remark Processor"
           branch: "chore/convert-markdown"
           commit-message: "Convert markdown content"
-          body: "Convert markdown content format as set in .remarkrc.yml"
+          body: "Convert markdown content format as set in .remarkrc-rendered.yml"
           token: ${{ github.token }}          
           
       
