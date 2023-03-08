@@ -27,7 +27,7 @@ jobs:
         if: steps.verify-changed-files.outputs.files_changed == 'true'
         uses: peter-evans/create-pull-request@v4
         with:
-          base: "master"
+          base: "rendered"
           title: "Remark Processor"
           branch: "chore/update-markdown"
           commit-message: "Updated markdown content"
