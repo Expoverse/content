@@ -14,3 +14,5 @@ plugins:
   - - remark-frontmatter
     - type: 'yaml'
       marker: '-'
+  - remark-parse
+  - remark-html    
