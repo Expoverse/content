@@ -5,7 +5,7 @@ skip_file: true
 
 ---
 
-[![Remark](https://github.com/Expoverse/content/actions/workflows/remark.yml/badge.svg)](https://github.com/Expoverse/content/actions/workflows/remark.yml)
+[![Markdown Processor](https://github.com/Expoverse/content/actions/workflows/remark.yml/badge.svg)](https://github.com/Expoverse/content/actions/workflows/remark.yml)
 
 The content on AppCode covering references, examples, specifications, how-to, and the many other web development related content. This is the repo where you can change, update, fix, and improve the community developer materials.
 
