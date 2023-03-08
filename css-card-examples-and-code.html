@@ -1,0 +1,216 @@
+<p>This article demonstrates CSS card designs, definitions, walk-throughs, code examples, FAQs, and other card-related developer information.</p>
+<p>You must be familiar with CSS to make your website look appealing. CSS (also referred to as Cascading Style Sheets) is a style sheet language for styling web content. Cards are often used in modern web design.</p>
+<p>The cards appear sleek and similar to the Android Material design. Using the box-shadow property, we can generate both Text and Picture cards.</p>
+<p>These cards can display article excerpts, with an image on top and the article title at the bottom, user profiles, or anything else. Picture cards can be used for several different things. This lesson will teach CSS fundamentals by creating card components from scratch. Let’s get started if you’re ready.</p>
+<h2>What is a Card?</h2>
+<h2>Parts of a Card</h2>
+<h2>How are Cards Used?</h2>
+<h2>Example 1</h2>
+<p>We need some content to work with before we begin working with CSS. In this step, we will start by creating the HTML markups. If you are unfamiliar with HTML, you can start with some of our HTML tutorials.</p>
+<pre><code>&#x3C;!-- A div with container id to hold the card -->
+&#x3C;div id="container">
+  &#x3C;!-- A div with card class for the card  -->
+  &#x3C;div class="card">
+    &#x3C;img src="https://images.unsplash.com/photo-1672357867403-0b36f4334de7?ixlib=rb-4.0.3&#x26;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&#x26;auto=format&#x26;fit=crop&#x26;w=870&#x26;q=80">
+    &#x3C;!-- A div with card__details class to hold the details in the card  -->
+    &#x3C;div class="card__details">
+      &#x3C;!-- Span with tag class for the tag -->
+      &#x3C;span class="tag">When nature calls&#x3C;/span>
+      &#x3C;span class="tag">By Unsplash&#x3C;/span>
+      &#x3C;!-- A div with name class for the name of the card -->
+      &#x3C;div class="name">Jim Carrey&#x3C;/div>
+      &#x3C;p>
+        Pride is an abomination. One must forego the self to obtain total spiritual creaminess and avoid the chewy chunks of degradation.
+      &#x3C;/p>
+      &#x3C;button>Read more&#x3C;/button>
+    &#x3C;/div>
+  &#x3C;/div>
+&#x3C;/div>
+</code></pre>
+<p>If you are coding externally, you must wrap these lines of code in the basic HTML markups. This means you ought to start by creating something like this:</p>
+<pre><code>&#x3C;!DOCTYPE html>
+&#x3C;html lang="en">
+    &#x3C;head>
+      &#x3C;meta charset="UTF-8">
+      &#x3C;meta name="viewport" content="width=device-width, initial-scale=1.0">
+      &#x3C;title>Creating Cards using CSS&#x3C;/title>
+    &#x3C;/head>
+    &#x3C;body>
+    &#x3C;!-- Website Content Here -->
+    &#x3C;/body>
+&#x3C;/html>
+</code></pre>
+<p>Alright, with the HMTL elements out of the way, let’s see what we’ve achieved so far with the lines of codes we’ve created thus far:</p>
+<pre><code>Image Placeholder
+</code></pre>
+<p>It doesn’t look like much, but that’s because we are yet to style it. However, what we’ve done here with HTML is to create the “skeleton” or “frame” for our design. With this, styling can exist. But it’s like trying to place a fleshy one in thin air – nothing will hold it!</p>
+<p>Remember, our task is to create a card component with an image, tags, a name, a description, and a button.</p>
+<p>The component must then be styled. This is the tutorial’s central point. This section will explain several concepts as I create the card component.</p>
+<h3>CSS Recap – CSS Application in HTML</h3>
+<p>First, let’s look at three approaches to adding CSS to HTML. These approaches are:</p>
+<p>External stylesheets
+The most popular and useful method is to use an external stylesheet. CSS is contained in a separate file with the extension.css.
+Create a new file, style.css, in the same folder as index.html to add an external stylesheet. You may also import the stylesheet within the element by doing this:</p>
+<pre><code>&#x3C;link rel="stylesheet" href="style.css">
+</code></pre>
+<p>Internal stylesheets
+You can include an internal stylesheet by putting CSS in the</p>
+<pre><code>&#x3C;!DOCTYPE html>
+&#x3C;html lang="en">
+&#x3C;head>
+  &#x3C;meta charset="UTF-8">
+  &#x3C;meta name="viewport" content="width=device-width, initial-scale=1.0">
+  &#x3C;title>Creating Cards using CSS&#x3C;/title>
+
+  &#x3C;style>
+    /* your style */
+  &#x3C;/style>
+
+&#x3C;/head>
+&#x3C;body>
+  
+&#x3C;/body>
+&#x3C;/html>
+</code></pre>
+<p>Inline styles (Not recommended)
+You should avoid this style as much as you can. However, the style attribute can also add style directly to an element.</p>
+<p>This method is frequently used when working with lines of code that do not allow you to alter the external or internal stylesheets.</p>
+<p>Adding inline styling to your page is not a good practice. Why? That’s because it makes it tough to read and understand; therefore, avoid it wherever possible.</p>
+<pre><code>&#x3C;div style="color:red;">paragraph&#x3C;/div>
+</code></pre>
+<p>Styling the HTML elements
+With this out of the way, let’s go back to our tutorial and style it using CSS.</p>
+<pre><code>body {
+  background-color: #eaeff1;
+  font-family: sans-serif;
+}
+
+#container {
+  max-width: 300px;
+
+  /* This will center the container in the middle on the horizontal axis */
+  margin: 0 auto;
+
+  /* Add space above the container (20% of the view height) */
+  margin-top: 20vh;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+  height: 214px;
+  object-fit: cover;
+}
+
+.card {
+  /* Change background color */
+  background-color: white;
+
+  /* Add border */
+  border: 1px solid #bacdd8;
+
+  /* Add space between the border and the content */
+  padding: 8px;
+  border-radius: 12px;
+}
+</code></pre>
+<p>Now you should have a responsive image with a height of 214px. So let’s move on. We’ve also fixed the distorted image by adding the object-fit: cover;</p>
+<p>But we still need to finish.</p>
+<pre><code>.tag {
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+p {
+  font-size: 14px;
+  color: #7f8c9b;
+  line height: 150%;
+}
+
+button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #0077ff;
+  background-color: #e0efff;  
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  padding: 16px 8px 8px 8px;
+}
+
+button: focus,
+button: hover {
+  background-color: red;
+  color: #e0efff;
+}
+</code></pre>
+<p>Here’s the final result:</p>
+<pre><code>Image Placeholder
+</code></pre>
+<p>Caption: News-like card using CSS</p>
+<h2>Example 2</h2>
+<p>n this example, we will use CSS to design a simple card. We will not use any frameworks or libraries because there will be occasions when you want to make things as basic as possible, which is exactly what this example is intended for. Let’s begin:</p>
+<pre><code>&#x3C;div class="tutorial">
+  &#x3C;div class="theheader">
+    &#x3C;p>Paragraph&#x3C;/p>
+  &#x3C;/div>
+  &#x3C;div class="container">
+    &#x3C;p>Let me just place this here&#x3C;/p>
+    &#x3C;p>Yep, we’ve got another text here!&#x3C;/p>
+    &#x3C;p>Placeholder Texts&#x3C;/p>
+    &#x3C;p>How about a dumb text? That should work. &#x3C;/p>
+  &#x3C;/div>
+&#x3C;/div>
+</code></pre>
+<p>We’ll start by making a div called “tutorial.” Then we will build another div called header and wrap it around the text “theheader .”It will be the content’s header, as the name suggests.
+Styling With CSS</p>
+<p>We’ll set the card width to 30% in the “tutorial” class and utilize the percentage ‘%’ to make the card mobile responsive. Then, we’ll use the flexbox to rearrange the header and the container so that the title fits appropriately on the card.</p>
+<p>To utilize flexbox, set the display to flex, which will stack the header and container into a row by default, and we’ll remedy that by changing the flex-direction to a column.</p>
+<pre><code>.tutorial {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border: 1px red solid;
+}
+
+.theheader {
+    height: 35%;
+    background: red;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 3px 18px;
+}
+</code></pre>
+<p>The header has also been styled. We’ll make the header 35% taller, alter the background color to red, and change the text color to white.</p>
+<p>Finally, we’ll add the padding 3px 18px shorthand (similar to padding-top: 3 and padding-right: 18) to the container class to create some gap between the contents and the card, making the card look more professional.</p>
+<pre><code>Image Placeholder
+</code></pre>
+<h2>Conclusion</h2>
+<p>So that brings us to the end of the tutorial. There are plenty of additional crucial CSS concepts to understand. However, using this guide, you should be able to use CSS to make your next project appear excellent.</p>
+<p>These cards can be used on your website’s sidebars, blog entries, etc. I hope you enjoyed this guide, and thank you for taking the time to read it.</p>
+<h2>Frequently Asked Questions</h2>
+<p>Mising Text</p>
+<h2>Other Examples</h2>
+<p>This high-quality and hand-picked collection shows CSS cards from across the web. Included are links with examples and code for use on your website.</p>
+<h2>Recommended Articles</h2>
+<ul>
+<li><a href="https://appcode.app/css-sidebar-menu-examples-and-code/">CSS Sidebar Menus</a></li>
+<li><a href="https://appcode.app/how-to-create-a-stacked-card-hover-effect-using-css/">How To Create a Stacked Card Hover Effect Using CSS</a></li>
+<li><a href="https://appcode.app/css-image-effect-examples-and-code/">CSS Image Effects</a></li>
+<li><a href="https://appcode.app/css-carousel-examples-and-code/">CSS Carousels</a></li>
+</ul>
