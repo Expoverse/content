@@ -13,7 +13,8 @@ jobs:
              remark-toc
              remark-frontmatter
              remark-prism
-             rehype-slug
+             remark-parse
+             remark-html
           files: |
              *.md
           rc_path: .remarkrc.yml   
