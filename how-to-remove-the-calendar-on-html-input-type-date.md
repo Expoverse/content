@@ -12,6 +12,8 @@ This tutorial demonstrates how to remove the calendar on the [HTML input type da
   <figcaption>Remove Arrows on HTML Input Type Date</figcaption>
 </figure>
 
+# Contents
+
 ## How To Remove the Icon From a Date Input?
 
 A calendar icon on an HTML input type date `(input\[type=”date”])` can be removed using CSS selectors and properties that target the input element calendar-picker-indicator. When removing a calendar icon, we need to use a `::-webkit-calendar-picker-indicator` pseudo-element, as the calendar icon cannot be selected using standard CSS selectors.
