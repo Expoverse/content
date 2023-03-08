@@ -312,7 +312,7 @@ This high-quality and hand-picked collection shows CSS cards from across the web
 
 ## Recommended Articles
 
--   [CSS Sidebar Menus](https://appcode.app/css-sidebar-menu-examples-and-code/)
--   [How To Create a Stacked Card Hover Effect Using CSS](https://appcode.app/how-to-create-a-stacked-card-hover-effect-using-css/)
--   [CSS Image Effects](https://appcode.app/css-image-effect-examples-and-code/)
--   [CSS Carousels](https://appcode.app/css-carousel-examples-and-code/)
+-   [CSS Sidebar Menus](/css-sidebar-menu-examples-and-code/)
+-   [How To Create a Stacked Card Hover Effect Using CSS](/how-to-create-a-stacked-card-hover-effect-using-css/)
+-   [CSS Image Effects](/css-image-effect-examples-and-code/)
+-   [CSS Carousels](/css-carousel-examples-and-code/)
