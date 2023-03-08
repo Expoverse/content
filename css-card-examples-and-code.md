@@ -13,6 +13,8 @@ The cards appear sleek and similar to the Android Material design. Using the box
 
 These cards can display article excerpts, with an image on top and the article title at the bottom, user profiles, or anything else. Picture cards can be used for several different things. This lesson will teach CSS fundamentals by creating card components from scratch. Let’s get started if you’re ready.
 
+## Contents
+
 ## What is a Card?
 
 ## Parts of a Card
