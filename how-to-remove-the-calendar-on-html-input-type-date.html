@@ -1,0 +1,149 @@
+<p>This tutorial demonstrates how to remove the calendar on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date">HTML input type date</a>. Included is a walkthrough example, code, and a live demo.</p>
+<h2>How To Remove the Icon From a Date Input?</h2>
+<p>A calendar icon on an HTML input type date <code>(input\[type=”date”])</code> can be removed using CSS selectors and properties that target the input element calendar-picker-indicator. When removing a calendar icon, we need to use a <code>::-webkit-calendar-picker-indicator</code> pseudo-element, as the calendar icon cannot be selected using standard CSS selectors.</p>
+<h2>Creating an Input Type Date</h2>
+<p>This section creates a styled date picker before we move on to removing the icon. This helps to spice up the example to be more visually helpful, so adding the extra HTML and CSS isn’t necessary, but it helps with the demonstration.</p>
+<p>To begin creating a webpage with an input type date, we need to create two <a href="https://www.htmlquick.com/reference/tags/div.html">div elements</a> to move the input element to the center of a web page. First, we will create a div element and a second div as a child. Once we have both div elements, we can create an <a href="https://www.w3schools.com/tags/tag_input.asp">HTML input element</a> with a type attribute set to date. Something like this: <code>DIV > DIV > INPUT</code>. The first DIV element will have a class named <code>.super-container</code>, and the second will be <code>.container</code>. As you see below, the <a href="https://www.quackit.com/html/codes/">HTML code fits</a> on a few lines.</p>
+<pre><code>&#x3C;div class="super-container">
+  &#x3C;div class="container">
+    &#x3C;input type="date">
+  &#x3C;/div>
+&#x3C;div>
+</code></pre>
+<p>Rendering this HTML will create a generic HTML date picker element like the one below but without any CSS styling.</p>
+<p>Suppose we made the date selector a bit more interesting before we removed the calendar icon. In that case, we could render an input element with custom styling, as in the image below.</p>
+<p>Here is the CSS for a styled date input before we move on to removing the calendar icon.</p>
+<pre><code>html,
+body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.super-container {
+  background: linear-gradient(60deg, rgb(39 28 86) 0%, rgb(0 85 96) 100%);
+  height: 100%;
+  width: 100%;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+input {
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  border-radius: 10px;
+  border: none;
+  line-height: 80px;
+  width: 400px;
+  padding: 0 20px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 50%);
+  outline: none;
+  color: white;
+  font-size: 22px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.container {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: 100%;
+}
+</code></pre>
+<h2>Removing the Calendar Icon</h2>
+<p>This section will remove a calendar icon using CSS styles and properties.</p>
+<p>We need to remove the calendar icon from the input element above. Below is an image of the input element with the calendar icon removed. To make the icon disappear, we need to utilize a few <a href="https://codeburst.io/how-to-style-your-website-with-css-e72e7046fda5">CSS properties</a> and a unique selector, which is required to achieve this effect.</p>
+<p>Removing an icon is simple; we will use two WebKit <a href="https://www.tutorialspoint.com/css/css_pseudo_elements.htm">pseudo-element</a> keywords with the <a href="https://www.freecodecamp.org/news/the-css-display-property-display-none-display-table-inline-block-and-more/">CSS display</a> and <a href="https://www.geeksforgeeks.org/css-webkit-appearance/">WebKit Appearance properties</a>. The CSS pseudo-elements we are using are <code>-webkit-inner-spin-button</code> and <code>-webkit-calender-picker-indicator</code>. We combine these keywords with the CSS <code>input[type="date"]</code> selector, targeting the date picker element.</p>
+<p>Included within the braces, we use the CSS properties <code>display</code> and <code>-webkit-appearance</code>. Both of these properties will have a value set to none.</p>
+<p>Below are the full CSS selector and properties to remove a date picker calendar icon.</p>
+<pre><code>input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+</code></pre>
+<h2>Project Code</h2>
+<p>Here are the entire CSS stylesheet and HTML used in this project.</p>
+<pre><code>&#x3C;div class="super-container">
+  &#x3C;div class="container">
+    &#x3C;input type="date">
+  &#x3C;/div>
+&#x3C;div>
+</code></pre>
+<pre><code>html,
+body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.super-container {
+  background: linear-gradient(60deg, rgb(39 28 86) 0%, rgb(0 85 96) 100%);
+  height: 100%;
+  width: 100%;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input {
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  border-radius: 10px;
+  border: none;
+  line-height: 80px;
+  width: 400px;
+  padding: 0 20px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 50%);
+  outline: none;
+  color: white;
+  font-size: 22px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.container {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: 100%;
+}
+</code></pre>
+<p>Here is a live demo of this <a href="https://codepen.io/tyler-chipman/pen/mdMYRqJ">example hosted on codepen.io</a></p>
+<h2>Recommended Articles</h2>
+<ul>
+<li><a href="https://appcode.app/how-to-create-css-color-palettes/">How to Create CSS Color Palettes</a></li>
+<li><a href="https://appcode.app/how-to-remove-the-arrows-on-html-input-type-number/">How To Remove the Arrows on HTML Input Type Number</a></li>
+<li><a href="https://appcode.app/how-to-create-html-and-css-emoji-icons/">How To Create HTML and CSS Emoji Icons</a></li>
+<li><a href="https://appcode.app/how-to-create-css-gradient-buttons/">How To Create CSS Gradient Buttons</a></li>
+<li><a href="https://appcode.app/how-to-create-a-black-and-white-image-using-css-grayscale/">How To Create a Black and White Image Using CSS Grayscale</a></li>
+</ul>
