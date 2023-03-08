@@ -9,7 +9,7 @@ This article demonstrates how to align an HTML list side by side with several me
 
 ## Contents
 
-## Setting Up a Demonstration {#setting-up-a-demonstration}
+## Setting Up a Demonstration
 
 Before we go walk-through setting up an example project for demonstrating methods of creating a horizontal list, we should review a frequently asked question that developers may ask when developing a website with list items:
 
