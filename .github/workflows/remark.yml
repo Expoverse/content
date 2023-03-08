@@ -31,7 +31,7 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           base: "master"
-          title: "Remark Processor"
+          title: "Remark Format Markdown"
           branch: "chore/update-markdown"
           commit-message: "Updated markdown content"
           body: "Updated markdown content format as set in .remarkrc.yml"
@@ -54,7 +54,7 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           base: "rendered"
-          title: "Remark Processor"
+          title: "Remark Convert Markdown to HTML"
           branch: "chore/convert-markdown"
           commit-message: "Convert markdown content"
           body: "Convert markdown content format as set in .remarkrc-rendered.yml"
