@@ -17,11 +17,9 @@ jobs:
              remark-frontmatter
              remark-prism
              rehype-slug
-             remark-parse
-             remark-html
           files: |
              *.md
-          rc_path: .remarkrc.yml   
+          rc_path: .remarkrc-master.yml   
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v13
         id: verify-changed-files
@@ -32,11 +30,34 @@ jobs:
         if: steps.verify-changed-files.outputs.files_changed == 'true'
         uses: peter-evans/create-pull-request@v4
         with:
-          base: "rendered"
+          base: "master"
           title: "Remark Processor"
           branch: "chore/update-markdown"
           commit-message: "Updated markdown content"
           body: "Updated markdown content format as set in .remarkrc.yml"
           token: ${{ github.token }}
+      - uses: actions/checkout@v2
+      - name: Run remark cli convert markdown to HTML
+        uses: tj-actions/remark@v3
+        with:
+          plugins: |
+             remark-toc
+             remark-frontmatter
+             remark-prism
+             rehype-slug
+             remark-parse
+             remark-html
+          files: |
+             *.md
+          rc_path: .remarkrc-rendered.yml            
+      - name: Create Pull Request For Rendered
+        uses: peter-evans/create-pull-request@v4
+        with:
+          base: "master"
+          title: "Remark Processor"
+          branch: "chore/convert-markdown"
+          commit-message: "Convert markdown content"
+          body: "Convert markdown content format as set in .remarkrc.yml"
+          token: ${{ github.token }}          
           
       
