@@ -1,0 +1,18 @@
+settings:
+  bullet: "-"
+  #rule: '-'
+plugins:
+  # Check that markdown is consistent.
+  #- remark-preset-lint-consistent
+  # Few recommended rules.
+  #- remark-preset-lint-recommended
+  # Generate a table of contents in `## Contents`
+  - - remark-toc
+    - heading: contents
+      tight: true
+  - - rehype-slug    
+  - - remark-frontmatter
+    - type: 'yaml'
+      marker: '-'
+  - remark-parse
+  - remark-html
