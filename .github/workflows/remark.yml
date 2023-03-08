@@ -49,6 +49,7 @@ jobs:
              remark-html
           files: |
              *.md
+             !README.md
           rc_path: .remarkrc-rendered.yml            
       - name: Create Pull Request For Rendered
         uses: peter-evans/create-pull-request@v4
