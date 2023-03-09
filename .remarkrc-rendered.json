@@ -19,8 +19,14 @@
 			{
 				"behavior": "append",
 				"linkProperties": {
-					"ariaHidden": "false",
-					"tabIndex": 0
+					"type": "element",
+					"tagName": "span",
+					"properties": {
+						"className": [
+							"icon",
+							"icon-link"
+						]
+					}
 				}
 			}
 		],
