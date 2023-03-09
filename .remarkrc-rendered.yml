@@ -15,4 +15,5 @@ plugins:
     - type: 'yaml'
       marker: '-'
   - remark-parse
-  - remark-html
+  - - remark-html
+    - sanitize: false
