@@ -45,8 +45,9 @@ jobs:
              remark-toc
              remark-frontmatter
              remark-prism
-             rehype-slug
              remark-parse
+             rehype-slug
+             remark-autolink-headings
              remark-html
           files: |
              *.md
