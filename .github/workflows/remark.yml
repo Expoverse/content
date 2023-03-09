@@ -16,7 +16,7 @@ jobs:
              remark-toc
              remark-frontmatter
              remark-prism
-             rehype-slug
+             remark-slug
           files: |
              *.md
           rc_path: .remarkrc-master.yml   
