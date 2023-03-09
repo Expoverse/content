@@ -30,21 +30,25 @@ Into these fancy dual-themed radio buttons.
   <figcaption class="blocks-gallery-item__caption">Dark Themed HTML Radio Buttons</figcaption>
 </figure>
 
-## Included CSS Libraries
+## Prerequisites
 
-The fancy design enhancement will include two CSS libraries, which will be added to the head of the page. The first library will be the \[Bootstrap library(https://getbootstrap.com/).
+Before we begin we need to add we will need to include two CSS libraries, which will be added to the head of the page. 
+
+### CSS Bootstrap Library
+
+The first library is the \[Bootstrap library(https://getbootstrap.com/).
 
 ```HTML
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 ```
+
+### CSS Unicons Libary
 
 The second library is an icon library. The icon library we’ll be using is called Unicons by [iconscout](https://iconscout.com/unicons/getting-started/line).
 
 ```HTML
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 ```
-
-## Unicons Libary
 
 You can see below the picture of the Unicon library there is a vast selection of icons available.
 
