@@ -15,6 +15,17 @@ These cards can display article excerpts, with an image on top and the article t
 
 ## Contents
 
+-   [What is a Card?](#what-is-a-card)
+-   [Parts of a Card](#parts-of-a-card)
+-   [How are Cards Used?](#how-are-cards-used)
+-   [Example 1](#example-1)
+    -   [CSS Recap – CSS Application in HTML](#css-recap--css-application-in-html)
+-   [Example 2](#example-2)
+-   [Conclusion](#conclusion)
+-   [Frequently Asked Questions](#frequently-asked-questions)
+-   [Other Examples](#other-examples)
+-   [Recommended Articles](#recommended-articles)
+
 ## What is a Card?
 
 ## Parts of a Card
