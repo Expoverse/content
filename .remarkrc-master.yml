@@ -9,8 +9,7 @@ plugins:
   # Generate a table of contents in `## Contents`
   - - remark-toc
     - heading: contents
-      tight: true
-  - - rehype-slug    
+      tight: true   
   - - remark-frontmatter
     - type: 'yaml'
       marker: '-'
