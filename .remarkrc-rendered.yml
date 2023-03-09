@@ -6,14 +6,10 @@ plugins:
   #- remark-preset-lint-consistent
   # Few recommended rules.
   #- remark-preset-lint-recommended
-  # Generate a table of contents in `## Contents`
-  - - remark-toc
-    - heading: contents
-      tight: true
-  - - rehype-slug    
   - - remark-frontmatter
     - type: 'yaml'
       marker: '-'
   - remark-parse
   - - remark-html
     - sanitize: false
+  - - remark-slug    
