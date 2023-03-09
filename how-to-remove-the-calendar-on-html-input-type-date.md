@@ -208,8 +208,8 @@ Here is a live demo of this [example hosted on codepen.io](https://codepen.io/ty
 
 ## See Also
 
--   [How to Create CSS Color Palettes](https://appcode.app/how-to-create-css-color-palettes/)
--   [How To Remove the Arrows on HTML Input Type Number](https://appcode.app/how-to-remove-the-arrows-on-html-input-type-number/)
--   [How To Create HTML and CSS Emoji Icons](https://appcode.app/how-to-create-html-and-css-emoji-icons/)
--   [How To Create CSS Gradient Buttons](https://appcode.app/how-to-create-css-gradient-buttons/)
--   [How To Create a Black and White Image Using CSS Grayscale](https://appcode.app/how-to-create-a-black-and-white-image-using-css-grayscale/)
+-   [How to Create CSS Color Palettes](/how-to-create-css-color-palettes/)
+-   [How To Remove the Arrows on HTML Input Type Number](/how-to-remove-the-arrows-on-html-input-type-number/)
+-   [How To Create HTML and CSS Emoji Icons](/how-to-create-html-and-css-emoji-icons/)
+-   [How To Create CSS Gradient Buttons](/how-to-create-css-gradient-buttons/)
+-   [How To Create a Black and White Image Using CSS Grayscale](/how-to-create-a-black-and-white-image-using-css-grayscale/)
