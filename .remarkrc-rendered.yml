@@ -12,5 +12,6 @@ plugins:
     linkProperties:
       ariaHidden: 'true'
       tabIndex: -1
+      rel: bookmark
 - - remark-html
   - sanitize: false
