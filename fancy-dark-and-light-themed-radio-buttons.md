@@ -7,6 +7,13 @@ post_date: 2022-03-03 02:06:15
 
 ## Contents
 
+-   [Description](#description)
+-   [Included CSS Libraries](#included-css-libraries)
+-   [Unicons Libary](#unicons-libary)
+-   [HTML](#html)
+-   [CSS](#css)
+-   [See Also](#see-also)
+
 ## Description
 
 Who said radio buttons should be simple on a web page? We’ll show you how to spice up radio inputs with a few CSS pseudo-selectors and HTML. We’ll turn these simple radio buttons below.
@@ -25,7 +32,7 @@ Into these fancy dual-themed radio buttons.
 
 ## Included CSS Libraries
 
-The fancy design enhancement will include two CSS libraries, which will be added to the head of the page. The first library will be the [Bootstrap library(https://getbootstrap.com/).
+The fancy design enhancement will include two CSS libraries, which will be added to the head of the page. The first library will be the \[Bootstrap library(https://getbootstrap.com/).
 
 ```HTML
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -70,6 +77,7 @@ We’ve upgraded the fancy design buttons by centering the content within the pa
 </figure>
 
 If you remember, we’ve added the Bootstrap library. Bootstrap is crucial because we use the column feature to group the Design Tools heading and the radio buttons into their rows. Creating the columns is done with the `.col-12` class provided by the bootstrap library, which is part of [Bootstrap’s grid feature](https://getbootstrap.com/docs/4.0/layout/grid/).
+
 ```HTML
 <div class="col-12 pb-5">
 ```
@@ -133,6 +141,7 @@ Here is the complete HTML for the new radio buttons.
 ```
 
 ## CSS
+
 We’ve shown you that this fancy radio button design has a theme switcher. This theme switcher uses a styled checkbox element, and the toggle button switches the theme whenever the value of the checkbox changes from checked to unchecked.
 
 ```HTML
@@ -408,10 +417,7 @@ p {
 
 ## See Also
 
-- [CSS Checkbox Examples and Code](/css-checkbox-examples-and-code/)
-- [How To Handle Form Data With jQuery](/how-to-handle-form-data-with-jquery/)
-- [How to Create a jQuery Ajax Contact Form in PHP](/how-to-create-a-jquery-ajax-contact-form-in-php/)
-- [Creating a Basic Web Form With CSS in Minutes!](/creating-a-basic-web-form-with-css-in-minutes/)
-
-
-
+-   [CSS Checkbox Examples and Code](/css-checkbox-examples-and-code/)
+-   [How To Handle Form Data With jQuery](/how-to-handle-form-data-with-jquery/)
+-   [How to Create a jQuery Ajax Contact Form in PHP](/how-to-create-a-jquery-ajax-contact-form-in-php/)
+-   [Creating a Basic Web Form With CSS in Minutes!](/creating-a-basic-web-form-with-css-in-minutes/)
