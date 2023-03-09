@@ -8,8 +8,9 @@ post_date: 2022-03-03 02:06:15
 ## Contents
 
 -   [Tutorial](#tutorial)
--   [Included CSS Libraries](#included-css-libraries)
--   [Unicons Libary](#unicons-libary)
+-   [Prerequisites](#prerequisites)
+    -   [CSS Bootstrap Library](#css-bootstrap-library)
+    -   [CSS Unicons Libary](#css-unicons-libary)
 -   [HTML](#html)
 -   [CSS](#css)
 -   [See Also](#see-also)
@@ -32,7 +33,7 @@ Into these fancy dual-themed radio buttons.
 
 ## Prerequisites
 
-Before we begin we need to include two CSS libraries, which will be added to the head of the page. 
+Before we begin we need to include two CSS libraries, which will be added to the head of the page.
 
 ### CSS Bootstrap Library
 
