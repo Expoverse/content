@@ -38,6 +38,7 @@ jobs:
           token: ${{ github.token }}
       - uses: actions/checkout@v2
       - name: Run remark cli convert markdown to HTML
+        if: steps.verify-changed-files.outputs.files_changed == 'false'
         uses: tj-actions/remark@v3
         with:
           plugins: |
@@ -51,6 +52,7 @@ jobs:
              *.md
           rc_path: .remarkrc-rendered.yml            
       - name: Create Pull Request For Rendered
+        if: steps.verify-changed-files.outputs.files_changed == 'false'
         uses: peter-evans/create-pull-request@v4
         with:
           base: "rendered"
