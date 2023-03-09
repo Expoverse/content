@@ -5,14 +5,6 @@ taxonomy:
 post_date: 2022-02-23 23:36:21  
 ---
 
-This article demonstrates CSS card designs, definitions, walk-throughs, code examples, FAQs, and other card-related developer information.
-
-You must be familiar with CSS to make your website look appealing. CSS (also referred to as Cascading Style Sheets) is a style sheet language for styling web content. Cards are often used in modern web design.
-
-The cards appear sleek and similar to the Android Material design. Using the box-shadow property, we can generate both Text and Picture cards.
-
-These cards can display article excerpts, with an image on top and the article title at the bottom, user profiles, or anything else. Picture cards can be used for several different things. This lesson will teach CSS fundamentals by creating card components from scratch. Let’s get started if you’re ready.
-
 ## Contents
 
 -   [What is a Card?](#what-is-a-card)
@@ -25,6 +17,16 @@ These cards can display article excerpts, with an image on top and the article t
 -   [Conclusion](#conclusion)
 -   [Frequently Asked Questions](#frequently-asked-questions)
 -   [See Also](#see-also)
+
+# Overview
+
+This article demonstrates CSS card designs, definitions, walk-throughs, code examples, FAQs, and other card-related developer information.
+
+You must be familiar with CSS to make your website look appealing. CSS (also referred to as Cascading Style Sheets) is a style sheet language for styling web content. Cards are often used in modern web design.
+
+The cards appear sleek and similar to the Android Material design. Using the box-shadow property, we can generate both Text and Picture cards.
+
+These cards can display article excerpts, with an image on top and the article title at the bottom, user profiles, or anything else. Picture cards can be used for several different things. This lesson will teach CSS fundamentals by creating card components from scratch. Let’s get started if you’re ready.
 
 ## What is a Card?
 
