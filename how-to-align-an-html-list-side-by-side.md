@@ -189,7 +189,7 @@ ul li {
 
 To tinker with this example, here is a link to the [live demo hosted on codepen.io.](https://codepen.io/tyler-chipman/pen/jOLgReZ)
 
-## Recommended Articles
+## See Also
 
 -   [How To Create a Black and White Image Using CSS Grayscale](https://appcode.app/how-to-create-a-black-and-white-image-using-css-grayscale/)
 -   [Quickly Search and Filter a List With JavaScript](https://appcode.app/quickly-search-and-filter-a-list-with-javascript/)
