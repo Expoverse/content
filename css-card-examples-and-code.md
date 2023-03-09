@@ -32,7 +32,52 @@ These cards can display article excerpts, with an image on top and the article t
 
 ## How are Cards Used?
 
-## Example 1
+## CSS Recap – CSS Application in HTML
+
+First, let’s look at three approaches to adding CSS to HTML. These approaches are:
+
+External stylesheets
+The most popular and useful method is to use an external stylesheet. CSS is contained in a separate file with the extension.css.
+Create a new file, style.css, in the same folder as index.html to add an external stylesheet. You may also import the stylesheet within the element by doing this:
+
+```HTML
+<link rel="stylesheet" href="style.css">
+```
+
+Internal stylesheets
+You can include an internal stylesheet by putting CSS in the
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating Cards using CSS</title>
+
+  <style>
+    /* your style */
+  </style>
+
+</head>
+<body>
+  
+</body>
+</html>
+```
+
+Inline styles (Not recommended)
+You should avoid this style as much as you can. However, the style attribute can also add style directly to an element.
+
+This method is frequently used when working with lines of code that do not allow you to alter the external or internal stylesheets.
+
+Adding inline styling to your page is not a good practice. Why? That’s because it makes it tough to read and understand; therefore, avoid it wherever possible.
+
+```HTML
+<div style="color:red;">paragraph</div>
+```
+
+## Creating a Read More Card
 
 We need some content to work with before we begin working with CSS. In this step, we will start by creating the HTML markups. If you are unfamiliar with HTML, you can start with some of our HTML tutorials.
 
@@ -85,51 +130,6 @@ It doesn’t look like much, but that’s because we are yet to style it. Howeve
 Remember, our task is to create a card component with an image, tags, a name, a description, and a button.
 
 The component must then be styled. This is the tutorial’s central point. This section will explain several concepts as I create the card component.
-
-### CSS Recap – CSS Application in HTML
-
-First, let’s look at three approaches to adding CSS to HTML. These approaches are:
-
-External stylesheets
-The most popular and useful method is to use an external stylesheet. CSS is contained in a separate file with the extension.css.
-Create a new file, style.css, in the same folder as index.html to add an external stylesheet. You may also import the stylesheet within the element by doing this:
-
-```HTML
-<link rel="stylesheet" href="style.css">
-```
-
-Internal stylesheets
-You can include an internal stylesheet by putting CSS in the
-
-```HTML
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Creating Cards using CSS</title>
-
-  <style>
-    /* your style */
-  </style>
-
-</head>
-<body>
-  
-</body>
-</html>
-```
-
-Inline styles (Not recommended)
-You should avoid this style as much as you can. However, the style attribute can also add style directly to an element.
-
-This method is frequently used when working with lines of code that do not allow you to alter the external or internal stylesheets.
-
-Adding inline styling to your page is not a good practice. Why? That’s because it makes it tough to read and understand; therefore, avoid it wherever possible.
-
-```HTML
-<div style="color:red;">paragraph</div>
-```
 
 Styling the HTML elements
 With this out of the way, let’s go back to our tutorial and style it using CSS.
@@ -224,7 +224,7 @@ Image Placeholder
 
 Caption: News-like card using CSS
 
-## Example 2
+## Creating a Shoutout Card
 
 n this example, we will use CSS to design a simple card. We will not use any frameworks or libraries because there will be occasions when you want to make things as basic as possible, which is exactly what this example is intended for. Let’s begin:
 
@@ -277,19 +277,9 @@ Finally, we’ll add the padding 3px 18px shorthand (similar to padding-top: 3 a
 Image Placeholder
 ```
 
-## Conclusion
-
-So that brings us to the end of the tutorial. There are plenty of additional crucial CSS concepts to understand. However, using this guide, you should be able to use CSS to make your next project appear excellent.
-
-These cards can be used on your website’s sidebars, blog entries, etc. I hope you enjoyed this guide, and thank you for taking the time to read it.
-
-## Frequently Asked Questions
-
-Mising Text
-
 ## Other Examples
 
-This high-quality and hand-picked collection shows CSS cards from across the web. Included are links with examples and code for use on your website.
+Here is a collection of cards that show CSS cards from across the web. Included are links with examples and code for use on your website. These cards can be used on your website’s sidebars, blog entries, etc.
 
 <article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Three-Black-Product-CSS-Cards.png" alt="Three Black Product CSS Cards" title="Three Black Product CSS Cards"></figure><br><h2>Three Black Product CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Tristan White</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/triss90/pen/bpZzzN" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
@@ -322,6 +312,14 @@ This high-quality and hand-picked collection shows CSS cards from across the web
 <article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Generic-Responsive-CSS-Cards.png" alt="Generic Responsive CSS Cards" title="Generic Responsive CSS Cards"></figure><br><h2>Generic Responsive CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Nick Kelly</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/nickresearch/pen/mdPNNOJ" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 
 <article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Basic-CSS-Cards.png" alt="Basic CSS Cards" title="Basic CSS Cards"></figure><br><h2>Basic CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Haneen Krimly</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/hkrimly/pen/ExYZedV" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+
+## Conclusion
+
+There are plenty of additional crucial CSS concepts to understand. However, using this guide, you should be able to use cards to structure your website with the help of CSS.
+
+## Frequently Asked Questions
+
+Mising Text
 
 ## Recommended Articles
 
