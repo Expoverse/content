@@ -32,7 +32,7 @@ Into these fancy dual-themed radio buttons.
 
 ## Prerequisites
 
-Before we begin we need to add we will need to include two CSS libraries, which will be added to the head of the page. 
+Before we begin we need to include two CSS libraries, which will be added to the head of the page. 
 
 ### CSS Bootstrap Library
 
