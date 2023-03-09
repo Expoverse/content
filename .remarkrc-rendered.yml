@@ -9,7 +9,12 @@ plugins:
   - - remark-frontmatter
     - type: 'yaml'
       marker: '-'
-  - remark-parse
-  - - remark-html
-    - sanitize: false
+    - remark-parse    
   - - remark-slug    
+  - - remark-autolink-headings
+    - behavior: wrap
+    - linkProperties: 
+      - ariaHidden: 'false'
+      - tabIndex: 0
+  - - remark-html
+    - sanitize: false    
