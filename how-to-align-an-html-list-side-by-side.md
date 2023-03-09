@@ -16,7 +16,7 @@ This article demonstrates how to align an HTML list side by side with several me
     -   [Using Flexbox Method](#using-flexbox-method)
     -   [Using display: inline Method](#using-display-inline-method)
 -   [Summary](#summary)
--   [Recommended Articles](#recommended-articles)
+-   [See Also](#see-also)
 
 ## Setting Up a Demonstration
 
