@@ -1,30 +1,34 @@
 {
-  "settings": {
-    "bullet": "-"
-  },
-  "plugins": [
-    [
-      "remark-frontmatter",
-      {
-        "type": "yaml",
-        "marker": "-"
-      },
-      "remark-parse"
-    ],
-    [
-      "remark-slug"
-    ],
-    [
-      "remark-autolink-headings",
-      {
-        "behavior": "append"
-      }
-    ],
-    [
-      "remark-html",
-      {
-        "sanitize": false
-      }
-    ]
-  ]
-} 
+	"settings": {
+		"bullet": "-"
+	},
+	"plugins": [
+		[
+			"remark-frontmatter",
+			{
+				"type": "yaml",
+				"marker": "-"
+			},
+			"remark-parse"
+		],
+		[
+			"remark-slug"
+		],
+		[
+			"remark-autolink-headings",
+			{
+				"behavior": "append",
+				"linkProperties": {
+					"ariaHidden": "false",
+					"tabIndex": 0
+				}
+			}
+		],
+		[
+			"remark-html",
+			{
+				"sanitize": false
+			}
+		]
+	]
+}
