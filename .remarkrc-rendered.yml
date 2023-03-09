@@ -14,5 +14,14 @@ plugins:
   - - remark-autolink-headings
     - behavior: wrap
     - linkProperties: {ariaHidden: 'false', tabIndex: 0}
+    - content: 
+        type: element
+        tagName: span
+        properties: 
+          className: 
+          - 
+            icon
+          - 
+            "icon-link"
   - - remark-html
     - sanitize: false    
