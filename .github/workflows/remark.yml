@@ -65,5 +65,6 @@ jobs:
           # Optional. Disable dirty check and always try to create a commit and push
           skip_dirty_check: true
           skip_checkout: true
+          push_options: '--force'
           
       
