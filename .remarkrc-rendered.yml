@@ -10,7 +10,7 @@ plugins:
 - - remark-autolink-headings
   - behavior: wrap
     linkProperties:
-      ariaHidden: 'true'
-      tabIndex: -1
+      ariaHidden: 'false'
+      tabIndex: 0
 - - remark-html
   - sanitize: false
