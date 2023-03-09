@@ -62,6 +62,9 @@ jobs:
           #  to. Defaults to the current branch.
           #  You might need to set `create_branch: true` if the branch does not exist.
           branch: rendered      
+          # Optional. Option used by `git-status` to determine if the repository is 
+          # dirty. See https://git-scm.com/docs/git-status#_options
+          status_options: '--untracked-files=no'
           # Optional. Disable dirty check and always try to create a commit and push
           skip_dirty_check: true
           
