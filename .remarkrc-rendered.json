@@ -17,17 +17,11 @@
 		[
 			"remark-autolink-headings",
 			{
-				"behavior": "append",
+				"behavior": "wrap",
 				"linkProperties": {
-					"type": "element",
-					"tagName": "span",
-					"properties": {
-						"className": [
-							"icon",
-							"icon-link"
-						]
-					}
-				}
+  "ariaHidden": "true",
+  "tabIndex": -1
+}
 			}
 		],
 		[
