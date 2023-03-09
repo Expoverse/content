@@ -321,7 +321,7 @@ There are plenty of additional crucial CSS concepts to understand. However, usin
 
 Mising Text
 
-## Recommended Articles
+## See Also
 
 -   [CSS Sidebar Menus](/css-sidebar-menu-examples-and-code/)
 -   [How To Create a Stacked Card Hover Effect Using CSS](/how-to-create-a-stacked-card-hover-effect-using-css/)
