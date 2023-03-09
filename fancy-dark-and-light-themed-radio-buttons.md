@@ -5,9 +5,9 @@ taxonomy:
 post_date: 2022-03-03 02:06:15
 ---
 
-# Contents
+## Contents
 
-# Description
+## Description
 
 Who said radio buttons should be simple on a web page? We’ll show you how to spice up radio inputs with a few CSS pseudo-selectors and HTML. We’ll turn these simple radio buttons below.
 
@@ -60,7 +60,7 @@ It’s also an option to switch the icons to something else, like perhaps an eCo
   <figcaption>Alternative CSS Unicon Icons</figcaption>
 </figure>
 
-# HTML
+## HTML
 
 We’ve upgraded the fancy design buttons by centering the content within the page vertically and horizontally. We’ve centered the content using the CSS flex property in the `.container` class.
 
