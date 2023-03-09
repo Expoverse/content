@@ -23,7 +23,7 @@
 <h2>How are Cards Used?</h2>
 <h2>Example 1</h2>
 <p>We need some content to work with before we begin working with CSS. In this step, we will start by creating the HTML markups. If you are unfamiliar with HTML, you can start with some of our HTML tutorials.</p>
-<pre><code>&#x3C;!-- A div with container id to hold the card -->
+<pre><code class="language-HTML">&#x3C;!-- A div with container id to hold the card -->
 &#x3C;div id="container">
   &#x3C;!-- A div with card class for the card  -->
   &#x3C;div class="card">
@@ -44,7 +44,7 @@
 &#x3C;/div>
 </code></pre>
 <p>If you are coding externally, you must wrap these lines of code in the basic HTML markups. This means you ought to start by creating something like this:</p>
-<pre><code>&#x3C;!DOCTYPE html>
+<pre><code class="language-HTML">&#x3C;!DOCTYPE html>
 &#x3C;html lang="en">
     &#x3C;head>
       &#x3C;meta charset="UTF-8">
@@ -57,7 +57,7 @@
 &#x3C;/html>
 </code></pre>
 <p>Alright, with the HMTL elements out of the way, let’s see what we’ve achieved so far with the lines of codes we’ve created thus far:</p>
-<pre><code>Image Placeholder
+<pre><code class="language-HTML">Image Placeholder
 </code></pre>
 <p>It doesn’t look like much, but that’s because we are yet to style it. However, what we’ve done here with HTML is to create the “skeleton” or “frame” for our design. With this, styling can exist. But it’s like trying to place a fleshy one in thin air – nothing will hold it!</p>
 <p>Remember, our task is to create a card component with an image, tags, a name, a description, and a button.</p>
@@ -67,11 +67,11 @@
 <p>External stylesheets
 The most popular and useful method is to use an external stylesheet. CSS is contained in a separate file with the extension.css.
 Create a new file, style.css, in the same folder as index.html to add an external stylesheet. You may also import the stylesheet within the element by doing this:</p>
-<pre><code>&#x3C;link rel="stylesheet" href="style.css">
+<pre><code class="language-HTML">&#x3C;link rel="stylesheet" href="style.css">
 </code></pre>
 <p>Internal stylesheets
 You can include an internal stylesheet by putting CSS in the</p>
-<pre><code>&#x3C;!DOCTYPE html>
+<pre><code class="language-HTML">&#x3C;!DOCTYPE html>
 &#x3C;html lang="en">
 &#x3C;head>
   &#x3C;meta charset="UTF-8">
@@ -92,11 +92,11 @@ You can include an internal stylesheet by putting CSS in the</p>
 You should avoid this style as much as you can. However, the style attribute can also add style directly to an element.</p>
 <p>This method is frequently used when working with lines of code that do not allow you to alter the external or internal stylesheets.</p>
 <p>Adding inline styling to your page is not a good practice. Why? That’s because it makes it tough to read and understand; therefore, avoid it wherever possible.</p>
-<pre><code>&#x3C;div style="color:red;">paragraph&#x3C;/div>
+<pre><code class="language-HTML">&#x3C;div style="color:red;">paragraph&#x3C;/div>
 </code></pre>
 <p>Styling the HTML elements
 With this out of the way, let’s go back to our tutorial and style it using CSS.</p>
-<pre><code>body {
+<pre><code class="language-CSS">body {
   background-color: #eaeff1;
   font-family: sans-serif;
 }
@@ -132,7 +132,7 @@ img {
 </code></pre>
 <p>Now you should have a responsive image with a height of 214px. So let’s move on. We’ve also fixed the distorted image by adding the object-fit: cover;</p>
 <p>But we still need to finish.</p>
-<pre><code>.tag {
+<pre><code class="language-CSS">.tag {
   padding: 4px 8px;
   border: 1px solid #e5eaed;
   border-radius: 50px;
@@ -173,12 +173,12 @@ button: hover {
 }
 </code></pre>
 <p>Here’s the final result:</p>
-<pre><code>Image Placeholder
+<pre><code class="language-HTML">Image Placeholder
 </code></pre>
 <p>Caption: News-like card using CSS</p>
 <h2>Example 2</h2>
 <p>n this example, we will use CSS to design a simple card. We will not use any frameworks or libraries because there will be occasions when you want to make things as basic as possible, which is exactly what this example is intended for. Let’s begin:</p>
-<pre><code>&#x3C;div class="tutorial">
+<pre><code class="language-HTML">&#x3C;div class="tutorial">
   &#x3C;div class="theheader">
     &#x3C;p>Paragraph&#x3C;/p>
   &#x3C;/div>
@@ -194,7 +194,7 @@ button: hover {
 Styling With CSS</p>
 <p>We’ll set the card width to 30% in the “tutorial” class and utilize the percentage ‘%’ to make the card mobile responsive. Then, we’ll use the flexbox to rearrange the header and the container so that the title fits appropriately on the card.</p>
 <p>To utilize flexbox, set the display to flex, which will stack the header and container into a row by default, and we’ll remedy that by changing the flex-direction to a column.</p>
-<pre><code>.tutorial {
+<pre><code class="language-CSS">.tutorial {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -214,7 +214,7 @@ Styling With CSS</p>
 </code></pre>
 <p>The header has also been styled. We’ll make the header 35% taller, alter the background color to red, and change the text color to white.</p>
 <p>Finally, we’ll add the padding 3px 18px shorthand (similar to padding-top: 3 and padding-right: 18) to the container class to create some gap between the contents and the card, making the card look more professional.</p>
-<pre><code>Image Placeholder
+<pre><code class="language-HTML">Image Placeholder
 </code></pre>
 <h2>Conclusion</h2>
 <p>So that brings us to the end of the tutorial. There are plenty of additional crucial CSS concepts to understand. However, using this guide, you should be able to use CSS to make your next project appear excellent.</p>
@@ -223,6 +223,22 @@ Styling With CSS</p>
 <p>Mising Text</p>
 <h2>Other Examples</h2>
 <p>This high-quality and hand-picked collection shows CSS cards from across the web. Included are links with examples and code for use on your website.</p>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Three-Black-Product-CSS-Cards.png" alt="Three Black Product CSS Cards" title="Three Black Product CSS Cards"></figure><br><h2>Three Black Product CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Tristan White</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/triss90/pen/bpZzzN" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/CSS-Cards-With-Drop-Shadow-Effect.png" alt="CSS Cards With Drop-Shadow Effect" title="CSS Cards With Drop-Shadow Effect"></figure><br><h2>CSS Cards With Drop-Shadow Effect</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Jaroslaw Hubert</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/jhkepa/pen/vddwYE" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Modern-CSS-Cards-Design.png" alt="Modern CSS Cards Design" title="Modern CSS Cards Design"></figure><br><h2>Modern CSS Cards Design</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>FlorinCornea</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/FlorinCornea/pen/KKwMeqd" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Pure-CSS-Cards-and-Deal-Offer-Cards.png" alt="Pure CSS Cards and Deal Offer Cards" title="Pure CSS Cards and Deal Offer Cards"></figure><br><h2>Pure CSS Cards and Deal Offer Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Nishant Dogra</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/mrdogra007/pen/dZGbay" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Multi-Colored-CSS-Cards-With-Buttons.png" alt="Multi-Colored CSS Cards With Buttons" title="Multi-Colored CSS Cards With Buttons"></figure><br><h2>Multi-Colored CSS Cards With Buttons</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Yana Mitrofanova</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/Raina97/pen/qQdzOV" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Beautiful-Collection-of-CSS-Cards.png" alt="Beautiful Collection of CSS Cards" title="Beautiful Collection of CSS Cards"></figure><br><h2>Beautiful Collection of CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>CodingTuting</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/codingtuting/pen/XWrBgQz" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Three-Small-CSS-Cards.png" alt="Three Small CSS Cards" title="Three Small CSS Cards"></figure><br><h2>Three Small CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Kelvyn Costa</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/kelvyncosta/pen/bgLwrw" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/UI-Profile-CSS-Card.png" alt="UI Profile CSS Card" title="UI Profile CSS Card"></figure><br><h2>UI Profile CSS Card</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Muhammad Arsallan</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/marsallan/pen/jRYGVQ" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Flipping-CSS-Cards.png" alt="Flipping CSS Cards" title="Flipping CSS Cards"></figure><br><h2>Flipping CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Tom the Dev</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/thomasfaller/pen/EWOyRY" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/CSS-Cards-Animation-and-Product-Card.png" alt="CSS Cards Animation and Product Card" title="CSS Cards Animation and Product Card"></figure><br><h2>CSS Cards Animation and Product Card</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Pratham</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/ps173/pen/yLJpWwy" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Blue-Flat-CSS-Cards.png" alt="Blue Flat CSS Cards" title="Blue Flat CSS Cards"></figure><br><h2>Blue Flat CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Console.log</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/console_logs/pen/oqXRNK" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Responsive-Column-CSS-Cards.png" alt="Responsive Column CSS Cards" title="Responsive Column CSS Cards"></figure><br><h2>Responsive Column CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Haneen Krimly</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/hkrimly/pen/mdbwKPR" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Recipe-Flipping-CSS-Cards.png" alt="Recipe Flipping CSS Cards" title="Recipe Flipping CSS Cards"></figure><br><h2>Recipe Flipping CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Maja Kulpa-Malecka</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://cdpn.io/maja127/fullpage/abbWKBV" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Tailwind-CSS-Cards.png" alt="Tailwind CSS Cards" title="Tailwind CSS Cards"></figure><br><h2>Tailwind CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Ross Orthwein</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://cdpn.io/rossorthwein/fullpage/rZbwaq" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Generic-Responsive-CSS-Cards.png" alt="Generic Responsive CSS Cards" title="Generic Responsive CSS Cards"></figure><br><h2>Generic Responsive CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Nick Kelly</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/nickresearch/pen/mdPNNOJ" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Basic-CSS-Cards.png" alt="Basic CSS Cards" title="Basic CSS Cards"></figure><br><h2>Basic CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Haneen Krimly</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/hkrimly/pen/ExYZedV" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 <h2>Recommended Articles</h2>
 <ul>
 <li><a href="/css-sidebar-menu-examples-and-code/">CSS Sidebar Menus</a></li>
