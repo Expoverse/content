@@ -53,13 +53,14 @@ jobs:
           rc_path: .remarkrc-rendered.yml            
       - name: Create Pull Request For Rendered
         if: steps.verify-changed-files.outputs.files_changed == 'false'
-        uses: peter-evans/create-pull-request@v4
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          base: "rendered"
-          title: "Remark Convert Markdown to HTML"
-          branch: "chore/convert-markdown"
-          commit-message: "Convert markdown content"
-          body: "Convert markdown content format as set in .remarkrc-rendered.yml"
-          token: ${{ github.token }}          
+          # Optional. Commit message for the created commit.
+          # Defaults to "Apply automatic changes"
+          commit_message: Automated Markdown to HTML Conversion
+          # Optional. Local and remote branch name where commit is going to be pushed
+          #  to. Defaults to the current branch.
+          #  You might need to set `create_branch: true` if the branch does not exist.
+          branch: rendered      
           
       
