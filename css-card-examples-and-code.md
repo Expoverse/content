@@ -24,7 +24,7 @@ These cards can display article excerpts, with an image on top and the article t
 -   [Other Examples](#other-examples)
 -   [Conclusion](#conclusion)
 -   [Frequently Asked Questions](#frequently-asked-questions)
--   [Recommended Articles](#recommended-articles)
+-   [See Also](#see-also)
 
 ## What is a Card?
 
