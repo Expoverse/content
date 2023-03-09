@@ -13,8 +13,8 @@ plugins:
   - - remark-slug    
   - - remark-autolink-headings
     - behavior: append
-    - linkProperties: 
-        - ariaHidden: 'false'
-        - tabIndex: 0
+    - linkProperties
+      ariaHidden: 'false'
+      tabIndex: 0
   - - remark-html
     - sanitize: false    
