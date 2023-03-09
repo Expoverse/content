@@ -206,7 +206,7 @@ input::placeholder {
 
 Here is a live demo of this [example hosted on codepen.io](https://codepen.io/tyler-chipman/pen/mdMYRqJ)
 
-## Recommended Articles
+## See Also
 
 -   [How to Create CSS Color Palettes](https://appcode.app/how-to-create-css-color-palettes/)
 -   [How To Remove the Arrows on HTML Input Type Number](https://appcode.app/how-to-remove-the-arrows-on-html-input-type-number/)
