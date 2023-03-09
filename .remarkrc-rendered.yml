@@ -14,7 +14,7 @@ plugins:
   - - remark-autolink-headings
     - behavior: wrap
     - linkProperties
-      - ariaHidden: 'false'
+    - ariaHidden: 'false'
     - tabIndex: 0
   - - remark-html
     - sanitize: false    
