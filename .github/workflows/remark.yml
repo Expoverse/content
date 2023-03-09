@@ -88,7 +88,7 @@ jobs:
 
           # The name of the custom committer you want to use, if different from the author of the commit.
           # Default: the name of the author (set with either author_name or default_author)
-          #committer_name: Committer Name
+          committer_name: Remark Bot
 
           # The email of the custom committer you want to use, if different from the author of the commit.
           # Default: the email of the author (set with either author_email or default_author)
