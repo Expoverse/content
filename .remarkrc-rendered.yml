@@ -13,15 +13,8 @@ plugins:
   - - remark-slug    
   - - remark-autolink-headings
     - behavior: wrap
-    - linkProperties: {ariaHidden: 'false', tabIndex: 0}
-    - content: 
-        type: element
-        tagName: span
-        properties: 
-          className: 
-          - 
-            icon
-          - 
-            "icon-link"
+    - linkProperties
+      - ariaHidden: 'false'
+    - tabIndex: 0
   - - remark-html
     - sanitize: false    
