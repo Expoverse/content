@@ -51,7 +51,7 @@ jobs:
           files: |
              *.md
           rc_path: .remarkrc-rendered.yml            
-      - name: Create Pull Request For Rendered
+      - name: Commit Converted HTML to Rendered Branch
         if: steps.verify-changed-files.outputs.files_changed == 'false'
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
@@ -61,7 +61,8 @@ jobs:
           # Optional. Local and remote branch name where commit is going to be pushed
           #  to. Defaults to the current branch.
           #  You might need to set `create_branch: true` if the branch does not exist.
-          branch: rendered      
+          branch: rendered     
+          file_pattern: '*.html'
           # Optional. Disable dirty check and always try to create a commit and push
           skip_dirty_check: true
           skip_checkout: true
