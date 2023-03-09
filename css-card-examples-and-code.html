@@ -7,21 +7,50 @@
 <li><a href="#what-is-a-card">What is a Card?</a></li>
 <li><a href="#parts-of-a-card">Parts of a Card</a></li>
 <li><a href="#how-are-cards-used">How are Cards Used?</a></li>
-<li><a href="#example-1">Example 1</a>
-<ul>
 <li><a href="#css-recap--css-application-in-html">CSS Recap – CSS Application in HTML</a></li>
-</ul>
-</li>
-<li><a href="#example-2">Example 2</a></li>
+<li><a href="#creating-a-read-more-card">Creating a Read More Card</a></li>
+<li><a href="#creating-a-shoutout-card">Creating a Shoutout Card</a></li>
+<li><a href="#other-examples">Other Examples</a></li>
 <li><a href="#conclusion">Conclusion</a></li>
 <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
-<li><a href="#other-examples">Other Examples</a></li>
 <li><a href="#recommended-articles">Recommended Articles</a></li>
 </ul>
 <h2 id="what-is-a-card">What is a Card?</h2>
 <h2 id="parts-of-a-card">Parts of a Card</h2>
 <h2 id="how-are-cards-used">How are Cards Used?</h2>
-<h2 id="example-1">Example 1</h2>
+<h2 id="css-recap--css-application-in-html">CSS Recap – CSS Application in HTML</h2>
+<p>First, let’s look at three approaches to adding CSS to HTML. These approaches are:</p>
+<p>External stylesheets
+The most popular and useful method is to use an external stylesheet. CSS is contained in a separate file with the extension.css.
+Create a new file, style.css, in the same folder as index.html to add an external stylesheet. You may also import the stylesheet within the element by doing this:</p>
+<pre><code class="language-HTML">&#x3C;link rel="stylesheet" href="style.css">
+</code></pre>
+<p>Internal stylesheets
+You can include an internal stylesheet by putting CSS in the</p>
+<pre><code class="language-HTML">&#x3C;!DOCTYPE html>
+&#x3C;html lang="en">
+&#x3C;head>
+  &#x3C;meta charset="UTF-8">
+  &#x3C;meta name="viewport" content="width=device-width, initial-scale=1.0">
+  &#x3C;title>Creating Cards using CSS&#x3C;/title>
+
+  &#x3C;style>
+    /* your style */
+  &#x3C;/style>
+
+&#x3C;/head>
+&#x3C;body>
+  
+&#x3C;/body>
+&#x3C;/html>
+</code></pre>
+<p>Inline styles (Not recommended)
+You should avoid this style as much as you can. However, the style attribute can also add style directly to an element.</p>
+<p>This method is frequently used when working with lines of code that do not allow you to alter the external or internal stylesheets.</p>
+<p>Adding inline styling to your page is not a good practice. Why? That’s because it makes it tough to read and understand; therefore, avoid it wherever possible.</p>
+<pre><code class="language-HTML">&#x3C;div style="color:red;">paragraph&#x3C;/div>
+</code></pre>
+<h2 id="creating-a-read-more-card">Creating a Read More Card</h2>
 <p>We need some content to work with before we begin working with CSS. In this step, we will start by creating the HTML markups. If you are unfamiliar with HTML, you can start with some of our HTML tutorials.</p>
 <pre><code class="language-HTML">&#x3C;!-- A div with container id to hold the card -->
 &#x3C;div id="container">
@@ -62,38 +91,6 @@
 <p>It doesn’t look like much, but that’s because we are yet to style it. However, what we’ve done here with HTML is to create the “skeleton” or “frame” for our design. With this, styling can exist. But it’s like trying to place a fleshy one in thin air – nothing will hold it!</p>
 <p>Remember, our task is to create a card component with an image, tags, a name, a description, and a button.</p>
 <p>The component must then be styled. This is the tutorial’s central point. This section will explain several concepts as I create the card component.</p>
-<h3 id="css-recap--css-application-in-html">CSS Recap – CSS Application in HTML</h3>
-<p>First, let’s look at three approaches to adding CSS to HTML. These approaches are:</p>
-<p>External stylesheets
-The most popular and useful method is to use an external stylesheet. CSS is contained in a separate file with the extension.css.
-Create a new file, style.css, in the same folder as index.html to add an external stylesheet. You may also import the stylesheet within the element by doing this:</p>
-<pre><code class="language-HTML">&#x3C;link rel="stylesheet" href="style.css">
-</code></pre>
-<p>Internal stylesheets
-You can include an internal stylesheet by putting CSS in the</p>
-<pre><code class="language-HTML">&#x3C;!DOCTYPE html>
-&#x3C;html lang="en">
-&#x3C;head>
-  &#x3C;meta charset="UTF-8">
-  &#x3C;meta name="viewport" content="width=device-width, initial-scale=1.0">
-  &#x3C;title>Creating Cards using CSS&#x3C;/title>
-
-  &#x3C;style>
-    /* your style */
-  &#x3C;/style>
-
-&#x3C;/head>
-&#x3C;body>
-  
-&#x3C;/body>
-&#x3C;/html>
-</code></pre>
-<p>Inline styles (Not recommended)
-You should avoid this style as much as you can. However, the style attribute can also add style directly to an element.</p>
-<p>This method is frequently used when working with lines of code that do not allow you to alter the external or internal stylesheets.</p>
-<p>Adding inline styling to your page is not a good practice. Why? That’s because it makes it tough to read and understand; therefore, avoid it wherever possible.</p>
-<pre><code class="language-HTML">&#x3C;div style="color:red;">paragraph&#x3C;/div>
-</code></pre>
 <p>Styling the HTML elements
 With this out of the way, let’s go back to our tutorial and style it using CSS.</p>
 <pre><code class="language-CSS">body {
@@ -176,7 +173,7 @@ button: hover {
 <pre><code class="language-HTML">Image Placeholder
 </code></pre>
 <p>Caption: News-like card using CSS</p>
-<h2 id="example-2">Example 2</h2>
+<h2 id="creating-a-shoutout-card">Creating a Shoutout Card</h2>
 <p>n this example, we will use CSS to design a simple card. We will not use any frameworks or libraries because there will be occasions when you want to make things as basic as possible, which is exactly what this example is intended for. Let’s begin:</p>
 <pre><code class="language-HTML">&#x3C;div class="tutorial">
   &#x3C;div class="theheader">
@@ -216,13 +213,8 @@ Styling With CSS</p>
 <p>Finally, we’ll add the padding 3px 18px shorthand (similar to padding-top: 3 and padding-right: 18) to the container class to create some gap between the contents and the card, making the card look more professional.</p>
 <pre><code class="language-HTML">Image Placeholder
 </code></pre>
-<h2 id="conclusion">Conclusion</h2>
-<p>So that brings us to the end of the tutorial. There are plenty of additional crucial CSS concepts to understand. However, using this guide, you should be able to use CSS to make your next project appear excellent.</p>
-<p>These cards can be used on your website’s sidebars, blog entries, etc. I hope you enjoyed this guide, and thank you for taking the time to read it.</p>
-<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
-<p>Mising Text</p>
 <h2 id="other-examples">Other Examples</h2>
-<p>This high-quality and hand-picked collection shows CSS cards from across the web. Included are links with examples and code for use on your website.</p>
+<p>Here is a collection of cards that show CSS cards from across the web. Included are links with examples and code for use on your website. These cards can be used on your website’s sidebars, blog entries, etc.</p>
 <article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Three-Black-Product-CSS-Cards.png" alt="Three Black Product CSS Cards" title="Three Black Product CSS Cards"></figure><br><h2>Three Black Product CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Tristan White</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/triss90/pen/bpZzzN" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 <article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/CSS-Cards-With-Drop-Shadow-Effect.png" alt="CSS Cards With Drop-Shadow Effect" title="CSS Cards With Drop-Shadow Effect"></figure><br><h2>CSS Cards With Drop-Shadow Effect</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Jaroslaw Hubert</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/jhkepa/pen/vddwYE" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 <article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Modern-CSS-Cards-Design.png" alt="Modern CSS Cards Design" title="Modern CSS Cards Design"></figure><br><h2>Modern CSS Cards Design</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>FlorinCornea</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/FlorinCornea/pen/KKwMeqd" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
@@ -239,6 +231,10 @@ Styling With CSS</p>
 <article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Tailwind-CSS-Cards.png" alt="Tailwind CSS Cards" title="Tailwind CSS Cards"></figure><br><h2>Tailwind CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Ross Orthwein</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://cdpn.io/rossorthwein/fullpage/rZbwaq" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 <article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Generic-Responsive-CSS-Cards.png" alt="Generic Responsive CSS Cards" title="Generic Responsive CSS Cards"></figure><br><h2>Generic Responsive CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Nick Kelly</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/nickresearch/pen/mdPNNOJ" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
 <article class="super-container"><figure><img loading="lazy" src="https://appcode.app/wp-content/uploads/2022/02/Basic-CSS-Cards.png" alt="Basic CSS Cards" title="Basic CSS Cards"></figure><br><h2>Basic CSS Cards</h2><h3 class="about-the-item">About Project</h3><h4></h4><p></p><div class="info-box"><div class="info info-author"><h4>Author</h4><ul><li>Haneen Krimly</li><li>codepen.io</li></ul></div><div class="info info-link"><h4>Links</h4><ul><li><a href="https://codepen.io/hkrimly/pen/ExYZedV" rel="nofollow">Demo and Code</a></li></ul></div></div></article>
+<h2 id="conclusion">Conclusion</h2>
+<p>There are plenty of additional crucial CSS concepts to understand. However, using this guide, you should be able to use cards to structure your website with the help of CSS.</p>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<p>Mising Text</p>
 <h2 id="recommended-articles">Recommended Articles</h2>
 <ul>
 <li><a href="/css-sidebar-menu-examples-and-code/">CSS Sidebar Menus</a></li>
