@@ -7,16 +7,17 @@ post_date: 2022-02-23 23:36:21
 
 ## Contents
 
--   [What is a Card?](#what-is-a-card)
--   [Parts of a Card](#parts-of-a-card)
--   [How are Cards Used?](#how-are-cards-used)
--   [CSS Recap – CSS Application in HTML](#css-recap--css-application-in-html)
--   [Creating a Read More Card](#creating-a-read-more-card)
--   [Creating a Shoutout Card](#creating-a-shoutout-card)
--   [Other Examples](#other-examples)
--   [Conclusion](#conclusion)
--   [Frequently Asked Questions](#frequently-asked-questions)
--   [See Also](#see-also)
+-   [Overview](#overview)
+    -   [What is a Card?](#what-is-a-card)
+    -   [Parts of a Card](#parts-of-a-card)
+    -   [How are Cards Used?](#how-are-cards-used)
+    -   [CSS Recap – CSS Application in HTML](#css-recap--css-application-in-html)
+    -   [Creating a Read More Card](#creating-a-read-more-card)
+    -   [Creating a Shoutout Card](#creating-a-shoutout-card)
+    -   [Other Examples](#other-examples)
+    -   [Conclusion](#conclusion)
+    -   [Frequently Asked Questions](#frequently-asked-questions)
+    -   [See Also](#see-also)
 
 # Overview
 
