@@ -19,9 +19,9 @@
 			{
 				"behavior": "wrap",
 				"linkProperties": {
-  "ariaHidden": "true",
-  "tabIndex": -1
-}
+					"ariaHidden": "true",
+					"tabIndex": -1
+				}
 			}
 		],
 		[
