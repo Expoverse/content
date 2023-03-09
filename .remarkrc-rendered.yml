@@ -12,7 +12,7 @@ plugins:
     - remark-parse    
   - - remark-slug    
   - - remark-autolink-headings
-    - behavior: wrap
+    - behavior: append
     - linkProperties:
         ariaHidden: 'false'
         tabIndex: 0
