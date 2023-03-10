@@ -29,6 +29,7 @@ Standard Markdown is a widely-used and consistent syntax. AppCode's Markdown syn
     -   [Inline code](#inline-code)
     -   [Link reference definitions](#link-reference-definitions)
 -   [Compiling Markdown to HTML](#compiling-markdown-to-html)
+-   [See also](#see-also)
 
 ## Introduction to CommonMark
 
@@ -240,4 +241,4 @@ The process of converting Markdown to HTML typically involves reading in the Mar
 
 ## See also
 
-- [How To Contribute to the Content on AppCode](https://github.com/Expoverse/content)
+-   [How To Contribute to the Content on AppCode](https://github.com/Expoverse/content)
