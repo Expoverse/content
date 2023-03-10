@@ -1,5 +1,7 @@
 ---
 title: Writing in Markdown
+taxonomy:
+    category: Writing Guidelines
 post_date: 2023-03-10 00:00:00
 ---
 
