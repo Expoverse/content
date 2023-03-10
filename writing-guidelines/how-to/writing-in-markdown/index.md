@@ -9,10 +9,9 @@ post_date: 2023-03-10 00:00:00
 
 This page outlines how we utilize Markdown to generate documentation on AppCode. We have opted for standard Markdown as the primary format for the documentation, as it provides a consistent and straightforward syntax for creating content. We have customized our Markdown tooling to support the specific needs of our documentation process on AppCode, allowing us to efficiently produce high-quality documentation.
 
-Standard Markdown is a widely-used and consistent syntax. AppCode's Markdown syntax is based on standard Markdown. This means that any specifications not explicitly outlined on this page can be referenced using the standard Markdown specification, CommonMark (<a href="https://spec.commonmark.org/">https://spec.commonmark.org/</a>). Additionally, the Markdown Guide (<a href="https://www.markdownguide.org/">https://www.markdownguide.org/</a>) is a great resource for learning more about Markdown syntax and best practices for using it in your writing.
+Standard Markdown is a widely-used and consistent syntax. AppCode's Markdown syntax is based on standard Markdown. This means that any specifications not explicitly outlined on this page can be referenced using the standard Markdown specification, CommonMark ([https://spec.commonmark.org/](https://spec.commonmark.org/)). Additionally, the Markdown Guide ([https://www.markdownguide.org/](https://www.markdownguide.org/)) is a great resource for learning more about Markdown syntax and best practices for using it in your writing.
 
-<!-- wp:heading {"level":1} -->
-## Introduction to CommonMark</h2>
+## Introduction to CommonMark
 
 CommonMark is a specification for the Markdown syntax. It was created to standardize the Markdown syntax, making it easier to write and interpret Markdown documents. The goal of CommonMark is to provide a consistent and predictable syntax that can be used across different platforms and applications.
 
