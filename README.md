@@ -31,8 +31,7 @@ This section is for creating articles, references, examples, how-to, and other m
 
 Pages can be submitted by being written in markdown and sumbitted through a [pull request](https://github.com/Expoverse/content/pulls).
 
--   Here is the [guide to writing in markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
--   Here is the [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+-   Here is the [guide to writing in markdown](https://appcode.app/writing-in-markdown/) for contributing to the content on AppCode.
 
 # Notes
 
