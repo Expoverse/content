@@ -53,6 +53,7 @@ jobs:
              remark-html
           files: |
              *.md
+             **/*.md
           rc_path: .remarkrc-rendered.yml        
       - name: Commit Converted HTML to Rendered Branch
         if: steps.verify-changed-files.outputs.files_changed == 'false'
