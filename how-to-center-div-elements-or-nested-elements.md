@@ -187,7 +187,7 @@ Remember, the justify-content property will center the element horizontally whil
 }
 ```
 
-But there is one problem. The `text-align` property will only center the element horizontally. 
+But there is one problem. The `text-align` property will only center the element horizontally.
 
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="1024" height="225" src="https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-text-using-the-text-align-property.png?resize=1024%2C225&amp;ssl=1" alt="Centered text using the text-align property" class="wp-image-7493" srcset="https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-text-using-the-text-align-property.png?resize=1024%2C225&amp;ssl=1 1024w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-text-using-the-text-align-property.png?resize=300%2C66&amp;ssl=1 300w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-text-using-the-text-align-property.png?resize=768%2C169&amp;ssl=1 768w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-text-using-the-text-align-property.png?resize=1536%2C338&amp;ssl=1 1536w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-text-using-the-text-align-property.png?w=1920&amp;ssl=1 1920w" sizes="(max-width: 1024px) 100vw, 1024px" data-recalc-dims="1">
