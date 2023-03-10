@@ -7,11 +7,21 @@ post_date: 2022-01-07 06:47:12
 
 ## Contents
 
+-   [Overview](#overview)
+-   [Methods for Centering DIVs and Elements](#methods-for-centering-divs-and-elements)
+    -   [Using margin Property](#using-margin-property)
+    -   [Using flex Property](#using-flex-property)
+    -   [Using text-align Property](#using-text-align-property)
+    -   [Using transform Property](#using-transform-property)
+    -   [Using grid Property](#using-grid-property)
+-   [Summary](#summary)
+-   [See Also](#see-also)
+
 ## Overview
 
 CSS is one of the three core technologies of the World Wide Web, along with HTML and JavaScript. No modern website is complete without CSS because CSS defines the presentation of the user interface.
 
-Though it seems easy, [CSS is quite tough to implement in real-time](https://medium.com/@Cryptacular/why-is-css-so-hard-for-programmers-a10d7e282620). The reason is that CSS is huge and has many concepts. Moreover, every challenge has more than one solution, sometimes several. Even experienced developers sometimes struggle while implementing CSS. 
+Though it seems easy, [CSS is quite tough to implement in real-time](https://medium.com/@Cryptacular/why-is-css-so-hard-for-programmers-a10d7e282620). The reason is that CSS is huge and has many concepts. Moreover, every challenge has more than one solution, sometimes several. Even experienced developers sometimes struggle while implementing CSS.
 
 One of the common challenges in CSS is to center an element. If you have ever worked with CSS, you likely faced a situation where a div element or a heading needs to be centered. And many developers struggle in doing this simple task. One of the primary reasons for this is that developers do not give enough time to learn the tricks for centering elements using CSS. So in this article, we will provide different ways of centering a div or centering other elements inside a div using CSS.
 
@@ -54,7 +64,7 @@ And following is the CSS.
 }
 ```
 
-To center this div horizontally, we can use the margin property and set `auto` as its value. 
+To center this div horizontally, we can use the margin property and set `auto` as its value.
 
 ```CSS
 .body-css {
@@ -72,7 +82,7 @@ To center this div horizontally, we can use the margin property and set `auto` a
 }
 ```
 
-With margin as `auto`, the div will be centered with respect to its parent element, i.e. body. 
+With margin as `auto`, the div will be centered with respect to its parent element, i.e. body.
 
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="1024" height="226" src="https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-margin-auto.png?resize=1024%2C226&amp;ssl=1" alt="A centered DIV element using margin auto" class="wp-image-7485" srcset="https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-margin-auto.png?resize=1024%2C226&amp;ssl=1 1024w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-margin-auto.png?resize=300%2C66&amp;ssl=1 300w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-margin-auto.png?resize=768%2C170&amp;ssl=1 768w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-margin-auto.png?resize=1536%2C339&amp;ssl=1 1536w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-margin-auto.png?w=1920&amp;ssl=1 1920w" sizes="(max-width: 1024px) 100vw, 1024px" data-recalc-dims="1">
@@ -256,8 +266,7 @@ Here is a link to a relatively more [advanced example of a centered nested DIV e
 
 ## See Also
 
-- [How to Create a Responsive Flexbox Grid](/how-to-create-a-responsive-flexbox-grid/)
-- [The CSS transform Property](/css-transform-property/)
-- [A Guide on How To Use CSS Grids for Layouts](/a-guide-on-how-to-use-css-grids-for-layouts/)
-- [How To Align an HTML List Side by Side](/how-to-align-an-html-list-side-by-side/)
-
+-   [How to Create a Responsive Flexbox Grid](/how-to-create-a-responsive-flexbox-grid/)
+-   [The CSS transform Property](/css-transform-property/)
+-   [A Guide on How To Use CSS Grids for Layouts](/a-guide-on-how-to-use-css-grids-for-layouts/)
+-   [How To Align an HTML List Side by Side](/how-to-align-an-html-list-side-by-side/)
