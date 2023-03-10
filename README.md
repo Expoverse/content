@@ -24,6 +24,12 @@ You can change, fix, update, and improve the content on https://appcode.app by c
     -   Using the [New content or feature suggestion issue template](https://github.com/Expoverse/content/issues/new?assignees=\&labels=proposal\&template=content-or-feature-suggestion.yml\&title=Enter+your+proposal+here)
 -   Submiting content and code changes with a [pull request.](https://github.com/Expoverse/content/pulls)
 
+# Creating Articles
+
+Articles can be submitted by being written in markdown and sumbitted through a [pull request](https://github.com/Expoverse/content/pulls).
+- Here is the [guide to writing in markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+- Here is the [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). 
+
 # Notes
 
 During the markdown linting and format of the markdown files you may notice some characters are escaped, this is normal for [Remark](https://github.com/remarkjs/remark). Here is more infomation on what characters to expect that will be escaped.
