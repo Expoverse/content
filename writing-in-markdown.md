@@ -5,9 +5,13 @@ taxonomy:
 post_date: 2023-03-10 00:00:00
 ---
 
+This page outlines how we utilize Markdown to generate documentation on AppCode. We have opted for standard Markdown as the primary format for the documentation, as it provides a consistent and straightforward syntax for creating content. We have customized our Markdown tooling to support the specific needs of our documentation process on AppCode, allowing us to efficiently produce high-quality documentation.
+
+Standard Markdown is a widely-used and consistent syntax. AppCode's Markdown syntax is based on standard Markdown. This means that any specifications not explicitly outlined on this page can be referenced using the standard Markdown specification, CommonMark (<https://spec.commonmark.org/>). Additionally, the Markdown Guide (<https://www.markdownguide.org/>) is a great resource for learning more about Markdown syntax and best practices for using it in your writing.
+
+
 ## Contents
 
--   [Overview](#overview)
 -   [Introduction to CommonMark](#introduction-to-commonmark)
 -   [CommonMark Specification](#commonmark-specification)
 -   [Basic Syntax](#basic-syntax)
@@ -26,12 +30,6 @@ post_date: 2023-03-10 00:00:00
     -   [Inline code](#inline-code)
     -   [Link reference definitions](#link-reference-definitions)
 -   [Compiling Markdown to HTML](#compiling-markdown-to-html)
-
-## Overview
-
-This page outlines how we utilize Markdown to generate documentation on AppCode. We have opted for standard Markdown as the primary format for the documentation, as it provides a consistent and straightforward syntax for creating content. We have customized our Markdown tooling to support the specific needs of our documentation process on AppCode, allowing us to efficiently produce high-quality documentation.
-
-Standard Markdown is a widely-used and consistent syntax. AppCode's Markdown syntax is based on standard Markdown. This means that any specifications not explicitly outlined on this page can be referenced using the standard Markdown specification, CommonMark (<https://spec.commonmark.org/>). Additionally, the Markdown Guide (<https://www.markdownguide.org/>) is a great resource for learning more about Markdown syntax and best practices for using it in your writing.
 
 ## Introduction to CommonMark
 
