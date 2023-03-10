@@ -26,7 +26,7 @@ You can change, fix, update, and improve the content on https://appcode.app by c
 
 # Creating Pages 
 
-This section is for articles, references, examples, how-to, and other materials not listed.
+This section is for creating articles, references, examples, how-to, and other materials not listed.
 
 Pages can be submitted by being written in markdown and sumbitted through a [pull request](https://github.com/Expoverse/content/pulls).
 - Here is the [guide to writing in markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
