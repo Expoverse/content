@@ -5,11 +5,31 @@ post_date: 2023-03-10 00:00:00
 
 ## Contents
 
+-   [Overview](#overview)
+-   [Introduction to CommonMark](#introduction-to-commonmark)
+-   [CommonMark Specification](#commonmark-specification)
+-   [Basic Syntax](#basic-syntax)
+    -   [Headings](#headings)
+    -   [Paragraphs](#paragraphs)
+    -   [Lists](#lists)
+    -   [Emphasis](#emphasis)
+-   [Extended Syntax](#extended-syntax)
+    -   [Code Blocks](#code-blocks)
+    -   [Links](#links)
+    -   [Images](#images)
+    -   [Tables](#tables)
+    -   [Raw HTML](#raw-html)
+    -   [Block quotes](#block-quotes)
+    -   [Fenced code blocks](#fenced-code-blocks)
+    -   [Inline code](#inline-code)
+    -   [Link reference definitions](#link-reference-definitions)
+-   [Compiling Markdown to HTML](#compiling-markdown-to-html)
+
 ## Overview
 
 This page outlines how we utilize Markdown to generate documentation on AppCode. We have opted for standard Markdown as the primary format for the documentation, as it provides a consistent and straightforward syntax for creating content. We have customized our Markdown tooling to support the specific needs of our documentation process on AppCode, allowing us to efficiently produce high-quality documentation.
 
-Standard Markdown is a widely-used and consistent syntax. AppCode's Markdown syntax is based on standard Markdown. This means that any specifications not explicitly outlined on this page can be referenced using the standard Markdown specification, CommonMark ([https://spec.commonmark.org/](https://spec.commonmark.org/)). Additionally, the Markdown Guide ([https://www.markdownguide.org/](https://www.markdownguide.org/)) is a great resource for learning more about Markdown syntax and best practices for using it in your writing.
+Standard Markdown is a widely-used and consistent syntax. AppCode's Markdown syntax is based on standard Markdown. This means that any specifications not explicitly outlined on this page can be referenced using the standard Markdown specification, CommonMark (<https://spec.commonmark.org/>). Additionally, the Markdown Guide (<https://www.markdownguide.org/>) is a great resource for learning more about Markdown syntax and best practices for using it in your writing.
 
 ## Introduction to CommonMark
 
@@ -151,7 +171,7 @@ Quotes can be especially useful when including external content within a Markdow
 
 ### Fenced code blocks
 
-Fenced code blocks are used to include larger blocks of code within the document, and are created by enclosing the code within a pair of triple backticks (```). Optionally, you can also specify the language of the code by including the name of the language immediately after the opening triple backticks.
+Fenced code blocks are used to include larger blocks of code within the document, and are created by enclosing the code within a pair of triple backticks (\`\`\`). Optionally, you can also specify the language of the code by including the name of the language immediately after the opening triple backticks.
 
 Here's an example of a fenced code block:
 
@@ -171,7 +191,7 @@ def hello_world():
 
 ### Inline code
 
-Inline code is used to include smaller snippets of code within the text of a Markdown document. Inline code is created by enclosing the code within a pair of backticks (`).
+Inline code is used to include smaller snippets of code within the text of a Markdown document. Inline code is created by enclosing the code within a pair of backticks (\`).
 
 Here's an example of inline code:
 
@@ -185,7 +205,7 @@ You can use the `print()` function to output text in Python.
 
 ### Link reference definitions
 
-Link reference definitions, also known as reference links, are another feature of CommonMark that allow for the inclusion of links within a Markdown document. Reference links are created by defining a link reference at the end of the document, and then referencing that link within the text of the document using square brackets ([]) and a label that corresponds to the link reference.
+Link reference definitions, also known as reference links, are another feature of CommonMark that allow for the inclusion of links within a Markdown document. Reference links are created by defining a link reference at the end of the document, and then referencing that link within the text of the document using square brackets (\[]) and a label that corresponds to the link reference.
 
 Here's an example of a link reference definition:
 
@@ -201,7 +221,7 @@ Take a look at [Google] to learn more.
 
 When rendered, the output will look something like this:
 
-Take a look at [Google] to learn more.
+Take a look at \[Google] to learn more.
 
 Reference links can also include optional titles, which are displayed as tooltips when the link is hovered over. To add a title to a reference link, simply include the title in quotes immediately after the URL:
 
@@ -211,7 +231,7 @@ Reference links can also include optional titles, which are displayed as tooltip
 
 When rendered, the output will look something like this:
 
-Take a look at [Google] to learn more.
+Take a look at \[Google] to learn more.
 
 ## Compiling Markdown to HTML
 

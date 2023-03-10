@@ -12,6 +12,7 @@ The content on AppCode covering references, examples, specifications, how-to, an
 # Contents
 
 -   [Contributing](#contributing)
+-   [Creating Pages](#creating-pages)
 -   [Notes](#notes)
 
 # Contributing
@@ -24,13 +25,14 @@ You can change, fix, update, and improve the content on https://appcode.app by c
     -   Using the [New content or feature suggestion issue template](https://github.com/Expoverse/content/issues/new?assignees=\&labels=proposal\&template=content-or-feature-suggestion.yml\&title=Enter+your+proposal+here)
 -   Submiting content and code changes with a [pull request.](https://github.com/Expoverse/content/pulls)
 
-# Creating Pages 
+# Creating Pages
 
 This section is for creating articles, references, examples, how-to, and other materials not listed.
 
 Pages can be submitted by being written in markdown and sumbitted through a [pull request](https://github.com/Expoverse/content/pulls).
-- Here is the [guide to writing in markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-- Here is the [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). 
+
+-   Here is the [guide to writing in markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+-   Here is the [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 # Notes
 
