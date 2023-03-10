@@ -9,7 +9,6 @@ This page outlines how we utilize Markdown to generate documentation on AppCode.
 
 Standard Markdown is a widely-used and consistent syntax. AppCode's Markdown syntax is based on standard Markdown. This means that any specifications not explicitly outlined on this page can be referenced using the standard Markdown specification, CommonMark (<https://spec.commonmark.org/>). Additionally, the Markdown Guide (<https://www.markdownguide.org/>) is a great resource for learning more about Markdown syntax and best practices for using it in your writing.
 
-
 ## Contents
 
 -   [Introduction to CommonMark](#introduction-to-commonmark)
