@@ -83,6 +83,6 @@ Once you have submitted your content, you will need to wait for feedback from th
 
 ## Step 6: Publish your content
 
-After your content in the pull request has been reviewed and approved, it will be merged into the [master content branch](https://github.com/Expoverse/content) and published on the [AppCode website](https://appcode.app/) after some checks and formating tasks are ran. Your ontribution will be acknowledged by the AppCode community by linking to your GitHub profile in several locations, including the Markdown file that was created or edited.
+After your content in the pull request has been reviewed and approved, it will be merged into the [master content branch](https://github.com/Expoverse/content) and published on the [AppCode website](https://appcode.app/) after some checks and formating tasks are ran. Your contribution will be acknowledged by the AppCode community by linking to your GitHub profile in several locations, including the Markdown file that was created or edited.
 
 Contributing to the AppCode website is a great way to share your knowledge and expertise with web development community. By following the steps outlined above, you can write and submit high-quality content that will help other developers improve their skills and build better apps and websites.
