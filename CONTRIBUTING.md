@@ -1,7 +1,10 @@
 ---
 
 title: AppCode Contribution Guide
-skip_file: true
+url: contributing
+taxonomy:
+    category: Writing Guidelines
+post_date: 2023-03-11 00:00:00
 
 ---
 
