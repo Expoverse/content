@@ -25,6 +25,8 @@ You can change, fix, update, and improve the content on https://appcode.app by c
     -   Using the [New content or feature suggestion issue template](https://github.com/Expoverse/content/issues/new?assignees=\&labels=proposal\&template=content-or-feature-suggestion.yml\&title=Enter+your+proposal+here)
 -   Submiting content and code changes with a [pull request.](https://github.com/Expoverse/content/pulls)
 
+To find out more about the complete contribution process and to find out how to get started, see the [CONTRIBUTING.md document in this repository](https://github.com/Expoverse/content/blob/master/CONTRIBUTING.md).
+
 # Creating Pages
 
 This section is for creating articles, references, examples, how-to, and other materials not listed.
