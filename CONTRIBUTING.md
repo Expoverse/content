@@ -17,23 +17,23 @@ The first step is to visit the AppCode website (https://appcode.app) and explore
 
 Once you have familiarized yourself with the AppCode website, you can choose a topic or existing page that you would like to write about or update. AppCode covers a wide range of topics on web development, so there are many areas where you can contribute. Some popular topics include:
 
-- HTML & CSS: Basics and advanced concepts
-- Responsive design and mobile-first development
-- CSS, Python, JavaScript, HTML references
-- Tutorials, References, and Specifications
-- Bootstrap and other CSS frameworks
-- JavaScript: Basics and advanced concepts
-- React, Angular, and Vue: Popular JavaScript frameworks
-- Node.js and Express: Server-side JavaScript development
-- RESTful API design and development
-- Web security: Best practices for securing web applications
-- Performance optimization: Techniques for improving website speed
-- Testing and debugging web applications
-- Version control and collaboration with Git and repositories
-- Progressive Web Apps (PWA): Designing and developing web apps that feel like native apps
-- Web animation: Techniques and libraries for adding animations to web pages
-- Serverless architecture and cloud computing for web development
-- E-commerce web development and payment gateway integration
+-   HTML & CSS: Basics and advanced concepts
+-   Responsive design and mobile-first development
+-   CSS, Python, JavaScript, HTML references
+-   Tutorials, References, and Specifications
+-   Bootstrap and other CSS frameworks
+-   JavaScript: Basics and advanced concepts
+-   React, Angular, and Vue: Popular JavaScript frameworks
+-   Node.js and Express: Server-side JavaScript development
+-   RESTful API design and development
+-   Web security: Best practices for securing web applications
+-   Performance optimization: Techniques for improving website speed
+-   Testing and debugging web applications
+-   Version control and collaboration with Git and repositories
+-   Progressive Web Apps (PWA): Designing and developing web apps that feel like native apps
+-   Web animation: Techniques and libraries for adding animations to web pages
+-   Serverless architecture and cloud computing for web development
+-   E-commerce web development and payment gateway integration
 
 ## Step 3: Write your content
 
