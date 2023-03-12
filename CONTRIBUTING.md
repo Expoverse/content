@@ -8,9 +8,13 @@ post_date: 2023-03-11 00:00:00
 
 ---
 
+## Overview
+
 AppCode is a popular web development website that contains references, tutorials, and other materials on web development and its languages. You can contribute to the AppCode community by sharing your knowledge and expertise through the website.
 
 If you are interested in contributing to the AppCode website, here are some steps you can follow:
+
+## Contents
 
 ## Step 1: Visit the AppCode website
 
@@ -56,7 +60,7 @@ When writing your content, make sure to follow the Markdown syntax rules to ensu
 
 ### 2) Fork the repository
 
-The next step is to [fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) where you want to contribute your content. To do this, go to the repository on GitHub and click on the "Fork" button in the top-right corner of the page. This will create a copy of the repository in your own GitHub account.
+The next step is to [fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) where you want to contribute your content. To do this, go to the repository on GitHub and click on the "Fork" button in the top-right corner of the page. This will create a copy of the repository in your own GitHub account. The [AppCode content repository can be found here](https://github.com/Expoverse/content). 
 
 ### 3) Create a new branch
 
@@ -89,3 +93,8 @@ Once you have submitted your content, you will need to wait for feedback from th
 After your content in the pull request has been reviewed and approved, it will be merged into the [master content branch](https://github.com/Expoverse/content) and published on the [AppCode website](https://appcode.app/) after some checks and formating tasks are ran. Your contribution will be acknowledged by the AppCode community by linking to your GitHub profile in several locations, including the Markdown file that was created or edited.
 
 Contributing to the AppCode website is a great way to share your knowledge and expertise with web development community. By following the steps outlined above, you can write and submit high-quality content that will help other developers improve their skills and build better apps and websites.
+
+## See Also
+
+- [AppCode Content Repository](https://github.com/Expoverse/content)
+- [Writing in Markdown](https://appcode.app/writing-in-markdown/)
