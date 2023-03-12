@@ -241,4 +241,4 @@ The process of converting Markdown to HTML typically involves reading in the Mar
 
 ## See also
 
--   [How To Contribute to the Content on AppCode](https://github.com/Expoverse/content)
+-   [How To Contribute to the Content on AppCode](https://appcode.app/contributing/)
