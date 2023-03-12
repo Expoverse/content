@@ -11,7 +11,7 @@ If you are interested in contributing to the AppCode website, here are some step
 
 ## Step 1: Visit the AppCode website
 
-The first step is to visit the AppCode website [https://appcode.app](https://appcode.app) and explore the different sections of the website. This will help you get a better understanding of the content that is already available and the topics that are covered. You can use the search to find topics based on the keywords you provide.
+The first step is to visit the AppCode website <https://appcode.app> and explore the different sections of the website. This will help you get a better understanding of the content that is already available and the topics that are covered. You can use the search to find topics based on the keywords you provide.
 
 ## Step 2: Choose a topic or edit an existing page
 
@@ -47,7 +47,7 @@ When writing your content, make sure that it is clear, concise, and easy to unde
 
 Markdown is a simple markup language that allows you to create formatted text using plain text syntax. To create your content in Markdown, you can use any text editor, such as Visual Studio Code, Atom, or Sublime Text.
 
-When writing your content, make sure to follow the Markdown syntax rules to ensure that your text is formatted correctly. You can find a comprehensive guide to Markdown syntax on the Markdown Guide website [https://www.markdownguide.org/](https://www.markdownguide.org/).
+When writing your content, make sure to follow the Markdown syntax rules to ensure that your text is formatted correctly. You can find a comprehensive guide to Markdown syntax on the Markdown Guide website <https://www.markdownguide.org/>.
 
 ### Step 4.2: Fork the repository
 
