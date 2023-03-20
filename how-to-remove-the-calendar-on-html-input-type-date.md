@@ -12,7 +12,7 @@ This tutorial demonstrates how to remove the calendar on the [HTML input type da
   <figcaption>Remove Arrows on HTML Input Type Date</figcaption>
 </figure>
 
-# Contents
+## Contents
 
 ## How To Remove the Icon From a Date Input?
 
