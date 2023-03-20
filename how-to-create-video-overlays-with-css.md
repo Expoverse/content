@@ -14,6 +14,11 @@ There are many types of different video overlays on the modern web, from ads and
 
 ## Contents
 
+-   [Creating The Base Video Element](#creating-the-base-video-element)
+-   [Creating the Card Overlays](#creating-the-card-overlays)
+-   [Project Solution](#project-solution)
+-   [See Also](#see-also)
+
 ## Creating The Base Video Element
 
 First, we will need to create the base video element, so we have a video to add overlays to.
@@ -550,7 +555,7 @@ Now we have a title and three card overlays on our video background. Let’s tak
 
 ## See Also
 
-- [How To Create a Full-Width Video Background With CSS](https://appcode.app/how-to-create-a-full-width-video-background-with-css/)
-- [How To Create an HTML Carousel](https://appcode.app/how-to-create-an-html-carousel/)
-- [How To Create a Stacked Card Hover Effect Using CSS](https://appcode.app/how-to-create-a-stacked-card-hover-effect-using-css/)
-- [How to Center DIV Elements or Nested Elements](https://appcode.app/how-to-center-div-elements-or-nested-elements/)
+-   [How To Create a Full-Width Video Background With CSS](https://appcode.app/how-to-create-a-full-width-video-background-with-css/)
+-   [How To Create an HTML Carousel](https://appcode.app/how-to-create-an-html-carousel/)
+-   [How To Create a Stacked Card Hover Effect Using CSS](https://appcode.app/how-to-create-a-stacked-card-hover-effect-using-css/)
+-   [How to Center DIV Elements or Nested Elements](https://appcode.app/how-to-center-div-elements-or-nested-elements/)
