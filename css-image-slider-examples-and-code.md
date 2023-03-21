@@ -11,6 +11,14 @@ A CSS image slider is a crucial part of any website or app. Sliders allow you to
 
 ## Contents
 
+-   [What Is an Image Slider in CSS?](#what-is-an-image-slider-in-css)
+-   [Creating an Image Slider With Bullet Points](#creating-an-image-slider-with-bullet-points)
+-   [Creating an Automatic Image Slider](#creating-an-automatic-image-slider)
+-   [Creating an Image Slider With Links](#creating-an-image-slider-with-links)
+-   [Creating an Image Slider with Nav Buttons](#creating-an-image-slider-with-nav-buttons)
+-   [Other Examples](#other-examples)
+-   [See Also](#see-also)
+
 ## What Is an Image Slider in CSS?
 
 An image slider is an animated HTML fragment used to display images, text, and videos as a slide show. The slider is typically made of frames that can be viewed independently. It is like a small viewport or screen that contains all the slides. Sometimes slides are on an automatic timer that changes to the next slide after some time. Other times there are controls that allow a user to adjust the content manually.
@@ -680,7 +688,7 @@ Here is a collection of sliders from around the web you can use in your project.
 
 ## See Also
 
-- [CSS Cards](https://appcode.app/css-card-examples-and-code/)
-- [CSS Carousels](https://appcode.app/css-carousel-examples-and-code/)
-- [CSS Image Galleries](https://appcode.app/css-image-gallery-examples-and-code/)
-- [CSS (Cascading Style Sheets)](https://appcode.app/how-to-use-css-cascading-style-sheets-to-style-html/)
+-   [CSS Cards](https://appcode.app/css-card-examples-and-code/)
+-   [CSS Carousels](https://appcode.app/css-carousel-examples-and-code/)
+-   [CSS Image Galleries](https://appcode.app/css-image-gallery-examples-and-code/)
+-   [CSS (Cascading Style Sheets)](https://appcode.app/how-to-use-css-cascading-style-sheets-to-style-html/)
