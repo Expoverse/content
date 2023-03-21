@@ -25,8 +25,8 @@ An image slider is an animated HTML fragment used to display images, text, and v
 
 ## Creating an Image Slider With Bullet Points
 
-<figure class="wp-block-image size-large"><
-  img loading="lazy" width="783" height="390" src="https://i2.wp.com/appcode.app/wp-content/uploads/2022/10/CSS-Image-Slider-With-Bullet-Points.png?resize=783%2C390&amp;ssl=1" alt="CSS Image Slider With Bullet Points" class="wp-image-15159" srcset="https://i2.wp.com/appcode.app/wp-content/uploads/2022/10/CSS-Image-Slider-With-Bullet-Points.png?w=783&amp;ssl=1 783w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/10/CSS-Image-Slider-With-Bullet-Points.png?resize=300%2C149&amp;ssl=1 300w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/10/CSS-Image-Slider-With-Bullet-Points.png?resize=768%2C383&amp;ssl=1 768w" sizes="(max-width: 783px) 100vw, 783px" data-recalc-dims="1">
+<figure class="wp-block-image size-large">
+    <img loading="lazy" width="783" height="390" src="https://i2.wp.com/appcode.app/wp-content/uploads/2022/10/CSS-Image-Slider-With-Bullet-Points.png?resize=783%2C390&amp;ssl=1" alt="CSS Image Slider With Bullet Points" class="wp-image-15159" srcset="https://i2.wp.com/appcode.app/wp-content/uploads/2022/10/CSS-Image-Slider-With-Bullet-Points.png?w=783&amp;ssl=1 783w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/10/CSS-Image-Slider-With-Bullet-Points.png?resize=300%2C149&amp;ssl=1 300w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/10/CSS-Image-Slider-With-Bullet-Points.png?resize=768%2C383&amp;ssl=1 768w" sizes="(max-width: 783px) 100vw, 783px" data-recalc-dims="1">
   <figcaption>CSS Image Slider With Bullet Points</figcaption>
 </figure>
 
