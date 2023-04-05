@@ -14,18 +14,18 @@ If you are interested in contributing to the AppCode website, here are some step
 
 ## Contents
 
--   [Step 1: Visit the AppCode website](#step-1-visit-the-appcode-website)
--   [Step 2: Choose a topic or edit an existing page](#step-2-choose-a-topic-or-edit-an-existing-page)
--   [Step 3: Write your content](#step-3-write-your-content)
--   [Step 4: Submit your content](#step-4-submit-your-content)
-    -   [Step 4.1: Create your content in Markdown](#step-41-create-your-content-in-markdown)
-    -   [Step 4.2: Fork the repository](#step-42-fork-the-repository)
-    -   [Step 4.3: Create a new branch](#step-43-create-a-new-branch)
-    -   [Step 4.4: Create a new Markdown file](#step-44-create-a-new-markdown-file)
-    -   [Step 4.5: Write your content in the Markdown file](#step-45-write-your-content-in-the-markdown-file)
-    -   [Step 4.6: Commit and push your changes](#step-46-commit-and-push-your-changes)
-    -   [Step 4.7: Create a pull request](#step-47-create-a-pull-request)
--   [Step 5: Publish your content](#step-5-publish-your-content)
+-   [Visit the AppCode website](#visit-the-appcode-website)
+-   [Choose a topic or edit an existing page](#choose-a-topic-or-edit-an-existing-page)
+-   [Write your content](#write-your-content)
+-   [Submit your content](#submit-your-content)
+    -   [Create your content in Markdown](#create-your-content-in-markdown)
+    -   [Fork the repository](#fork-the-repository)
+    -   [Create a new branch](#create-a-new-branch)
+    -   [Create a new Markdown file](#create-a-new-markdown-file)
+    -   [Write your content in the Markdown file](#write-your-content-in-the-markdown-file)
+    -   [Commit and push your changes](#commit-and-push-your-changes)
+    -   [Create a pull request](#create-a-pull-request)
+-   [Publish your content](#publish-your-content)
 -   [See Also](#see-also)
 
 ## Visit the AppCode website
