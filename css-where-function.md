@@ -5,31 +5,29 @@ taxonomy:
 post_date: 2022-10-16 00:40:52
 ---
 
-This article demonstrates how to use the CSS `:where()` function within CSS style sheets. Included are code, definitions, and examples.
+This article demonstrates how to use the CSS `:where()` function within CSS Cascading Style Sheets. Included in this guide are code, definitions, and examples.
 
 ## Contents
 
 ## What is CSS :where()?
 
-The `:where()` function is a functional pseudo-class that takes a list of selectors as its argument and applies the styles to the selected HTML elements in the list.
+The `:where()` function is a functional pseudo-class that takes a list of selectors as its argument and applies the styles to the selected HTML elements in the list. It allows developers to specify conditions that must be met before a particular style is applied to an element.
 
-It allows developers to specify conditions that must be met before a particular style is applied to an element. The syntax for the `where()` function is as follows:
+## Syntax
+
+ The syntax for the `where()` function is as follows:
 
 ```CSS
 selector where(condition) {
   /* Styles to apply */
 }
-```
 
-In this syntax, the `selector` is any valid CSS selector, and `condition` is a boolean expression that must be true for the styles to be applied. If the condition is `false`, the styles will be ignored.
-
-## Syntax
-
-```CSS
 :where( <complex-selector-list> )
 ```
 
-The `:where()` function parameter is a `<complex-selector-list>` data type and should be replaced with an example value such as: `:where(:not(:hover))`.
+In this syntax, the `selector` is any valid CSS selector, and `condition` which is a boolean expression that must be true for the styles to be applied. If the condition is `false`, the styles will be ignored.
+
+The parameter of the `:where()` function is a `<complex-selector-list>` data type and should be replaced with an example value such as: `:where(:not(:hover))`.
 
 ## Examples
 
@@ -47,16 +45,6 @@ The examples below use selectors and selector list values for the parameter of t
 :where(:valid, :unsupported)
 :where(#section) h2
 ```
-
-For example, suppose we want to apply a different background color to paragraphs that contain the word "important". We could use the following CSS:
-
-```CSS
-p where(:contains("important")) {
-  background-color: yellow;
-}
-```
-
-In this CSS, the `where()` function is used to apply the `background-color` property only to paragraphs that contain the word "important". The `:contains()` pseudo-class is used to match any element that contains the specified text.
 
 ## Usage
 You can apply the `:where()` function to any element by using CSS selectors and adding styles.
@@ -84,6 +72,36 @@ main :where(h1, h2, h3) {
   color: orange;
 }
 ```
+
+For example, suppose we want to apply a different background color to paragraphs that contain the word "important". We could use the following CSS:
+
+```CSS
+p where(:contains("important")) {
+  background-color: yellow;
+}
+```
+
+In this CSS, the `where()` function is used to apply the `background-color` property only to paragraphs that contain the word `important`. The `:contains()` pseudo-class is used to match any element that contains the specified text.
+
+Applying styles to the first child element that meets a condition:
+
+```CSS
+div where(p:first-of-type) {
+  /* styles to apply */
+}
+```
+
+In this example, the `where()` function is used to apply styles to the first paragraph element inside a `div` element.
+
+Applying styles to an element that has a specific attribute:
+
+```CSS
+a where([target="_blank"]) {
+  /* styles to apply */
+}
+```
+
+In this example, the `where()` function is used to apply styles to an `anchor` element that has the attribute target set to `_blank`.
 
 ## Use Cases of :where()
 
