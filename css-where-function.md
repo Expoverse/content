@@ -9,13 +9,26 @@ This article demonstrates how to use the CSS `:where()` function within CSS Casc
 
 ## Contents
 
+-   [What is CSS :where()?](#what-is-css-where)
+-   [Syntax](#syntax)
+-   [Examples](#examples)
+-   [Usage](#usage)
+-   [Use Cases of :where()](#use-cases-of-where)
+-   [Specificity](#specificity)
+-   [Forgiving Selectors Lists](#forgiving-selectors-lists)
+-   [Refactoring Using :where()](#refactoring-using-where)
+-   [Using :where() To Target Elements](#using-where-to-target-elements)
+-   [Try It](#try-it)
+-   [Specifications](#specifications)
+-   [See Also](#see-also)
+
 ## What is CSS :where()?
 
 The `:where()` function is a functional pseudo-class that takes a list of selectors as its argument and applies the styles to the selected HTML elements in the list. It allows developers to specify conditions that must be met before a particular style is applied to an element.
 
 ## Syntax
 
- The syntax for the `where()` function is as follows:
+The syntax for the `where()` function is as follows:
 
 ```CSS
 selector where(condition) {
@@ -47,6 +60,7 @@ The examples below use selectors and selector list values for the parameter of t
 ```
 
 ## Usage
+
 You can apply the `:where()` function to any element by using CSS selectors and adding styles.
 
 ```CSS
@@ -105,8 +119,8 @@ In this example, the `where()` function is used to apply styles to an `anchor` e
 
 ## Use Cases of :where()
 
-- **Overriding Styles** – `:where()` is helpful for creating filters in a selector while keeping associate selectors easy to override.
-- **Shorting Selector Lists** – `:where()` can shorten CSS style selectors by reducing redundancy and is very useful in shortening CSS code.
+-   **Overriding Styles** – `:where()` is helpful for creating filters in a selector while keeping associate selectors easy to override.
+-   **Shorting Selector Lists** – `:where()` can shorten CSS style selectors by reducing redundancy and is very useful in shortening CSS code.
 
 ```CSS
 header a:hover,
@@ -219,7 +233,7 @@ article footer > p {
 
 In the first CSS style block, we set the `green` and `underline` values to be applied to the `header`, `section`, `main`, and `footer` elements whenever the link element is hovered.
 
-In the second list, we specify that the article’s `header`, `section`, and `foote` paragraph elements should be styled with `blue` text. 
+In the second list, we specify that the article’s `header`, `section`, and `foote` paragraph elements should be styled with `blue` text.
 
 The last list uses the `.light-theme` class to apply styles to the link and button elements. The class contains properties to set the text color to `black` for those elements.
 
@@ -403,20 +417,8 @@ ol {
 ## Specifications
 
 [W3C CSS Selectors Level 4
-#zero-matches](https://www.w3.org/TR/selectors-4/#zero-matches)
+\#zero-matches](https://www.w3.org/TR/selectors-4/#zero-matches)
 
 ## See Also
-- [How To Remove Unused CSS](https://appcode.app/how-to-remove-unused-css/)
 
-
-
-
-
-
-
-
-
-
-
-
-
+-   [How To Remove Unused CSS](https://appcode.app/how-to-remove-unused-css/)
