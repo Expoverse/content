@@ -16,7 +16,7 @@ In the sections below we'll cover a step-by-step breakdown installing jQuery, pe
 ## Contents
 
 -   [Installing jQuery](#installing-jquery)
--   [**Form markup**](#form-markup)
+-   [Form markup](#form-markup)
 -   [Form styles](#form-styles)
 -   [jQuery form handling](#jquery-form-handling)
     -   [On page load](#on-page-load)
