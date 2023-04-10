@@ -432,81 +432,24 @@ After validating form data, it is typically sent to be processed somewhere such 
 ## References
 
 <ol>
-	<li id="cite_note-1"><span class="cite-backlink"><b><a href="#cite_ref-1" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Wikimedia Foundation. (2023, March 23) <a rel="nofollow" href="https://en.wikipedia.org/wiki/HTML_form">HTML form</a>. <i>Wikipedia</i>. Retrieved <span>April 10,</span> 2023</span>.</cite></li>
-	<li id="cite_note-2"><span class="cite-backlink"><b><a href="#cite_ref-2" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >Baker, K. (2022, September 14).
-  <a rel="nofollow" href="https://blog.hubspot.com/marketing/web-forms">Web forms: The ultimate guide</a>. <i>HubSpot Blog</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-3"><span class="cite-backlink"><b><a href="#cite_ref-3" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >Educative Answers Team. (2020, August 13).
-  <a rel="nofollow" href="https://www.educative.io/answers/what-are-the-different-ways-to-add-jquery-to-our-webpages">What are the different ways to add jQuery to our webpages</a>? <i>Educative</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-4"><span class="cite-backlink"><b><a href="#cite_ref-4" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >Staff. (2017, October 24).
-  <a rel="nofollow" href="http://web.simmons.edu/~grabiner/comm244/weeknine/including-javascript.html">Including JavaScript In Your Page</a>. <i>Simmons University</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-5"><span class="cite-backlink"><b><a href="#cite_ref-5" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >community wiki. (2012, February 5).
-  <a rel="nofollow" href="https://stackoverflow.com/questions/9151861/updating-jquery-version">Updating jQuery version</a>. <i>Stack Overflow</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-6"><span class="cite-backlink"><b><a href="#cite_ref-6" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >Refsnes Data. (2000, June 20).
-  <a rel="nofollow" href="https://www.w3schools.com/html/html_forms.asp">HTML Forms</a>. <i>w3schools</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-7"><span class="cite-backlink"><b><a href="#cite_ref-7" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >Ohans Emmanuel. (2021, July 30).
-  <a rel="nofollow" href="https://blog.logrocket.com/how-browser-rendering-works-behind-scenes/">How browser rendering works - behind the scenes</a>. <i>LogRocket Blog</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-8"><span class="cite-backlink"><b><a href="#cite_ref-8" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >OpenJS Foundation. (2010, May 22).
-  <a rel="nofollow" href="https://api.jquery.com/event.preventdefault/">event.preventDefault()</a>. <i>jQuery</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-9"><span class="cite-backlink"><b><a href="#cite_ref-9" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >OpenJS Foundation. (2010, May 22).
-  <a rel="nofollow" href="https://api.jquery.com/submit/">.submit()</a>. <i>jQuery</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-10"><span class="cite-backlink"><b><a href="#cite_ref-10" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >Staff. (2015, August 28).
-  <a rel="nofollow" href="https://www.tutorialsteacher.com/jquery/jquery-selectors">JQuery selectors</a>. <i>TutorialsTeacher</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-11"><span class="cite-backlink"><b><a href="#cite_ref-11" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >Staff. (2015, August 15).
-  <a rel="nofollow" href="https://www.javatpoint.com/jquery-val">JQuery .val()</a>. <i>JavaTpoint</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-12"><span class="cite-backlink"><b><a href="#cite_ref-12" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >Staff. (2021, May 15).
-  <a rel="nofollow" href="https://www.tutorialspoint.com/jquery-length-property">Jquery Length Property</a>. <i>Tutorials Point</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-13"><span class="cite-backlink"><b><a href="#cite_ref-13" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >Millner, R. (2008, August 18).
-  <a rel="nofollow" href="https://www.wired.com/2008/08/four-regular-expressions-to-check-email-addresses/">Four regular expressions to check email addresses</a>. <i>Wired</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-14"><span class="cite-backlink"><b><a href="#cite_ref-14" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >Staff. (2011, October 13).
-  <a rel="nofollow" href="https://www.w3resource.com/javascript/object-property-method/regexp-test.php">JavaScript test() method : Regexp Object</a>. <i>w3resource</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-15"><span class="cite-backlink"><b><a href="#cite_ref-15" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >GeeksforGeeks. (2019, February 13).
-  <a rel="nofollow" href="https://www.geeksforgeeks.org/jquery-remove/">JQuery: Remove()</a>. <i>GeeksforGeeks</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-16"><span class="cite-backlink"><b><a href="#cite_ref-16" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >Michaelscharnagl. (2021, November 29).
-  <a rel="nofollow" href="https://web.dev/learn/forms/form-element/">Use forms to get data from users</a>. <i>web.dev</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-17"><span class="cite-backlink"><b><a href="#cite_ref-17" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >EDUCBA. (2022, July 26).
-  <a rel="nofollow" href="https://www.educba.com/jquery-ajax-formdata/">JQuery ajax formdata: How does ajax formdata work in jQuery</a>. <i>EDUCBA</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-18"><span class="cite-backlink"><b><a href="#cite_ref-18" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >Wikimedia Foundation. (2005, May 7).
-  <a rel="nofollow" href="https://en.wikipedia.org/wiki/XMLHttpRequest">XMLHttpRequest</a>. <i>Wikipedia</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-19"><span class="cite-backlink"><b><a href="#cite_ref-19" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >Ilya Kantor. (2021, June 22).
-  <a rel="nofollow" href="https://javascript.info/formdata">Formdata. The Modern JavaScript Tutorial</a>. <i>javascript.info</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
-	<li id="cite_note-20"><span class="cite-backlink"><b><a href="#cite_ref-20" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite >freeCodeCamp.org. (2021, April 28).
-  <a rel="nofollow" href="https://www.freecodecamp.org/news/jquery-ajax-post-method/"> JQuery Ajax Post method</a>. <i>freeCodeCamp</i>.
-  Retrieved <span>April 10,</span> 2023</span>.
-</cite></li>
+  <li id="cite_note-1"><span class="cite-backlink"><b><a href="#cite_ref-1" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Wikimedia Foundation. (2023, March 23) <a rel="nofollow" href="https://en.wikipedia.org/wiki/HTML_form">HTML form</a>. <i>Wikipedia</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-2"><span class="cite-backlink"><b><a href="#cite_ref-2" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Baker, K. (2022, September 14). <a rel="nofollow" href="https://blog.hubspot.com/marketing/web-forms">Web forms: The ultimate guide</a>. <i>HubSpot Blog</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-3"><span class="cite-backlink"><b><a href="#cite_ref-3" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Educative Answers Team. (2020, August 13). <a rel="nofollow" href="https://www.educative.io/answers/what-are-the-different-ways-to-add-jquery-to-our-webpages">What are the different ways to add jQuery to our webpages</a>? <i>Educative</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-4"><span class="cite-backlink"><b><a href="#cite_ref-4" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Staff. (2017, October 24). <a rel="nofollow" href="http://web.simmons.edu/~grabiner/comm244/weeknine/including-javascript.html">Including JavaScript In Your Page</a>. <i>Simmons University</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-5"><span class="cite-backlink"><b><a href="#cite_ref-5" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>community wiki. (2012, February 5). <a rel="nofollow" href="https://stackoverflow.com/questions/9151861/updating-jquery-version">Updating jQuery version</a>. <i>Stack Overflow</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-6"><span class="cite-backlink"><b><a href="#cite_ref-6" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Refsnes Data. (2000, June 20). <a rel="nofollow" href="https://www.w3schools.com/html/html_forms.asp">HTML Forms</a>. <i>w3schools</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-7"><span class="cite-backlink"><b><a href="#cite_ref-7" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Ohans Emmanuel. (2021, July 30). <a rel="nofollow" href="https://blog.logrocket.com/how-browser-rendering-works-behind-scenes/">How browser rendering works - behind the scenes</a>. <i>LogRocket Blog</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-8"><span class="cite-backlink"><b><a href="#cite_ref-8" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>OpenJS Foundation. (2010, May 22). <a rel="nofollow" href="https://api.jquery.com/event.preventdefault/">event.preventDefault()</a>. <i>jQuery</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-9"><span class="cite-backlink"><b><a href="#cite_ref-9" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>OpenJS Foundation. (2010, May 22). <a rel="nofollow" href="https://api.jquery.com/submit/">.submit()</a>. <i>jQuery</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-10"><span class="cite-backlink"><b><a href="#cite_ref-10" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Staff. (2015, August 28). <a rel="nofollow" href="https://www.tutorialsteacher.com/jquery/jquery-selectors">JQuery selectors</a>. <i>TutorialsTeacher</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-11"><span class="cite-backlink"><b><a href="#cite_ref-11" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Staff. (2015, August 15). <a rel="nofollow" href="https://www.javatpoint.com/jquery-val">JQuery .val()</a>. <i>JavaTpoint</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-12"><span class="cite-backlink"><b><a href="#cite_ref-12" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Staff. (2021, May 15). <a rel="nofollow" href="https://www.tutorialspoint.com/jquery-length-property">Jquery Length Property</a>. <i>Tutorials Point</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-13"><span class="cite-backlink"><b><a href="#cite_ref-13" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Millner, R. (2008, August 18). <a rel="nofollow" href="https://www.wired.com/2008/08/four-regular-expressions-to-check-email-addresses/">Four regular expressions to check email addresses</a>. <i>Wired</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-14"><span class="cite-backlink"><b><a href="#cite_ref-14" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Staff. (2011, October 13). <a rel="nofollow" href="https://www.w3resource.com/javascript/object-property-method/regexp-test.php">JavaScript test() method : Regexp Object</a>. <i>w3resource</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-15"><span class="cite-backlink"><b><a href="#cite_ref-15" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>GeeksforGeeks. (2019, February 13). <a rel="nofollow" href="https://www.geeksforgeeks.org/jquery-remove/">JQuery: Remove()</a>. <i>GeeksforGeeks</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-16"><span class="cite-backlink"><b><a href="#cite_ref-16" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Michaelscharnagl. (2021, November 29). <a rel="nofollow" href="https://web.dev/learn/forms/form-element/">Use forms to get data from users</a>. <i>web.dev</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-17"><span class="cite-backlink"><b><a href="#cite_ref-17" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>EDUCBA. (2022, July 26). <a rel="nofollow" href="https://www.educba.com/jquery-ajax-formdata/">JQuery ajax formdata: How does ajax formdata work in jQuery</a>. <i>EDUCBA</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-18"><span class="cite-backlink"><b><a href="#cite_ref-18" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Wikimedia Foundation. (2005, May 7). <a rel="nofollow" href="https://en.wikipedia.org/wiki/XMLHttpRequest">XMLHttpRequest</a>. <i>Wikipedia</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-19"><span class="cite-backlink"><b><a href="#cite_ref-19" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Ilya Kantor. (2021, June 22). <a rel="nofollow" href="https://javascript.info/formdata">Formdata. The Modern JavaScript Tutorial</a>. <i>javascript.info</i>. Retrieved April 10, 2023.</cite></li>
+  <li id="cite_note-20"><span class="cite-backlink"><b><a href="#cite_ref-20" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>freeCodeCamp.org. (2021, April 28). <a rel="nofollow" href="https://www.freecodecamp.org/news/jquery-ajax-post-method/"> JQuery Ajax Post method</a>. <i>freeCodeCamp</i>. Retrieved April 10, 2023.</cite></li>
 </ol>
