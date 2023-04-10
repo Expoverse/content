@@ -50,7 +50,7 @@ https://cdnjs.cloudflare.com/ajax/libs/jquery/{version number}/jquery.min.js
                                               | - Library version
 ```
 
-## **Form markup**
+## Form markup
 
 <figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="402" src="https://appcode.app/wp-content/uploads/2022/03/Basic-Form-Handling-With-jQuery-1024x402.png" alt="Basic Form Handling With jQuery" class="wp-image-9180" srcset="https://appcode.app/wp-content/uploads/2022/03/Basic-Form-Handling-With-jQuery-1024x402.png 1024w, https://appcode.app/wp-content/uploads/2022/03/Basic-Form-Handling-With-jQuery-300x118.png 300w, https://appcode.app/wp-content/uploads/2022/03/Basic-Form-Handling-With-jQuery-768x302.png 768w, https://appcode.app/wp-content/uploads/2022/03/Basic-Form-Handling-With-jQuery-1536x603.png 1536w, https://appcode.app/wp-content/uploads/2022/03/Basic-Form-Handling-With-jQuery.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Basic Form Handling With jQuery</figcaption></figure>
 
