@@ -1,95 +1,70 @@
----
-
-title: How To Handle Form Data With jQuery
-taxonomy:
-    category: jQuery
-post_date: 2022-03-01 02:54:39
-
----
-
-The article demonstrates how to handle and validate a few types of form inputs with jQuery before sending the data to a server.
-
-Forms are a common feature of webpages.<sup id="cite_ref-1"><a href="#cite_note-1">\[1]</a></sup> They commonly provide services such as authenticating users via login and registration, collecting feedback, checking out for purchasing products, searching, profiles, adding descriptions, setting usernames, and any other implementations you can imagine.<sup id="cite_ref-2"><a href="#cite_note-2">\[2]</a></sup>
-
-In the sections below we'll cover a step-by-step breakdown installing jQuery, performing operations to collect data from the form input fields as variables, validating data is the correct type using by using a regular expression (regEx), and returning an error message if a field input is an invalid type whenever the form is submitted. The form used is an account registration example that will include the name, email, and password fields.
-
-## Contents
-
--   [Installing jQuery](#installing-jquery)
--   [Form markup](#form-markup)
--   [Form styles](#form-styles)
--   [jQuery form handling](#jquery-form-handling)
-    -   [On page load](#on-page-load)
-    -   [Intercepting the form submission](#intercepting-the-form-submission)
-    -   [Get fields as variables](#get-fields-as-variables)
--   [Form validation](#form-validation)
-    -   [Checking empty fields](#checking-empty-fields)
-    -   [Validate an email address](#validate-an-email-address)
-    -   [Error messages](#error-messages)
--   [Sending form data](#sending-form-data)
--   [See also](#see-also)
--   [References](#references)
-
-## Installing jQuery
-
-First, in order to use jQuery we need to add it to a webpage. There are multiple ways to include jQuery.<sup id="cite_ref-3"><a href="#cite_note-3">\[3]</a></sup>  We will being adding the jQuery library with a file hosted on a Content Delivery Network (CDN) in the `<head>` element of the website markup.
-
-*Note:* If you already have the jQuery library hosted on a server, skip this step and include the library via a script tag pointed at the https location of the file.
-
-A script element can be used to add a JavaScript file from a remote source such as a CDN to your webpage.<sup id="cite_ref-4"><a href="#cite_note-4">\[4]</a></sup> This file is hosted on cdn.js. Add this element before the closing `</head>` tag.
-
-```javascript
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-```
-
-To specify a different version of jQuery you can change the version in the URL.<sup id="cite_ref-5"><a href="#cite_note-5">\[5]</a></sup>
-
-```javascript
-https://cdnjs.cloudflare.com/ajax/libs/jquery/{version number}/jquery.min.js
+<p>The article demonstrates how to handle and validate a few types of form inputs with jQuery before sending the data to a server.</p>
+<p>Forms are a common feature of webpages.<sup id="cite_ref-1"><a href="#cite_note-1">[1]</a></sup> They commonly provide services such as authenticating users via login and registration, collecting feedback, checking out for purchasing products, searching, profiles, adding descriptions, setting usernames, and any other implementations you can imagine.<sup id="cite_ref-2"><a href="#cite_note-2">[2]</a></sup></p>
+<p>In the sections below we'll cover a step-by-step breakdown installing jQuery, performing operations to collect data from the form input fields as variables, validating data is the correct type using by using a regular expression (regEx), and returning an error message if a field input is an invalid type whenever the form is submitted. The form used is an account registration example that will include the name, email, and password fields.</p>
+<h2 id="contents"><a href="#contents" aria-hidden="true" tabindex="-1" rel="bookmark">Contents</a></h2>
+<ul>
+<li><a href="#installing-jquery">Installing jQuery</a></li>
+<li><a href="#form-markup">Form markup</a></li>
+<li><a href="#form-styles">Form styles</a></li>
+<li><a href="#jquery-form-handling">jQuery form handling</a>
+<ul>
+<li><a href="#on-page-load">On page load</a></li>
+<li><a href="#intercepting-the-form-submission">Intercepting the form submission</a></li>
+<li><a href="#get-fields-as-variables">Get fields as variables</a></li>
+</ul>
+</li>
+<li><a href="#form-validation">Form validation</a>
+<ul>
+<li><a href="#checking-empty-fields">Checking empty fields</a></li>
+<li><a href="#validate-an-email-address">Validate an email address</a></li>
+<li><a href="#error-messages">Error messages</a></li>
+</ul>
+</li>
+<li><a href="#sending-form-data">Sending form data</a></li>
+<li><a href="#see-also">See also</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+<h2 id="installing-jquery"><a href="#installing-jquery" aria-hidden="true" tabindex="-1" rel="bookmark">Installing jQuery</a></h2>
+<p>First, in order to use jQuery we need to add it to a webpage. There are multiple ways to include jQuery.<sup id="cite_ref-3"><a href="#cite_note-3">[3]</a></sup>  We will being adding the jQuery library with a file hosted on a Content Delivery Network (CDN) in the <code>&#x3C;head></code> element of the website markup.</p>
+<p><em>Note:</em> If you already have the jQuery library hosted on a server, skip this step and include the library via a script tag pointed at the https location of the file.</p>
+<p>A script element can be used to add a JavaScript file from a remote source such as a CDN to your webpage.<sup id="cite_ref-4"><a href="#cite_note-4">[4]</a></sup> This file is hosted on cdn.js. Add this element before the closing <code>&#x3C;/head></code> tag.</p>
+<pre><code class="language-javascript">&#x3C;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js">&#x3C;/script>
+</code></pre>
+<p>To specify a different version of jQuery you can change the version in the URL.<sup id="cite_ref-5"><a href="#cite_note-5">[5]</a></sup></p>
+<pre><code class="language-javascript">https://cdnjs.cloudflare.com/ajax/libs/jquery/{version number}/jquery.min.js
                                               ^
                                               | - Library version
-```
-
-## Form markup
-
+</code></pre>
+<h2 id="form-markup"><a href="#form-markup" aria-hidden="true" tabindex="-1" rel="bookmark">Form markup</a></h2>
 <figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="402" src="https://appcode.app/wp-content/uploads/2022/03/Basic-Form-Handling-With-jQuery-1024x402.png" alt="Basic Form Handling With jQuery" class="wp-image-9180" srcset="https://appcode.app/wp-content/uploads/2022/03/Basic-Form-Handling-With-jQuery-1024x402.png 1024w, https://appcode.app/wp-content/uploads/2022/03/Basic-Form-Handling-With-jQuery-300x118.png 300w, https://appcode.app/wp-content/uploads/2022/03/Basic-Form-Handling-With-jQuery-768x302.png 768w, https://appcode.app/wp-content/uploads/2022/03/Basic-Form-Handling-With-jQuery-1536x603.png 1536w, https://appcode.app/wp-content/uploads/2022/03/Basic-Form-Handling-With-jQuery.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Basic Form Handling With jQuery</figcaption></figure>
-
-A form requires HTML when using markup.<sup id="cite_ref-6"><a href="#cite_note-6">\[6]</a></sup> The HTML below is the markup of our form which tells the browser which input fields, labels, buttons, and attributes should be included.<sup id="cite_ref-7"><a href="#cite_note-7">\[7]</a></sup>
-
-```markup
-<div id="container">
-  <div class="form-container">
-    <form id="signup_form" method="post" action="#">
-      <h1>Create Account</h1>
-      <span>with your name, email, and password.</span>
-      <input id="name" type="text" placeholder="Name" />
-      <input id="email" type="email" placeholder="Email" />
-      <input id="password" type="password" placeholder="Password" />
-      <button>Sign Up</button>
-    </form>
-  </div>
-  <div class="overlay-container">
-    <div class="overlay">
-      <div class="overlay-panel">
-        <h1>Welcome Back!</h1>
-        <p>To manage your content login with your credentials.</p>
-        <button id="signIn">Sign In</button>
-      </div>
-    </div>
-  </div>
-</div>
-```
-
-## Form styles
-
-Below is what the account creation form looks like without CSS styles.
-
+<p>A form requires HTML when using markup.<sup id="cite_ref-6"><a href="#cite_note-6">[6]</a></sup> The HTML below is the markup of our form which tells the browser which input fields, labels, buttons, and attributes should be included.<sup id="cite_ref-7"><a href="#cite_note-7">[7]</a></sup></p>
+<pre><code class="language-markup">&#x3C;div id="container">
+  &#x3C;div class="form-container">
+    &#x3C;form id="signup_form" method="post" action="#">
+      &#x3C;h1>Create Account&#x3C;/h1>
+      &#x3C;span>with your name, email, and password.&#x3C;/span>
+      &#x3C;input id="name" type="text" placeholder="Name" />
+      &#x3C;input id="email" type="email" placeholder="Email" />
+      &#x3C;input id="password" type="password" placeholder="Password" />
+      &#x3C;button>Sign Up&#x3C;/button>
+    &#x3C;/form>
+  &#x3C;/div>
+  &#x3C;div class="overlay-container">
+    &#x3C;div class="overlay">
+      &#x3C;div class="overlay-panel">
+        &#x3C;h1>Welcome Back!&#x3C;/h1>
+        &#x3C;p>To manage your content login with your credentials.&#x3C;/p>
+        &#x3C;button id="signIn">Sign In&#x3C;/button>
+      &#x3C;/div>
+    &#x3C;/div>
+  &#x3C;/div>
+&#x3C;/div>
+</code></pre>
+<h2 id="form-styles"><a href="#form-styles" aria-hidden="true" tabindex="-1" rel="bookmark">Form styles</a></h2>
+<p>Below is what the account creation form looks like without CSS styles.</p>
 <figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="488" src="https://appcode.app/wp-content/uploads/2022/03/Form-Without-CSS-Styles-1024x488.png" alt="Form Without CSS Styles" class="wp-image-9184" srcset="https://appcode.app/wp-content/uploads/2022/03/Form-Without-CSS-Styles-1024x488.png 1024w, https://appcode.app/wp-content/uploads/2022/03/Form-Without-CSS-Styles-300x143.png 300w, https://appcode.app/wp-content/uploads/2022/03/Form-Without-CSS-Styles-768x366.png 768w, https://appcode.app/wp-content/uploads/2022/03/Form-Without-CSS-Styles.png 1338w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Form Without CSS Styles</figcaption></figure>
-
-**Note**: Remember, the CSS is not fixed; you can customize the styles.
-
-```css
-* {
+<p><strong>Note</strong>: Remember, the CSS is not fixed; you can customize the styles.</p>
+<pre><code class="language-css">* {
   box-sizing: border-box;
 }
 
@@ -216,20 +191,13 @@ input {
   display: block;
   width: 100%;
 }
-```
-
-After adding the CSS styles to your signup form, it should look similar but not identical to the image below as we removed some of the styles and HTML markup to simplify the demonstration.
-
+</code></pre>
+<p>After adding the CSS styles to your signup form, it should look similar but not identical to the image below as we removed some of the styles and HTML markup to simplify the demonstration.</p>
 <figure class="wp-block-image size-large"><img loading="lazy" width="946" height="589" src="https://appcode.app/wp-content/uploads/2022/03/Form-With-CSS-Styles.png" alt="Form With CSS Styles" class="wp-image-9186" srcset="https://appcode.app/wp-content/uploads/2022/03/Form-With-CSS-Styles.png 946w, https://appcode.app/wp-content/uploads/2022/03/Form-With-CSS-Styles-300x187.png 300w, https://appcode.app/wp-content/uploads/2022/03/Form-With-CSS-Styles-768x478.png 768w" sizes="(max-width: 946px) 100vw, 946px"><figcaption>Form With CSS Styles</figcaption></figure>
-
-## jQuery form handling
-
-After adding the styles and properties to the form, we need to add the jQuery functionality to start validating user input.
-
-The below code will add field validation and error handling to the form.
-
-```javascript
-$(document).ready(function () {
+<h2 id="jquery-form-handling"><a href="#jquery-form-handling" aria-hidden="true" tabindex="-1" rel="bookmark">jQuery form handling</a></h2>
+<p>After adding the styles and properties to the form, we need to add the jQuery functionality to start validating user input.</p>
+<p>The below code will add field validation and error handling to the form.</p>
+<pre><code class="language-javascript">$(document).ready(function () {
   
   $("#signup_form").submit(function (e) {
     e.preventDefault();    
@@ -241,31 +209,31 @@ $(document).ready(function () {
     $(".error").remove();
     
     // Check the name length, return an error if field is empty.
-    if (name.length < 1) {
+    if (name.length &#x3C; 1) {
       $("#name").after(
-        '<span class="error">Name is required</span>'
+        '&#x3C;span class="error">Name is required&#x3C;/span>'
       );
       return;
     }
     
     // Check the email length, return an error if the field is empty.
     // Also run a regex against the email to verify the value is an email.
-    if (email.length < 1) {
-      $("#email").after('<span class="error">Email is required</span>');
+    if (email.length &#x3C; 1) {
+      $("#email").after('&#x3C;span class="error">Email is required&#x3C;/span>');
       return;
     } else {
       var regEx = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
       var validEmail = regEx.test(email);
       if (!validEmail) {
-        $("#email").after('<span class="error">Enter a valid email</span>');
+        $("#email").after('&#x3C;span class="error">Enter a valid email&#x3C;/span>');
         return;
       }
     }
     
     // Check the length of the password value, if empty return an error. 
-    if (password.length < 8) {
+    if (password.length &#x3C; 8) {
       $("#password").after(
-        '<span class="error">Password must be at least 8 characters long</span>'
+        '&#x3C;span class="error">Password must be at least 8 characters long&#x3C;/span>'
       );
       return;
     }
@@ -283,130 +251,80 @@ $(document).ready(function () {
     );
   });
 });
-```
-
-Let’s describe each part of the code using smaller blocks to understand what is happening within our jQuery code.
-
-### On page load
-
-The jQuery ready function executes the code to only after the DOM is ready in the browser.
-
-```javascript
-$(document).ready(function() {
+</code></pre>
+<p>Let’s describe each part of the code using smaller blocks to understand what is happening within our jQuery code.</p>
+<h3 id="on-page-load"><a href="#on-page-load" aria-hidden="true" tabindex="-1" rel="bookmark">On page load</a></h3>
+<p>The jQuery ready function executes the code to only after the DOM is ready in the browser.</p>
+<pre><code class="language-javascript">$(document).ready(function() {
  	//CODE HERE
 });
-```
-
-### Intercepting the form submission
-
-The form submit is triggered whenever the user clicks the submit button in the form. By using the jQuery `e.preventDefault()` function, the form is not sent to the server automatically, it cancels the default event by not triggering it.<sup id="cite_ref-8"><a href="#cite_note-8">\[8]</a></sup> We could then submit it by using the `.submit()` function after successful validation.<sup id="cite_ref-9"><a href="#cite_note-9">\[9]</a></sup>  This allows us modify or validate the form data before allowing the data to send.
-
-```javascript
-$('#signup_form').submit(function(e) {
+</code></pre>
+<h3 id="intercepting-the-form-submission"><a href="#intercepting-the-form-submission" aria-hidden="true" tabindex="-1" rel="bookmark">Intercepting the form submission</a></h3>
+<p>The form submit is triggered whenever the user clicks the submit button in the form. By using the jQuery <code>e.preventDefault()</code> function, the form is not sent to the server automatically, it cancels the default event by not triggering it.<sup id="cite_ref-8"><a href="#cite_note-8">[8]</a></sup> We could then submit it by using the <code>.submit()</code> function after successful validation.<sup id="cite_ref-9"><a href="#cite_note-9">[9]</a></sup>  This allows us modify or validate the form data before allowing the data to send.</p>
+<pre><code class="language-javascript">$('#signup_form').submit(function(e) {
    e.preventDefault();
    //Form dating handling such as modifcation or validation
 });
-```
-
-### Get fields as variables
-
-The syntax below is the general format in jQuery to select an input value from specific input element.<sup id="cite_ref-10"><a href="#cite_note-10">\[10]</a></sup>
-
-**Syntax**:
-
-```javascript
-var fieldName  = $('fieldCSSSelector').val();
-```
-
-Below, we use three variables, the `name`, `email`, and `password`. The value of these variables can be set from the input value of their respective fields by using the `.val()` function jQuery.<sup id="cite_ref-11"><a href="#cite_note-11">\[11]</a></sup>
-
-```javascript
-var name = $("#name").val();
+</code></pre>
+<h3 id="get-fields-as-variables"><a href="#get-fields-as-variables" aria-hidden="true" tabindex="-1" rel="bookmark">Get fields as variables</a></h3>
+<p>The syntax below is the general format in jQuery to select an input value from specific input element.<sup id="cite_ref-10"><a href="#cite_note-10">[10]</a></sup></p>
+<p><strong>Syntax</strong>:</p>
+<pre><code class="language-javascript">var fieldName  = $('fieldCSSSelector').val();
+</code></pre>
+<p>Below, we use three variables, the <code>name</code>, <code>email</code>, and <code>password</code>. The value of these variables can be set from the input value of their respective fields by using the <code>.val()</code> function jQuery.<sup id="cite_ref-11"><a href="#cite_note-11">[11]</a></sup></p>
+<pre><code class="language-javascript">var name = $("#name").val();
 var email = $("#email").val();
 var password = $("#password").val();
-```
-
-## Form validation
-
-All of the markup, styles, and jQuery functionality is not fixed for the example we demonstrated. You can change the code to fit the needs of you or your organization. Let's go over validating fields and using error messages.
-
-### Checking empty fields
-
-We can use the length attribute to retrieve the character length of the input.<sup id="cite_ref-12"><a href="#cite_note-12">\[12]</a></sup> The `name.length` combined with an if statement checks whether the user entered a name. If the user didn’t fill this field with at least 1 character it will show an error message, “Name is required”.
-
-```javascript
-// Check the name length, return an error if field is empty.
-if (name.length < 1) {
+</code></pre>
+<h2 id="form-validation"><a href="#form-validation" aria-hidden="true" tabindex="-1" rel="bookmark">Form validation</a></h2>
+<p>All of the markup, styles, and jQuery functionality is not fixed for the example we demonstrated. You can change the code to fit the needs of you or your organization. Let's go over validating fields and using error messages.</p>
+<h3 id="checking-empty-fields"><a href="#checking-empty-fields" aria-hidden="true" tabindex="-1" rel="bookmark">Checking empty fields</a></h3>
+<p>We can use the length attribute to retrieve the character length of the input.<sup id="cite_ref-12"><a href="#cite_note-12">[12]</a></sup> The <code>name.length</code> combined with an if statement checks whether the user entered a name. If the user didn’t fill this field with at least 1 character it will show an error message, “Name is required”.</p>
+<pre><code class="language-javascript">// Check the name length, return an error if field is empty.
+if (name.length &#x3C; 1) {
   $("#name").after(
-    '<span class="error">Name is required</span>');
+    '&#x3C;span class="error">Name is required&#x3C;/span>');
   return
-```
-
+</code></pre>
 <figure class="wp-block-image size-large"><img loading="lazy" width="631" height="339" src="https://appcode.app/wp-content/uploads/2022/03/Checking-the-Password-Field-Is-Not-Empty-in-Forms-With-jQuery.png" alt="Checking the Password Field Is Not Empty in Forms With jQuery" class="wp-image-9173" srcset="https://appcode.app/wp-content/uploads/2022/03/Checking-the-Password-Field-Is-Not-Empty-in-Forms-With-jQuery.png 631w, https://appcode.app/wp-content/uploads/2022/03/Checking-the-Password-Field-Is-Not-Empty-in-Forms-With-jQuery-300x161.png 300w" sizes="(max-width: 631px) 100vw, 631px"><figcaption>Checking the Password Field Is Not Empty in Forms With jQuery</figcaption></figure>
-
-The `email.length` if statement checks whether the user entered his email correctly. If the user didn’t fill this field it will show an error message.
-
-```javascript
-// Check the email length, return an error if the field is empty.
-if (email.length < 1) {
-   $("#email").after('<span class="error">Email is required</span>');
+<p>The <code>email.length</code> if statement checks whether the user entered his email correctly. If the user didn’t fill this field it will show an error message.</p>
+<pre><code class="language-javascript">// Check the email length, return an error if the field is empty.
+if (email.length &#x3C; 1) {
+   $("#email").after('&#x3C;span class="error">Email is required&#x3C;/span>');
    return;
 }
-```
-
+</code></pre>
 <figure class="wp-block-image size-large"><img loading="lazy" width="672" height="334" src="https://appcode.app/wp-content/uploads/2022/03/Checking-the-Email-Field-Is-Not-Empty-in-Forms-With-jQuery.png" alt="Checking the Email Field Is Not Empty in Forms With jQuery" class="wp-image-9175" srcset="https://appcode.app/wp-content/uploads/2022/03/Checking-the-Email-Field-Is-Not-Empty-in-Forms-With-jQuery.png 672w, https://appcode.app/wp-content/uploads/2022/03/Checking-the-Email-Field-Is-Not-Empty-in-Forms-With-jQuery-300x149.png 300w" sizes="(max-width: 672px) 100vw, 672px"><figcaption>Checking the Email Field Is Not Empty in Forms With jQuery</figcaption></figure>
-
-Addionally we use the length on the password variable. `password.length` also checks whether a user skipped the password field. The code will show an error message if the password field is less than 8 characters.
-
-```javascript
-// Check the length of the password value, if empty return an error.
-if (password.length < 8) {
-  $("#password").after('<span class="error">Password must be at least 8 characters long</span>'
+<p>Addionally we use the length on the password variable. <code>password.length</code> also checks whether a user skipped the password field. The code will show an error message if the password field is less than 8 characters.</p>
+<pre><code class="language-javascript">// Check the length of the password value, if empty return an error.
+if (password.length &#x3C; 8) {
+  $("#password").after('&#x3C;span class="error">Password must be at least 8 characters long&#x3C;/span>'
 );
   return;
 }
-```
-
+</code></pre>
 <figure class="wp-block-image size-large"><img loading="lazy" width="738" height="378" src="https://appcode.app/wp-content/uploads/2022/03/Checking-the-Password-Field-Is-Valid-in-Forms-With-jQuery.png" alt="Checking the Password Field Is Valid in Forms With jQuery" class="wp-image-9176" srcset="https://appcode.app/wp-content/uploads/2022/03/Checking-the-Password-Field-Is-Valid-in-Forms-With-jQuery.png 738w, https://appcode.app/wp-content/uploads/2022/03/Checking-the-Password-Field-Is-Valid-in-Forms-With-jQuery-300x154.png 300w" sizes="(max-width: 738px) 100vw, 738px"><figcaption>Checking the Password Field Is Valid in Forms With jQuery</figcaption></figure>
-
-### Validate an email address
-
-The **regEx** variable is regular expression to match an email address. There are several variations of the regular expression online.<sup id="cite_ref-13"><a href="#cite_note-13">\[13]</a></sup> This expression matches an email address format which allows us to check the validity of input in the email field.
-
-```javascript
-var regEx = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-```
-
-Using `regEx.test()` returns a Boolean value if there is a match.<sup id="cite_ref-14"><a href="#cite_note-14">\[14]</a></sup> The variable `validEmail` will be `false` if the email address is invalid.
-
-```javascript
-var validEmail = regEx.test(email);
-```
-
-The `!validEmail` if statement checks the Boolean value of the variable. If the variable if `false`, it will show an error message.
-
-```javascript
-// Also run a regex against the email to verify the value is an email.
+<h3 id="validate-an-email-address"><a href="#validate-an-email-address" aria-hidden="true" tabindex="-1" rel="bookmark">Validate an email address</a></h3>
+<p>The <strong>regEx</strong> variable is regular expression to match an email address. There are several variations of the regular expression online.<sup id="cite_ref-13"><a href="#cite_note-13">[13]</a></sup> This expression matches an email address format which allows us to check the validity of input in the email field.</p>
+<pre><code class="language-javascript">var regEx = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+</code></pre>
+<p>Using <code>regEx.test()</code> returns a Boolean value if there is a match.<sup id="cite_ref-14"><a href="#cite_note-14">[14]</a></sup> The variable <code>validEmail</code> will be <code>false</code> if the email address is invalid.</p>
+<pre><code class="language-javascript">var validEmail = regEx.test(email);
+</code></pre>
+<p>The <code>!validEmail</code> if statement checks the Boolean value of the variable. If the variable if <code>false</code>, it will show an error message.</p>
+<pre><code class="language-javascript">// Also run a regex against the email to verify the value is an email.
 if (!validEmail) {
-   $("#email").after('<span class="error">Enter a valid email</span>');
+   $("#email").after('&#x3C;span class="error">Enter a valid email&#x3C;/span>');
    return;
 }
-```
-
-### Error messages
-
-We also remove  all prior error messages from the form if the user has already clicked submit once. The `.remove()` jQuery function removes HTML elements.<sup id="cite_ref-15"><a href="#cite_note-15">\[15]</a></sup>
-
-```javascript
-$(".error").remove();
-```
-
-## Sending form data
-
-In the last section of the jQuery code, you see an alert function containing the name and the email variable. Usually, this section would prepare and send the form data, and the data is typically sent to a server that handles the new user registration.
-
-```javascript
- // If form has been filled send the data to a server.
+</code></pre>
+<h3 id="error-messages"><a href="#error-messages" aria-hidden="true" tabindex="-1" rel="bookmark">Error messages</a></h3>
+<p>We also remove  all prior error messages from the form if the user has already clicked submit once. The <code>.remove()</code> jQuery function removes HTML elements.<sup id="cite_ref-15"><a href="#cite_note-15">[15]</a></sup></p>
+<pre><code class="language-javascript">$(".error").remove();
+</code></pre>
+<h2 id="sending-form-data"><a href="#sending-form-data" aria-hidden="true" tabindex="-1" rel="bookmark">Sending form data</a></h2>
+<p>In the last section of the jQuery code, you see an alert function containing the name and the email variable. Usually, this section would prepare and send the form data, and the data is typically sent to a server that handles the new user registration.</p>
+<pre><code class="language-javascript"> // If form has been filled send the data to a server.
  // In this case we create an alert message
  alert(
    "Name : " +
@@ -417,20 +335,16 @@ In the last section of the jQuery code, you see an alert function containing the
    "\n" +
    "DO SOMETHING WITH THE INFORMATION"
  );
-```
-
+</code></pre>
 <figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="https://appcode.app/wp-content/uploads/2022/03/Sending-Form-Data-Using-jQuery-1024x576.png" alt="Sending Form Data Using jQuery" class="wp-image-9178" srcset="https://appcode.app/wp-content/uploads/2022/03/Sending-Form-Data-Using-jQuery-1024x576.png 1024w, https://appcode.app/wp-content/uploads/2022/03/Sending-Form-Data-Using-jQuery-300x169.png 300w, https://appcode.app/wp-content/uploads/2022/03/Sending-Form-Data-Using-jQuery-768x432.png 768w, https://appcode.app/wp-content/uploads/2022/03/Sending-Form-Data-Using-jQuery-1536x864.png 1536w, https://appcode.app/wp-content/uploads/2022/03/Sending-Form-Data-Using-jQuery.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Sending Form Data Using jQuery</figcaption></figure>
-
-After validating form data, it is typically sent to be processed somewhere such as a server.<sup id="cite_ref-16"><a href="#cite_note-16">\[16]</a></sup> There are several ways to process user-provided data such as using Ajax,<sup id="cite_ref-17"><a href="#cite_note-17">\[17]</a></sup> an XMLHttpRequest,<sup id="cite_ref-18"><a href="#cite_note-18">\[18]</a></sup> FormData with a form element,<sup id="cite_ref-19"><a href="#cite_note-19">\[19]</a></sup> `.post()` jQuery function,<sup id="cite_ref-20"><a href="#cite_note-20">\[20]</a></sup> and many other ways.
-
-## See also
-
--   [Form Examples](/css-form-examples-and-code/)
--   [jQuery Ajax Contact Form](/how-to-create-a-jquery-ajax-contact-form-in-php/)
--   [Creating a Basic Web Form](/creating-a-basic-web-form-with-css-in-minutes/)
-
-## References
-
+<p>After validating form data, it is typically sent to be processed somewhere such as a server.<sup id="cite_ref-16"><a href="#cite_note-16">[16]</a></sup> There are several ways to process user-provided data such as using Ajax,<sup id="cite_ref-17"><a href="#cite_note-17">[17]</a></sup> an XMLHttpRequest,<sup id="cite_ref-18"><a href="#cite_note-18">[18]</a></sup> FormData with a form element,<sup id="cite_ref-19"><a href="#cite_note-19">[19]</a></sup> <code>.post()</code> jQuery function,<sup id="cite_ref-20"><a href="#cite_note-20">[20]</a></sup> and many other ways.</p>
+<h2 id="see-also"><a href="#see-also" aria-hidden="true" tabindex="-1" rel="bookmark">See also</a></h2>
+<ul>
+<li><a href="/css-form-examples-and-code/">Form Examples</a></li>
+<li><a href="/how-to-create-a-jquery-ajax-contact-form-in-php/">jQuery Ajax Contact Form</a></li>
+<li><a href="/creating-a-basic-web-form-with-css-in-minutes/">Creating a Basic Web Form</a></li>
+</ul>
+<h2 id="references"><a href="#references" aria-hidden="true" tabindex="-1" rel="bookmark">References</a></h2>
 <ol class="reference-list">
   <li id="cite_note-1"><span class="cite-backlink"><b><a href="#cite_ref-1" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Wikimedia Foundation. (2023, March 23) <a rel="nofollow" href="https://en.wikipedia.org/wiki/HTML_form">HTML form</a>. <i>Wikipedia</i>. Retrieved April 10, 2023.</cite></li>
   <li id="cite_note-2"><span class="cite-backlink"><b><a href="#cite_ref-2" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Baker, K. (2022, September 14). <a rel="nofollow" href="https://blog.hubspot.com/marketing/web-forms">Web forms: The ultimate guide</a>. <i>HubSpot Blog</i>. Retrieved April 10, 2023.</cite></li>

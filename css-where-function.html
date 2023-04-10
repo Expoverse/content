@@ -1,0 +1,339 @@
+<p>This article demonstrates how to use the CSS <code>:where()</code> function within CSS Cascading Style Sheets. Included in this guide are code, definitions, and examples.</p>
+<h2 id="contents"><a href="#contents" aria-hidden="true" tabindex="-1" rel="bookmark">Contents</a></h2>
+<ul>
+<li><a href="#what-is-css-where">What is CSS :where()?</a></li>
+<li><a href="#syntax">Syntax</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#use-cases-of-where">Use Cases of :where()</a></li>
+<li><a href="#specificity">Specificity</a></li>
+<li><a href="#forgiving-selectors-lists">Forgiving Selectors Lists</a></li>
+<li><a href="#refactoring-using-where">Refactoring Using :where()</a></li>
+<li><a href="#using-where-to-target-elements">Using :where() To Target Elements</a></li>
+<li><a href="#try-it">Try It</a></li>
+<li><a href="#specifications">Specifications</a></li>
+<li><a href="#see-also">See Also</a></li>
+</ul>
+<h2 id="what-is-css-where"><a href="#what-is-css-where" aria-hidden="true" tabindex="-1" rel="bookmark">What is CSS :where()?</a></h2>
+<p>The <code>:where()</code> function is a functional pseudo-class that takes a list of selectors as its argument and applies the styles to the selected HTML elements in the list. It allows developers to specify conditions that must be met before a particular style is applied to an element.</p>
+<h2 id="syntax"><a href="#syntax" aria-hidden="true" tabindex="-1" rel="bookmark">Syntax</a></h2>
+<p>The syntax for the <code>where()</code> function is as follows:</p>
+<pre><code class="language-CSS">selector where(condition) {
+  /* Styles to apply */
+}
+
+:where( &#x3C;complex-selector-list> )
+</code></pre>
+<p>In this syntax, the <code>selector</code> is any valid CSS selector, and <code>condition</code> which is a boolean expression that must be true for the styles to be applied. If the condition is <code>false</code>, the styles will be ignored.</p>
+<p>The parameter of the <code>:where()</code> function is a <code>&#x3C;complex-selector-list></code> data type and should be replaced with an example value such as: <code>:where(:not(:hover))</code>.</p>
+<h2 id="examples"><a href="#examples" aria-hidden="true" tabindex="-1" rel="bookmark">Examples</a></h2>
+<p>The examples below use selectors and selector list values for the parameter of the <code>:where()</code> function.</p>
+<pre><code class="language-CSS">:where(:not(:hover))
+:where(ol, ul, menu:unsupported)
+:where(section, aside, footer) a
+:where(header, main, footer) a:hover
+:where(header, footer) > p
+:where(button, a)
+:where(.light-theme, .bright-theme)
+:where(ol[class])
+:where(:valid, :unsupported)
+:where(#section) h2
+</code></pre>
+<h2 id="usage"><a href="#usage" aria-hidden="true" tabindex="-1" rel="bookmark">Usage</a></h2>
+<p>You can apply the <code>:where()</code> function to any element by using CSS selectors and adding styles.</p>
+<pre><code class="language-CSS">:where(ol, ul) :where(ol, ul) ol {
+    list-style-type: lower-greek;
+    color: green;
+}
+
+:where(section) a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+article :where(footer, aside) > p {
+  color: orange;
+}
+
+:where(button, a) {
+  color: purple;
+}
+
+main :where(h1, h2, h3) {
+  color: orange;
+}
+</code></pre>
+<p>For example, suppose we want to apply a different background color to paragraphs that contain the word "important". We could use the following CSS:</p>
+<pre><code class="language-CSS">p where(:contains("important")) {
+  background-color: yellow;
+}
+</code></pre>
+<p>In this CSS, the <code>where()</code> function is used to apply the <code>background-color</code> property only to paragraphs that contain the word <code>important</code>. The <code>:contains()</code> pseudo-class is used to match any element that contains the specified text.</p>
+<p>Applying styles to the first child element that meets a condition:</p>
+<pre><code class="language-CSS">div where(p:first-of-type) {
+  /* styles to apply */
+}
+</code></pre>
+<p>In this example, the <code>where()</code> function is used to apply styles to the first paragraph element inside a <code>div</code> element.</p>
+<p>Applying styles to an element that has a specific attribute:</p>
+<pre><code class="language-CSS">a where([target="_blank"]) {
+  /* styles to apply */
+}
+</code></pre>
+<p>In this example, the <code>where()</code> function is used to apply styles to an <code>anchor</code> element that has the attribute target set to <code>_blank</code>.</p>
+<h2 id="use-cases-of-where"><a href="#use-cases-of-where" aria-hidden="true" tabindex="-1" rel="bookmark">Use Cases of :where()</a></h2>
+<ul>
+<li><strong>Overriding Styles</strong> – <code>:where()</code> is helpful for creating filters in a selector while keeping associate selectors easy to override.</li>
+<li><strong>Shorting Selector Lists</strong> – <code>:where()</code> can shorten CSS style selectors by reducing redundancy and is very useful in shortening CSS code.</li>
+</ul>
+<pre><code class="language-CSS">header a:hover,
+main a:hover,
+aside:hover,
+footer a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+</code></pre>
+<p>The above CSS selectors can be reduced by using the <code>:where()</code> function because the selectors can be turned into a list. The example below reduced the characters from <strong>100</strong> to <strong>89</strong>, an 11% reduction.</p>
+<pre><code class="language-CSS">:where(header, main, aside, footer) a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+</code></pre>
+<p>Using the <code>:where()</code> function gives us the advantage of creating shorter and more readily understandable lists.</p>
+<h2 id="specificity"><a href="#specificity" aria-hidden="true" tabindex="-1" rel="bookmark">Specificity</a></h2>
+<p>CSS <code>:where()</code> function is similar to :is() syntax and functionality. However, the difference between <code>:is()</code> and <code>:where()</code> is that :where() is their specificity.</p>
+<p>The CSS <code>:where()</code> function always has a specificity of zero. This means that the <code>:where()</code> pseudo-class or its argument list does not contribute to the specificity of the selector.</p>
+<p>An example of specificity failing.</p>
+<pre><code class="language-CSS">a:not(:hover) {
+  text-decoration: none;
+  color: blue;
+}
+
+nav a {
+  /* Has no effect */
+  text-decoration: underline;
+  color: orange;
+}
+</code></pre>
+<p>However, by using <code>:where()</code> you can explicitly declare selector intent:</p>
+<pre><code class="language-CSS">a:where(:not(:hover)) {
+  text-decoration: none;
+
+  color: blue;
+}
+
+nav a {
+  /* Works now! */
+  text-decoration: underline;
+
+  color: orange;
+}
+</code></pre>
+<h2 id="forgiving-selectors-lists"><a href="#forgiving-selectors-lists" aria-hidden="true" tabindex="-1" rel="bookmark">Forgiving Selectors Lists</a></h2>
+<p>The <code>:where()</code> function is forgiving in that each selector within the comma-separated list <code>:where(x, y, z)</code> is ignored if it is an invalid selector. With <code>:where()</code> being forgiving, this means invalid selectors within the pseudo-class don’t disable the entire selector like they normally do.</p>
+<p>Syntactically the comma list is a <a href="https://www.w3.org/TR/selectors-4/#forgiving-selector"><forgiving-selector-list></a> data value which is equivalent to <code>&#x3C;any-value>?</code> The browser then parses the forgiving selector list into valid selectors to obtain its actual value.</p>
+<p>Below, the <code>totally:fake</code> selector is ignored while the heading selector isn’t.</p>
+<pre><code class="language-CSS">:where(&#x3C;forgiving-selector-list> | &#x3C;any-value>?) {
+  /* Some element */
+}
+
+/* Invalid "totally:fake is ignored */
+:where(heading, totally:fake) {
+  /* will still select heading */
+}
+</code></pre>
+<h2 id="refactoring-using-where"><a href="#refactoring-using-where" aria-hidden="true" tabindex="-1" rel="bookmark">Refactoring Using :where()</a></h2>
+<p>When using <code>:where()</code>, we can place it at the beginning, middle, or end of a selector. This allows us to use the function to combine selectors in different ways.</p>
+<p>Here is an example of multiple styles and selectors.</p>
+<pre><code class="language-CSS">/* first list */
+header a:hover,
+section: a:hover,
+main a:hover,
+footer a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+/* second list */
+article header > p,
+article section > p,
+article footer > p {
+  color: blue;
+}
+
+/* third list */
+.light-theme button,
+.light-theme a {
+  color: black;
+}
+
+</code></pre>
+<p>In the first CSS style block, we set the <code>green</code> and <code>underline</code> values to be applied to the <code>header</code>, <code>section</code>, <code>main</code>, and <code>footer</code> elements whenever the link element is hovered.</p>
+<p>In the second list, we specify that the article’s <code>header</code>, <code>section</code>, and <code>foote</code> paragraph elements should be styled with <code>blue</code> text.</p>
+<p>The last list uses the <code>.light-theme</code> class to apply styles to the link and button elements. The class contains properties to set the text color to <code>black</code> for those elements.</p>
+<p>Now we can use the <code>:where()</code> function to reduce the CSS.</p>
+<pre><code class="language-CSS">/* first list */
+/* at the beginning */
+:where(header, section, main, footer) a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+/* second list */
+/* in the middle */
+article :where(header, section, footer) > p {
+  color: blue;
+}
+
+/* third list */
+/* at the end */
+.light-theme :where(button, a) {
+  color: black;
+}
+</code></pre>
+<p>We replaced each selector group with a <code>:where()</code> function. This resulted in fewer selectors, as the selector’s redundant parts were removed.</p>
+<h2 id="using-where-to-target-elements"><a href="#using-where-to-target-elements" aria-hidden="true" tabindex="-1" rel="bookmark">Using :where() To Target Elements</a></h2>
+<p>Using another example, we can use the <code>:where()</code> function to target different links within HTML elements such as the header, sections, and footers.</p>
+<figure class="wp-block-image size-large">
+  <img loading="lazy" width="1024" height="319" src="https://appcode.app/wp-content/uploads/2022/10/Targeting-Link-Elements-With-CSS-where-1024x319.png" alt="Targeting Link Elements With CSS where()" class="wp-image-14992" srcset="https://appcode.app/wp-content/uploads/2022/10/Targeting-Link-Elements-With-CSS-where-1024x319.png 1024w, https://appcode.app/wp-content/uploads/2022/10/Targeting-Link-Elements-With-CSS-where-300x94.png 300w, https://appcode.app/wp-content/uploads/2022/10/Targeting-Link-Elements-With-CSS-where-768x240.png 768w, https://appcode.app/wp-content/uploads/2022/10/Targeting-Link-Elements-With-CSS-where-1536x479.png 1536w, https://appcode.app/wp-content/uploads/2022/10/Targeting-Link-Elements-With-CSS-where.png 1641w" sizes="(max-width: 1024px) 100vw, 1024px">
+  <figcaption>Targeting Link Elements With CSS where()</figcaption>
+</figure>
+<pre><code class="language-HTML">&#x3C;article>
+  &#x3C;h2>:where()-styled links&#x3C;/h2>
+  &#x3C;header class="where-styling">
+    &#x3C;p>
+      Here is my header content. This
+      &#x3C;a href="https://appcode.app">contains a link&#x3C;/a>.
+    &#x3C;/p>
+  &#x3C;/header>
+
+  &#x3C;section class="where-styling">
+    &#x3C;p>
+      Here is my section content. This
+      &#x3C;a href="https://appcode.app">also contains a link&#x3C;/a>.
+    &#x3C;/p>
+  &#x3C;/section>
+
+  &#x3C;aside class="where-styling">
+    &#x3C;p>
+      Here is my aside content. This
+      &#x3C;a href="https://appcode.app">also contains another link&#x3C;/a>.
+    &#x3C;/p>
+  &#x3C;/aside>
+
+  &#x3C;footer class="where-styling">
+    &#x3C;p>
+      This is my footer, also containing
+      &#x3C;a href="https://appcode.app">a link&#x3C;/a>.
+    &#x3C;/p>
+  &#x3C;/footer>
+&#x3C;/article>
+</code></pre>
+<pre><code class="language-CSS">html {
+  font-family: sans-serif;
+  font-size: 150%;
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+:where(header.where-styling) a {
+  color: blue;
+}
+
+:where(section.where-styling) a {
+  color: green;
+}
+
+:where(aside.where-styling, footer.where-styling) a {
+  color: orange;
+}
+</code></pre>
+<p>The last CSS selector uses a <code>:where()</code> to override the last link element color from its default orange.</p>
+<h2 id="try-it"><a href="#try-it" aria-hidden="true" tabindex="-1" rel="bookmark">Try It</a></h2>
+<p>Below, we show how to use the <code>:where()</code> function to style and target different levels of unordered and ordered lists by supplying selectors in the parameter <code>:where()</code>.</p>
+<figure class="wp-block-image size-large">
+  <img loading="lazy" width="1024" height="360" src="https://appcode.app/wp-content/uploads/2022/10/Using-The-CSS-where-Function-1024x360.png" alt="Using The CSS where() Function" class="wp-image-14988" srcset="https://appcode.app/wp-content/uploads/2022/10/Using-The-CSS-where-Function-1024x360.png 1024w, https://appcode.app/wp-content/uploads/2022/10/Using-The-CSS-where-Function-300x106.png 300w, https://appcode.app/wp-content/uploads/2022/10/Using-The-CSS-where-Function-768x270.png 768w, https://appcode.app/wp-content/uploads/2022/10/Using-The-CSS-where-Function.png 1392w" sizes="(max-width: 1024px) 100vw, 1024px">
+  <figcaption>Using The CSS where() Function</figcaption>
+</figure>
+<pre><code class="language-HTML">&#x3C;ol>
+  &#x3C;li>Shapes&#x3C;/li>
+  &#x3C;ul>
+    &#x3C;li>Square&#x3C;/li>
+    &#x3C;li>
+      &#x3C;ul>
+        &#x3C;li>Color&#x3C;/li>
+        &#x3C;li>Size&#x3C;/li>
+        &#x3C;li>
+          &#x3C;ol>
+            &#x3C;li>X&#x3C;/li>
+            &#x3C;li>Y&#x3C;/li>
+            &#x3C;li>Z&#x3C;/li>
+          &#x3C;/ol>
+        &#x3C;/li>
+        &#x3C;li>Weight&#x3C;/li>
+      &#x3C;/ul>
+    &#x3C;/li>
+    &#x3C;li>Circle&#x3C;/li>
+    &#x3C;li>
+      &#x3C;ol>
+        &#x3C;li>Color&#x3C;/li>
+        &#x3C;li>Weight&#x3C;/li>
+      &#x3C;/ol>
+    &#x3C;/li>
+  &#x3C;/ul>
+&#x3C;/ol>
+</code></pre>
+<pre><code class="language-CSS">html,
+body {
+  height: 100%;
+  margin: 0;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  font-size: 18px;
+}
+
+ol {
+  list-style-type: number;
+  color: darkblue;
+}
+
+/* Not applied to ol, because of lower specificity */
+:where(ol, ul, menu:unsupported) :where(ol, ul) {
+  color: green;
+}
+
+:where(ol, ul ul) :where(ol, ul ul) ol {
+  list-style-type: lower-greek;
+  color: brown;
+}
+
+:where(ol, ul ul) :where(ol, ul ul) {
+  list-style-type: lower-alpha;
+  color: #871f78;
+}
+</code></pre>
+<h2 id="specifications"><a href="#specifications" aria-hidden="true" tabindex="-1" rel="bookmark">Specifications</a></h2>
+<p><a href="https://www.w3.org/TR/selectors-4/#zero-matches">W3C CSS Selectors Level 4
+#zero-matches</a></p>
+<h2 id="see-also"><a href="#see-also" aria-hidden="true" tabindex="-1" rel="bookmark">See Also</a></h2>
+<ul>
+<li><a href="https://appcode.app/how-to-remove-unused-css/">How To Remove Unused CSS</a></li>
+</ul>

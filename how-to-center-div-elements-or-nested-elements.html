@@ -1,57 +1,39 @@
----
-title: How to Center DIV Elements or Nested Elements
-taxonomy:
-    category: CSS
-post_date: 2022-01-07 06:47:12
----
-
-## Contents
-
--   [Overview](#overview)
--   [Methods for Centering DIVs and Elements](#methods-for-centering-divs-and-elements)
-    -   [Using margin Property](#using-margin-property)
-    -   [Using flex Property](#using-flex-property)
-    -   [Using text-align Property](#using-text-align-property)
-    -   [Using transform Property](#using-transform-property)
-    -   [Using grid Property](#using-grid-property)
--   [Summary](#summary)
--   [See Also](#see-also)
-
-## Overview
-
-CSS is one of the three core technologies of the World Wide Web, along with HTML and JavaScript. No modern website is complete without CSS because CSS defines the presentation of the user interface.
-
-Though it seems easy, [CSS is quite tough to implement in real-time](https://medium.com/@Cryptacular/why-is-css-so-hard-for-programmers-a10d7e282620). The reason is that CSS is huge and has many concepts. Moreover, every challenge has more than one solution, sometimes several. Even experienced developers sometimes struggle while implementing CSS.
-
-One of the common challenges in CSS is to center an element. If you have ever worked with CSS, you likely faced a situation where a div element or a heading needs to be centered. And many developers struggle in doing this simple task. One of the primary reasons for this is that developers do not give enough time to learn the tricks for centering elements using CSS. So in this article, we will provide different ways of centering a div or centering other elements inside a div using CSS.
-
-## Methods for Centering DIVs and Elements
-
-There are different ways to center a div or center elements inside a div. This can include centering a div on the screen or center elements such as paragraphs, headings, or images inside a div. We can do it horizontally, vertically, or both horizontally or vertically. So let’s discuss each of these ways one by one.
-
-### Using margin Property
-
-One of the easiest ways to center a div horizontally is by [using the margin property](https://www.w3schools.com/css/css_margin.asp). Observe the following div element.
-
+<h2 id="contents"><a href="#contents" aria-hidden="true" tabindex="-1" rel="bookmark">Contents</a></h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#methods-for-centering-divs-and-elements">Methods for Centering DIVs and Elements</a>
+<ul>
+<li><a href="#using-margin-property">Using margin Property</a></li>
+<li><a href="#using-flex-property">Using flex Property</a></li>
+<li><a href="#using-text-align-property">Using text-align Property</a></li>
+<li><a href="#using-transform-property">Using transform Property</a></li>
+<li><a href="#using-grid-property">Using grid Property</a></li>
+</ul>
+</li>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#see-also">See Also</a></li>
+</ul>
+<h2 id="overview"><a href="#overview" aria-hidden="true" tabindex="-1" rel="bookmark">Overview</a></h2>
+<p>CSS is one of the three core technologies of the World Wide Web, along with HTML and JavaScript. No modern website is complete without CSS because CSS defines the presentation of the user interface.</p>
+<p>Though it seems easy, <a href="https://medium.com/@Cryptacular/why-is-css-so-hard-for-programmers-a10d7e282620">CSS is quite tough to implement in real-time</a>. The reason is that CSS is huge and has many concepts. Moreover, every challenge has more than one solution, sometimes several. Even experienced developers sometimes struggle while implementing CSS.</p>
+<p>One of the common challenges in CSS is to center an element. If you have ever worked with CSS, you likely faced a situation where a div element or a heading needs to be centered. And many developers struggle in doing this simple task. One of the primary reasons for this is that developers do not give enough time to learn the tricks for centering elements using CSS. So in this article, we will provide different ways of centering a div or centering other elements inside a div using CSS.</p>
+<h2 id="methods-for-centering-divs-and-elements"><a href="#methods-for-centering-divs-and-elements" aria-hidden="true" tabindex="-1" rel="bookmark">Methods for Centering DIVs and Elements</a></h2>
+<p>There are different ways to center a div or center elements inside a div. This can include centering a div on the screen or center elements such as paragraphs, headings, or images inside a div. We can do it horizontally, vertically, or both horizontally or vertically. So let’s discuss each of these ways one by one.</p>
+<h3 id="using-margin-property"><a href="#using-margin-property" aria-hidden="true" tabindex="-1" rel="bookmark">Using margin Property</a></h3>
+<p>One of the easiest ways to center a div horizontally is by <a href="https://www.w3schools.com/css/css_margin.asp">using the margin property</a>. Observe the following div element.</p>
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="714" height="158" src="https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/A-simple-green-circle-DIV-element-1024x226.png?resize=1024%2C226&amp;ssl=1" alt="A simple green circle DIV element" class="wp-image-7484" srcset="https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-simple-green-circle-DIV-element.png?resize=1024%2C226&amp;ssl=1 1024w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-simple-green-circle-DIV-element.png?resize=300%2C66&amp;ssl=1 300w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-simple-green-circle-DIV-element.png?resize=768%2C170&amp;ssl=1 768w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-simple-green-circle-DIV-element.png?resize=1536%2C339&amp;ssl=1 1536w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-simple-green-circle-DIV-element.png?w=1920&amp;ssl=1 1920w" sizes="(max-width: 1024px) 100vw, 1024px">
   <figcaption>A simple green circle DIV element</figcaption>
 </figure>
-
-[The green circle is the div element](https://www.freecodecamp.org/news/css-shapes-explained-how-to-draw-a-circle-triangle-and-more-using-pure-css/) and currently, it is not centered. Following is the HTML for the above.
-
-```HTML
-<html>
-  <body class="body-css">
-    <div class="div-css"></div>
-  </body>
-</html>
-```
-
-And following is the CSS.
-
-```CSS
-.body-css {
+<p><a href="https://www.freecodecamp.org/news/css-shapes-explained-how-to-draw-a-circle-triangle-and-more-using-pure-css/">The green circle is the div element</a> and currently, it is not centered. Following is the HTML for the above.</p>
+<pre><code class="language-HTML">&#x3C;html>
+  &#x3C;body class="body-css">
+    &#x3C;div class="div-css">&#x3C;/div>
+  &#x3C;/body>
+&#x3C;/html>
+</code></pre>
+<p>And following is the CSS.</p>
+<pre><code class="language-CSS">.body-css {
   border: 2px solid black;
   padding: 60px;
 }
@@ -62,12 +44,9 @@ And following is the CSS.
   background-color: green;
   border-radius: 50%;
 }
-```
-
-To center this div horizontally, we can use the margin property and set `auto` as its value.
-
-```CSS
-.body-css {
+</code></pre>
+<p>To center this div horizontally, we can use the margin property and set <code>auto</code> as its value.</p>
+<pre><code class="language-CSS">.body-css {
   border: 2px solid black;
   padding: 60px;
 }
@@ -80,21 +59,15 @@ To center this div horizontally, we can use the margin property and set `auto` a
 
   margin: auto;
 }
-```
-
-With margin as `auto`, the div will be centered with respect to its parent element, i.e. body.
-
+</code></pre>
+<p>With margin as <code>auto</code>, the div will be centered with respect to its parent element, i.e. body.</p>
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="1024" height="226" src="https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-margin-auto.png?resize=1024%2C226&amp;ssl=1" alt="A centered DIV element using margin auto" class="wp-image-7485" srcset="https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-margin-auto.png?resize=1024%2C226&amp;ssl=1 1024w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-margin-auto.png?resize=300%2C66&amp;ssl=1 300w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-margin-auto.png?resize=768%2C170&amp;ssl=1 768w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-margin-auto.png?resize=1536%2C339&amp;ssl=1 1536w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-margin-auto.png?w=1920&amp;ssl=1 1920w" sizes="(max-width: 1024px) 100vw, 1024px" data-recalc-dims="1">
   <figcaption>A centered DIV element using margin auto</figcaption>
 </figure>
-
-### Using flex Property
-
-[Using flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), we can align the div horizontally, vertically, or both. We have to apply the `flex` as the value of the display property in the parent element. Then, we have to use the [`justify-content` and `align-items property`](https://stackoverflow.com/questions/35049262/difference-between-justify-content-vs-align-items) in the parent element as well and both of them should have `center` as their values.
-
-```CSS
-.body-css {
+<h3 id="using-flex-property"><a href="#using-flex-property" aria-hidden="true" tabindex="-1" rel="bookmark">Using flex Property</a></h3>
+<p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Using flex</a>, we can align the div horizontally, vertically, or both. We have to apply the <code>flex</code> as the value of the display property in the parent element. Then, we have to use the <a href="https://stackoverflow.com/questions/35049262/difference-between-justify-content-vs-align-items"><code>justify-content</code> and <code>align-items property</code></a> in the parent element as well and both of them should have <code>center</code> as their values.</p>
+<pre><code class="language-CSS">.body-css {
   border: 2px solid black;
   padding: 60px;
  
@@ -108,34 +81,26 @@ With margin as `auto`, the div will be centered with respect to its parent eleme
   background-color: green;
   border-radius: 50%;
 }
-```
-
+</code></pre>
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="1024" height="226" src="https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-CSS-flex.png?resize=1024%2C226&amp;ssl=1" alt="A centered DIV element using CSS flex" class="wp-image-7486" srcset="https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-CSS-flex.png?resize=1024%2C226&amp;ssl=1 1024w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-CSS-flex.png?resize=300%2C66&amp;ssl=1 300w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-CSS-flex.png?resize=768%2C169&amp;ssl=1 768w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-CSS-flex.png?resize=1536%2C338&amp;ssl=1 1536w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-element-using-CSS-flex.png?w=1920&amp;ssl=1 1920w" sizes="(max-width: 1024px) 100vw, 1024px" data-recalc-dims="1">
   <figcaption>A centered DIV element using CSS flex</figcaption>
 </figure>
-
-This way is also useful when we want to center any element inside a div. Observe the following HTML.
-
-```HTML
-<html>
-  <body class="body-css">
-    <div class="div-css">
-      <h3>Hello World!</h3>
-    </div>
-  </body>
-</html>
-```
-
+<p>This way is also useful when we want to center any element inside a div. Observe the following HTML.</p>
+<pre><code class="language-HTML">&#x3C;html>
+  &#x3C;body class="body-css">
+    &#x3C;div class="div-css">
+      &#x3C;h3>Hello World!&#x3C;/h3>
+    &#x3C;/div>
+  &#x3C;/body>
+&#x3C;/html>
+</code></pre>
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="1024" height="227" src="https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-using-CSS-flex-with-uncentered-text.png?resize=1024%2C227&amp;ssl=1" alt="A centered DIV using CSS flex with uncentered text" class="wp-image-7489" srcset="https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-using-CSS-flex-with-uncentered-text.png?resize=1024%2C227&amp;ssl=1 1024w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-using-CSS-flex-with-uncentered-text.png?resize=300%2C67&amp;ssl=1 300w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-using-CSS-flex-with-uncentered-text.png?resize=768%2C170&amp;ssl=1 768w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-using-CSS-flex-with-uncentered-text.png?resize=1536%2C341&amp;ssl=1 1536w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/A-centered-DIV-using-CSS-flex-with-uncentered-text.png?w=1920&amp;ssl=1 1920w" sizes="(max-width: 1024px) 100vw, 1024px" data-recalc-dims="1">
   <figcaption>A centered DIV using CSS flex with uncentered text</figcaption>
 </figure>
-
-To center the h3 element, we have to apply the flex to its parent element i.e. div. Yes, we have already applied flex to the body element and there is no problem in applying the flex again.
-
-```CSS
-.body-css {
+<p>To center the h3 element, we have to apply the flex to its parent element i.e. div. Yes, we have already applied flex to the body element and there is no problem in applying the flex again.</p>
+<pre><code class="language-CSS">.body-css {
   border: 2px solid black;
   padding: 60px;
 
@@ -154,21 +119,15 @@ To center the h3 element, we have to apply the flex to its parent element i.e. d
   justify-content: center;
   align-items: center;
 }
-```
-
-Remember, the justify-content property will center the element horizontally while align-items will center vertically.
-
+</code></pre>
+<p>Remember, the justify-content property will center the element horizontally while align-items will center vertically.</p>
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="1024" height="226" src="https://i0.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-DIV-and-text-using-CSS-Flex.png?resize=1024%2C226&amp;ssl=1" alt="Centered DIV and text using CSS Flex" class="wp-image-7491" srcset="https://i0.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-DIV-and-text-using-CSS-Flex.png?resize=1024%2C226&amp;ssl=1 1024w, https://i0.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-DIV-and-text-using-CSS-Flex.png?resize=300%2C66&amp;ssl=1 300w, https://i0.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-DIV-and-text-using-CSS-Flex.png?resize=768%2C169&amp;ssl=1 768w, https://i0.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-DIV-and-text-using-CSS-Flex.png?resize=1536%2C338&amp;ssl=1 1536w, https://i0.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-DIV-and-text-using-CSS-Flex.png?w=1920&amp;ssl=1 1920w" sizes="(max-width: 1024px) 100vw, 1024px" data-recalc-dims="1">
   <figcaption>Centered DIV and text using CSS Flex</figcaption>
 </figure>
-
-### Using text-align Property
-
-[Using text-align property](https://www.geeksforgeeks.org/css-text-align-property/) is the most common way to center a text. In the above example, we centered the h3 element inside the div using the flex, which was also used to center the div itself. Instead of using flex to center the h3 element, let’s try the text-align property.
-
-```CSS
-.body-css {
+<h3 id="using-text-align-property"><a href="#using-text-align-property" aria-hidden="true" tabindex="-1" rel="bookmark">Using text-align Property</a></h3>
+<p><a href="https://www.geeksforgeeks.org/css-text-align-property/">Using text-align property</a> is the most common way to center a text. In the above example, we centered the h3 element inside the div using the flex, which was also used to center the div itself. Instead of using flex to center the h3 element, let’s try the text-align property.</p>
+<pre><code class="language-CSS">.body-css {
   border: 2px solid black;
   padding: 60px;
 
@@ -185,23 +144,16 @@ Remember, the justify-content property will center the element horizontally whil
 
   text-align: center;
 }
-```
-
-But there is one problem. The `text-align` property will only center the element horizontally.
-
+</code></pre>
+<p>But there is one problem. The <code>text-align</code> property will only center the element horizontally.</p>
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="1024" height="225" src="https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-text-using-the-text-align-property.png?resize=1024%2C225&amp;ssl=1" alt="Centered text using the text-align property" class="wp-image-7493" srcset="https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-text-using-the-text-align-property.png?resize=1024%2C225&amp;ssl=1 1024w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-text-using-the-text-align-property.png?resize=300%2C66&amp;ssl=1 300w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-text-using-the-text-align-property.png?resize=768%2C169&amp;ssl=1 768w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-text-using-the-text-align-property.png?resize=1536%2C338&amp;ssl=1 1536w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centered-text-using-the-text-align-property.png?w=1920&amp;ssl=1 1920w" sizes="(max-width: 1024px) 100vw, 1024px" data-recalc-dims="1">
   <figcaption>Centered text using the text-align property</figcaption>
 </figure>
-
-So, we can use the `text-align` property, if it is required to center the text horizontally only.
-
-### Using transform Property
-
-Another way to center an element to its nearest parent element is by using the [transform property](https://www.w3schools.com/cssref/css3_pr_transform.asp). In this technique, we give the parent a `relative` position and `absolute` to the child. Then, we provide top, left, and transform properties to the child element with necessary values.
-
-```CSS
-.body-css {
+<p>So, we can use the <code>text-align</code> property, if it is required to center the text horizontally only.</p>
+<h3 id="using-transform-property"><a href="#using-transform-property" aria-hidden="true" tabindex="-1" rel="bookmark">Using transform Property</a></h3>
+<p>Another way to center an element to its nearest parent element is by using the <a href="https://www.w3schools.com/cssref/css3_pr_transform.asp">transform property</a>. In this technique, we give the parent a <code>relative</code> position and <code>absolute</code> to the child. Then, we provide top, left, and transform properties to the child element with necessary values.</p>
+<pre><code class="language-CSS">.body-css {
   border: 2px solid black;
   padding: 120px;
   position: relative;
@@ -217,21 +169,15 @@ Another way to center an element to its nearest parent element is by using the [
   left: 50%;
   transform: translate(-50%, -50%);
 }
-```
-
-Remember, the top and left property values should always be `50%` while `translate` should be used for the transform property.
-
+</code></pre>
+<p>Remember, the top and left property values should always be <code>50%</code> while <code>translate</code> should be used for the transform property.</p>
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="1024" height="173" src="https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Using-the-transform-property-to-center-a-DIV-element-1024x173.png?resize=1024%2C173&amp;ssl=1" alt="Using the transform property to center a DIV element" class="wp-image-7494" srcset="https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/Using-the-transform-property-to-center-a-DIV-element.png?resize=1024%2C173&amp;ssl=1 1024w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/Using-the-transform-property-to-center-a-DIV-element.png?resize=300%2C51&amp;ssl=1 300w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/Using-the-transform-property-to-center-a-DIV-element.png?resize=768%2C130&amp;ssl=1 768w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/Using-the-transform-property-to-center-a-DIV-element.png?resize=1536%2C259&amp;ssl=1 1536w, https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/Using-the-transform-property-to-center-a-DIV-element.png?w=1920&amp;ssl=1 1920w" sizes="(max-width: 1024px) 100vw, 1024px" data-recalc-dims="1">
   <figcaption>Using the transform property to center a DIV element</figcaption>
 </figure>
-
-### Using grid Property
-
-[The grid system is relatively new](https://learncssgrid.com/), and you can use it to center elements in CSS. In this technique, we have to set `grid` as the value of display in the parent element and define rows and columns. Then, we can use `justify-self` and `align-self` properties in the child element and set their values as `center`.
-
-```CSS
-.body-css {
+<h3 id="using-grid-property"><a href="#using-grid-property" aria-hidden="true" tabindex="-1" rel="bookmark">Using grid Property</a></h3>
+<p><a href="https://learncssgrid.com/">The grid system is relatively new</a>, and you can use it to center elements in CSS. In this technique, we have to set <code>grid</code> as the value of display in the parent element and define rows and columns. Then, we can use <code>justify-self</code> and <code>align-self</code> properties in the child element and set their values as <code>center</code>.</p>
+<pre><code class="language-CSS">.body-css {
   border: 2px solid black;
 
   display: grid;
@@ -248,27 +194,22 @@ Remember, the top and left property values should always be `50%` while `transla
   justify-self: center;
   align-self: center;
 }
-```
-
+</code></pre>
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="1024" height="164" src="https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centering-a-DIV-element-using-CSS-Grid.png?resize=1024%2C164&amp;ssl=1" alt="Centering a DIV element using CSS Grid" class="wp-image-7499" srcset="https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centering-a-DIV-element-using-CSS-Grid.png?resize=1024%2C164&amp;ssl=1 1024w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centering-a-DIV-element-using-CSS-Grid.png?resize=300%2C48&amp;ssl=1 300w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centering-a-DIV-element-using-CSS-Grid.png?resize=768%2C123&amp;ssl=1 768w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centering-a-DIV-element-using-CSS-Grid.png?resize=1536%2C246&amp;ssl=1 1536w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centering-a-DIV-element-using-CSS-Grid.png?w=1920&amp;ssl=1 1920w" sizes="(max-width: 1024px) 100vw, 1024px" data-recalc-dims="1">
   <figcaption>Centering a DIV element using CSS Grid</figcaption>
 </figure>
-
-## Summary
-
-So centering elements using CSS is not challenging, and you only need to have the correct understanding of specific CSS properties and their values. In this article, we discussed five ways to center a div or center other elements in a div both horizontally and vertically.
-
-Here is a link to a relatively more [advanced example of a centered nested DIV element on codepen.io](https://codepen.io/tyler-chipman/pen/XWeYPVM).
-
+<h2 id="summary"><a href="#summary" aria-hidden="true" tabindex="-1" rel="bookmark">Summary</a></h2>
+<p>So centering elements using CSS is not challenging, and you only need to have the correct understanding of specific CSS properties and their values. In this article, we discussed five ways to center a div or center other elements in a div both horizontally and vertically.</p>
+<p>Here is a link to a relatively more <a href="https://codepen.io/tyler-chipman/pen/XWeYPVM">advanced example of a centered nested DIV element on codepen.io</a>.</p>
 <figure class="wp-block-image size-large">
   <img loading="lazy" width="1024" height="263" src="https://i1.wp.com/appcode.app/wp-content/uploads/2022/01/Centering-DIV-Elements-or-Nested-Elements-1024x263.png?resize=1024%2C263&amp;ssl=1" alt="Centering DIV Elements or Nested Elements" class="wp-image-7511" srcset="https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centering-DIV-Elements-or-Nested-Elements.png?resize=1024%2C263&amp;ssl=1 1024w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centering-DIV-Elements-or-Nested-Elements.png?resize=300%2C77&amp;ssl=1 300w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centering-DIV-Elements-or-Nested-Elements.png?resize=768%2C197&amp;ssl=1 768w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centering-DIV-Elements-or-Nested-Elements.png?resize=1536%2C394&amp;ssl=1 1536w, https://i2.wp.com/appcode.app/wp-content/uploads/2022/01/Centering-DIV-Elements-or-Nested-Elements.png?w=1920&amp;ssl=1 1920w" sizes="(max-width: 1024px) 100vw, 1024px" data-recalc-dims="1">
   <figcaption>Centering DIV Elements or Nested Elements</figcaption>
 </figure>
-
-## See Also
-
--   [How to Create a Responsive Flexbox Grid](/how-to-create-a-responsive-flexbox-grid/)
--   [The CSS transform Property](/css-transform-property/)
--   [A Guide on How To Use CSS Grids for Layouts](/a-guide-on-how-to-use-css-grids-for-layouts/)
--   [How To Align an HTML List Side by Side](/how-to-align-an-html-list-side-by-side/)
+<h2 id="see-also"><a href="#see-also" aria-hidden="true" tabindex="-1" rel="bookmark">See Also</a></h2>
+<ul>
+<li><a href="/how-to-create-a-responsive-flexbox-grid/">How to Create a Responsive Flexbox Grid</a></li>
+<li><a href="/css-transform-property/">The CSS transform Property</a></li>
+<li><a href="/a-guide-on-how-to-use-css-grids-for-layouts/">A Guide on How To Use CSS Grids for Layouts</a></li>
+<li><a href="/how-to-align-an-html-list-side-by-side/">How To Align an HTML List Side by Side</a></li>
+</ul>
