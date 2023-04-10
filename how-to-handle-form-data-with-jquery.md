@@ -431,7 +431,7 @@ After validating form data, it is typically sent to be processed somewhere such 
 
 ## References
 
-<ol>
+<ol class="reference-list">
   <li id="cite_note-1"><span class="cite-backlink"><b><a href="#cite_ref-1" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Wikimedia Foundation. (2023, March 23) <a rel="nofollow" href="https://en.wikipedia.org/wiki/HTML_form">HTML form</a>. <i>Wikipedia</i>. Retrieved April 10, 2023.</cite></li>
   <li id="cite_note-2"><span class="cite-backlink"><b><a href="#cite_ref-2" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Baker, K. (2022, September 14). <a rel="nofollow" href="https://blog.hubspot.com/marketing/web-forms">Web forms: The ultimate guide</a>. <i>HubSpot Blog</i>. Retrieved April 10, 2023.</cite></li>
   <li id="cite_note-3"><span class="cite-backlink"><b><a href="#cite_ref-3" aria-label="Jump up" title="Jump up">^</a></b></span>&nbsp;<cite>Educative Answers Team. (2020, August 13). <a rel="nofollow" href="https://www.educative.io/answers/what-are-the-different-ways-to-add-jquery-to-our-webpages">What are the different ways to add jQuery to our webpages</a>? <i>Educative</i>. Retrieved April 10, 2023.</cite></li>
