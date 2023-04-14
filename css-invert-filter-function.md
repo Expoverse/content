@@ -5,31 +5,48 @@ taxonomy:
 post_date: 2022-02-23 23:36:21  
 ---
 
-
-This article provides a comprehensive guide to the CSS invert filter function. Invert is a value of the [CSS filter property](https://appcode.app/the-css-filter-property/).<sup id="cite_ref-1"><a href="#cite_note-1">[1]</a></sup> The invert filter can be used to invert the colors of an element, making it look like a negative of itself.<sup id="cite_ref-2"><a href="#cite_note-2">[2]</a></sup>
+This article provides a comprehensive guide to the CSS invert filter function. Invert is a value of the [CSS filter property](https://appcode.app/the-css-filter-property/).<sup id="cite_ref-1"><a href="#cite_note-1">\[1]</a></sup> The invert filter can be used to invert the colors of an element, making it look like a negative of itself.<sup id="cite_ref-2"><a href="#cite_note-2">\[2]</a></sup>
 
 In the guide we'll cover its syntax, parameters, specifications. We also discuss the various implimentations of the CSS invert filter by demostating simple usage and advanced examples utilizing CSS variables and functions as parameters to change the value of invert.
 
 ## Contents
 
+-   [Syntax](#syntax)
+-   [Parameters](#parameters)
+-   [Usage](#usage)
+-   [How it works](#how-it-works)
+-   [Examples](#examples)
+    -   [Inverted image](#inverted-image)
+    -   [Inverted text](#inverted-text)
+    -   [Inverted background](#inverted-background)
+    -   [Animations](#animations)
+    -   [Dark mode](#dark-mode)
+    -   [Highlighting text](#highlighting-text)
+    -   [Image hover effect](#image-hover-effect)
+    -   [calc() as a parameter](#calc-as-a-parameter)
+    -   [Pseudo-class inverted elements](#pseudo-class-inverted-elements)
+    -   [Using an HTML slider](#using-an-html-slider)
+-   [Specifications](#specifications)
+-   [See also](#see-also)
+-   [Reference](#reference)
 
 ## Syntax
 
-The syntax of invert can be expressed using the filter property with the invert function and an optional parameter. 
+The syntax of invert can be expressed using the filter property with the invert function and an optional parameter.
 
 ```css
 filter: invert(value?) | ... other functions;
 ```
 
-If multiple filters are applied to an element with invert, their order of application can be specified using multiple functions in a **filter-order**.<sup id="cite_ref-3"><a href="#cite_note-3">[3]</a></sup>
+If multiple filters are applied to an element with invert, their order of application can be specified using multiple functions in a **filter-order**.<sup id="cite_ref-3"><a href="#cite_note-3">\[3]</a></sup>
 
 ## Parameters
 
-The invert value is the percentage of inversion that is applied to the element. It can range from 0% (no inversion) to 100% (complete inversion).<sup id="cite_ref-4"><a href="#cite_note-4">[4]</a></sup>
+The invert value is the percentage of inversion that is applied to the element. It can range from 0% (no inversion) to 100% (complete inversion).<sup id="cite_ref-4"><a href="#cite_note-4">\[4]</a></sup>
 
 -   **value**  (required)
 
-This value can be a number or percentage. The value is a proportion of the invert conversion, which means 5% or 0.05 is only 5% inverted and is linear between 0% and 100%. Values over 100% are accepted but they are clamped to 1 and negative values are not allowed.  For interpolation the value is 0. When using invert without a parameter, the default value is 1 when omitted, which is completely inverted.<sup id="cite_ref-5"><a href="#cite_note-5">[5]</a></sup>
+This value can be a number or percentage. The value is a proportion of the invert conversion, which means 5% or 0.05 is only 5% inverted and is linear between 0% and 100%. Values over 100% are accepted but they are clamped to 1 and negative values are not allowed.  For interpolation the value is 0. When using invert without a parameter, the default value is 1 when omitted, which is completely inverted.<sup id="cite_ref-5"><a href="#cite_note-5">\[5]</a></sup>
 
 The code block below shows example values for the parameter.
 
@@ -52,7 +69,7 @@ invert(0.18)    /* A invert of 18% */
 
 ## Usage
 
-The CSS invert filter can be applied to any element on a web page, including images, text, and backgrounds.<sup id="cite_ref-6"><a href="#cite_note-6">[6]</a></sup> To apply the invert filter, the developer must first select the element they wish to modify and add the `filter` property to its style sheet. They then need to specify the type of filter they want to apply by adding the `invert()` function and setting its value.
+The CSS invert filter can be applied to any element on a web page, including images, text, and backgrounds.<sup id="cite_ref-6"><a href="#cite_note-6">\[6]</a></sup> To apply the invert filter, the developer must first select the element they wish to modify and add the `filter` property to its style sheet. They then need to specify the type of filter they want to apply by adding the `invert()` function and setting its value.
 
 ```css
 #element-id {
@@ -66,10 +83,9 @@ img {
 
 ## How it works
 
-Inverting a color value simply means subtracting the color value from the maximum value (typically 255 for an 8-bit color channel), which produces the "opposite" color. For example, inverting the color red rgb(255, 0, 0) would result in cyan rgb(0, 255, 255).<sup id="cite_ref-7"><a href="#cite_note-7">[7]</a></sup>
+Inverting a color value simply means subtracting the color value from the maximum value (typically 255 for an 8-bit color channel), which produces the "opposite" color. For example, inverting the color red rgb(255, 0, 0) would result in cyan rgb(0, 255, 255).<sup id="cite_ref-7"><a href="#cite_note-7">\[7]</a></sup>
 
 When the invert filter is applied to an element, each color value in the element's pixels is inverted according to the formula above. For example, applying the invert filter to a black and white image would result in a negative image with white elements becoming black and black elements becoming white. Applying the invert filter to a colorful image would result in a color-shifted image, where the colors are shifted towards their opposites.
-
 
 ## Examples
 
@@ -77,7 +93,7 @@ Here are some examples of how the CSS invert filter can be used to create visual
 
 ### Inverted image
 
-The invert filter can be applied to images to create an inverted visual effect.<sup id="cite_ref-8"><a href="#cite_note-8">[8]</a></sup> In this example, the invert filter is applied to three images of a fern, creating a different degree of inverted images using the parameter values of `0%`, `50%`, and `100%`.
+The invert filter can be applied to images to create an inverted visual effect.<sup id="cite_ref-8"><a href="#cite_note-8">\[8]</a></sup> In this example, the invert filter is applied to three images of a fern, creating a different degree of inverted images using the parameter values of `0%`, `50%`, and `100%`.
 
 <figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="388" src="https://appcode.app/wp-content/uploads/2022/09/The-CSS-Invert-Filter-Function-1024x388.png" alt="The CSS invert filter Function" class="wp-image-14292" srcset="https://appcode.app/wp-content/uploads/2022/09/The-CSS-Invert-Filter-Function-1024x388.png 1024w, https://appcode.app/wp-content/uploads/2022/09/The-CSS-Invert-Filter-Function-300x114.png 300w, https://appcode.app/wp-content/uploads/2022/09/The-CSS-Invert-Filter-Function-768x291.png 768w, https://appcode.app/wp-content/uploads/2022/09/The-CSS-Invert-Filter-Function-1536x582.png 1536w, https://appcode.app/wp-content/uploads/2022/09/The-CSS-Invert-Filter-Function.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Inverting an Image</figcaption></figure>
 
@@ -136,7 +152,7 @@ body {
 
 ### Inverted text
 
-The invert filter can also be used to create an effect on text.<sup id="cite_ref-9"><a href="#cite_note-9">[9]</a></sup> In this example, the invert filter is applied to a block of text inside a `<h1>` element, making it stand out against the background.
+The invert filter can also be used to create an effect on text.<sup id="cite_ref-9"><a href="#cite_note-9">\[9]</a></sup> In this example, the invert filter is applied to a block of text inside a `<h1>` element, making it stand out against the background.
 
 ```css
 h1 {
@@ -146,7 +162,7 @@ h1 {
 
 ### Inverted background
 
-We can also use invert on a background of an element.<sup id="cite_ref-10"><a href="#cite_note-10">[10]</a></sup> In this example, the invert filter is applied to the background, creating a negative image of a starry sky.
+We can also use invert on a background of an element.<sup id="cite_ref-10"><a href="#cite_note-10">\[10]</a></sup> In this example, the invert filter is applied to the background, creating a negative image of a starry sky.
 
 ```css
 body {
@@ -157,7 +173,7 @@ body {
 
 ### Animations
 
-The CSS invert filter can also be used in [animations](https://appcode.app/awesome-keyframe-css-animation-examples-and-code/) to create animation effects.<sup id="cite_ref-11"><a href="#cite_note-11">[11]</a></sup> In this example, we will use the invert filter to create an animation where an image gradually transitions from its original colors to a fully inverted negative image.
+The CSS invert filter can also be used in [animations](https://appcode.app/awesome-keyframe-css-animation-examples-and-code/) to create animation effects.<sup id="cite_ref-11"><a href="#cite_note-11">\[11]</a></sup> In this example, we will use the invert filter to create an animation where an image gradually transitions from its original colors to a fully inverted negative image.
 
 ```html
 <div class="container">
@@ -199,7 +215,7 @@ When the animation runs, the image gradually transitions from its original color
 
 ### Dark mode
 
-Another use of the invert filter is to create a dark mode toggle button. This is achieved by inverting the colors of the entire page, effectively creating a negative image.<sup id="cite_ref-12"><a href="#cite_note-12">[12]</a></sup> Here is an example of how this can be achieved:
+Another use of the invert filter is to create a dark mode toggle button. This is achieved by inverting the colors of the entire page, effectively creating a negative image.<sup id="cite_ref-12"><a href="#cite_note-12">\[12]</a></sup> Here is an example of how this can be achieved:
 
 ```html
 <div>
@@ -264,7 +280,7 @@ We also define a `div.dark` selector, which applies an inversion of 100%, effect
 
 ### Highlighting text
 
-Another implimentation of the invert filter is to create a highlight effect on text.<sup id="cite_ref-13"><a href="#cite_note-13">[13]</a></sup> This is achieved by applying the invert filter to a background color, effectively inverting the color and creating a highlight effect. Here is an example of how this can be achieved:
+Another implimentation of the invert filter is to create a highlight effect on text.<sup id="cite_ref-13"><a href="#cite_note-13">\[13]</a></sup> This is achieved by applying the invert filter to a background color, effectively inverting the color and creating a highlight effect. Here is an example of how this can be achieved:
 
 ```html
 <p>This is some <span class="highlight">highlighted</span> text.</p>
@@ -283,7 +299,7 @@ The example creates a `span` element with a class of `highlight`, which we use t
 
 ### Image hover effect
 
-The invert filter can also be used to create a hover effect on images, where the image is inverted on hover.<sup id="cite_ref-14"><a href="#cite_note-14">[14]</a></sup> Here is an example of how this can be achieved:
+The invert filter can also be used to create a hover effect on images, where the image is inverted on hover.<sup id="cite_ref-14"><a href="#cite_note-14">\[14]</a></sup> Here is an example of how this can be achieved:
 
 ```html
 <div class="image-container">
@@ -313,8 +329,9 @@ img:hover {
 }
 ```
 
-### calc() as a parameter 
-Using CSS variables and the `calc()` function can be a useful technique for dynamically adjusting the invert filter value based on user input or other factors.<sup id="cite_ref-15"><a href="#cite_note-15">[15]</a></sup> Here's an example of how to use CSS variables and `calc()` with the invert filter:
+### calc() as a parameter
+
+Using CSS variables and the `calc()` function can be a useful technique for dynamically adjusting the invert filter value based on user input or other factors.<sup id="cite_ref-15"><a href="#cite_note-15">\[15]</a></sup> Here's an example of how to use CSS variables and `calc()` with the invert filter:
 
 ```css
 /* Define a CSS variable for the invert filter value */
@@ -339,7 +356,8 @@ To adjust the invert filter value dynamically, we can simply change the value of
 When the user clicks the button, the `--invert-value` variable is updated to 0.5, which will result in the invert filter applying a 50% inversion to the element.
 
 ### Pseudo-class inverted elements
-One way to use a pseudo-class with the invert filter is to apply the invert filter to old elements. For example the even elements are unchanged:<sup id="cite_ref-16"><a href="#cite_note-16">[16]</a></sup>
+
+One way to use a pseudo-class with the invert filter is to apply the invert filter to old elements. For example the even elements are unchanged:<sup id="cite_ref-16"><a href="#cite_note-16">\[16]</a></sup>
 
 ```css
 /* Apply the invert filter to odd-numbered list items */
@@ -347,11 +365,12 @@ li:nth-child(odd) {
   filter: invert(100%);
 }
 ```
+
 In this example, we then apply the invert filter to odd-numbered `li` elements using the `:nth-child(odd)` selector.
 
-
 ### Using an HTML slider
-Combining the CSS calc and var functions with an HTML slider is a way to create a changing CSS filter invert effect using minumum JavaScript.<sup id="cite_ref-17"><a href="#cite_note-17">[17]</a></sup> Here's an example of how to achieve this effect:
+
+Combining the CSS calc and var functions with an HTML slider is a way to create a changing CSS filter invert effect using minumum JavaScript.<sup id="cite_ref-17"><a href="#cite_note-17">\[17]</a></sup> Here's an example of how to achieve this effect:
 
 ```css
 /* Define a CSS variable for the invert filter value */
@@ -365,7 +384,7 @@ div {
 }
 ```
 
-In this example, we first define a CSS variable called `--invert-value` with an initial value of 0, which will be used to control the invert filter value. 
+In this example, we first define a CSS variable called `--invert-value` with an initial value of 0, which will be used to control the invert filter value.
 
 Finally, we apply the invert filter to the `div` element using a `calc()` function that gets the `--invert-value` variable based on the slider value. The `calc(var(--invert-value))` expression produces a value where the `div` has a value the `-invert-value`.
 
@@ -380,12 +399,11 @@ In this example, we define an HTML range input with a minimum value of 0, a maxi
 
 ## Specifications
 
-The CSS invert filter was first introduced in the CSS3 specification as a part of the CSS Image Filters Module. This module added several new properties to the CSS language that allowed web developers to apply different visual effects to images, including blurring, sharpening, and color manipulation.<sup id="cite_ref-18"><a href="#cite_note-18">[18]</a></sup>
-
+The CSS invert filter was first introduced in the CSS3 specification as a part of the CSS Image Filters Module. This module added several new properties to the CSS language that allowed web developers to apply different visual effects to images, including blurring, sharpening, and color manipulation.<sup id="cite_ref-18"><a href="#cite_note-18">\[18]</a></sup>
 
 ## See also
 
-The invert filter is one of many filter functions available in CSS. Other filter functions include Blur, Grayscale, Sepia, and more. These filter functions can be combined and applied in various ways to achieve different visual effects.<sup id="cite_ref-19"><a href="#cite_note-19">[19]</a></sup>
+The invert filter is one of many filter functions available in CSS. Other filter functions include Blur, Grayscale, Sepia, and more. These filter functions can be combined and applied in various ways to achieve different visual effects.<sup id="cite_ref-19"><a href="#cite_note-19">\[19]</a></sup>
 
 -   [blur()](https://appcode.app/css-blur-filter-function/)
 -   [brightness()](https://appcode.app/css-brightness-filter-function/)
